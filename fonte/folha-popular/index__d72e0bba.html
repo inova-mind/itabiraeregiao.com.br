@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Folha Popular em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Folha Popular | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Folha Popular | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Folha Popular | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Folha Popular</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/folha-popular"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/folha-popular?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/15735-abradi-minas-gerais-elege-nova-diretoria-para-o-bienio-2026-2028" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-24-breno.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Abradi Minas Gerais elege nova diretoria para o biênio 2026/2028</h2>
+      <p class="card-snippet">A gestão será liderada pelo empresário e jornalista Breno Botelho Nova gestão no estado busca ampliar a relevância da regional, fortalecer o mercado mineiro e atuar em alinhamento com a nova…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-24T17:29:55+00:00">
+          24/07/2026 17:29
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15736-festival-de-inverno-de-santa-maria-tera-inicio-nesta-sexta-24-com-programacao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-24-festival-sm.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Festival de Inverno de Santa Maria terá início nesta sexta (24) com programação itinerante</h2>
+      <p class="card-snippet">24/07/2026 – O 8º Festival de Inverno itinerante de Santa Maria de Itabira será aberto nesta sexta-feira (24), com grandes atrações, cultura, música e momentos especiais para toda a família. A…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-24T17:16:44+00:00">
+          24/07/2026 17:16
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15611-sabores-que-nos-unem-dom-joaquim-recebe-festival-gastronomico-e-cultural-dom" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-24-dom-joaquim.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Sabores que nos unem: Dom Joaquim recebe Festival gastronômico e cultural ‘Dom Apetite’ neste sábado (25)</h2>
+      <p class="card-snippet">Evento estimula o relacionamento de produtores locais com o público, preservando a memória e as tradições culinárias da região 24/07/2026 – Há quem diga que a comida mineira é uma das melhores do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-24T11:20:24+00:00">
+          24/07/2026 11:20
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15604-fim-do-patio-bolha-articulacao-da-prefeitura-de-barao-contribui-para-desfecho" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-24-barao-5.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Fim do “pátio bolha”: articulação da Prefeitura de Barão contribui para desfecho do empreendimento</h2>
+      <p class="card-snippet">Após anos de reivindicações da comunidade, área que gerava poeira, ruídos e riscos à saúde é desmobilizada 24/07/2026 – Com interlocução do governo de Barão de Cocais, uma demanda antiga da…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-24T10:43:42+00:00">
+          24/07/2026 10:43
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15501-barao-de-cocais-oferta-30-vagas-para-pos-graduacao-gratuita-pelo-ifmg" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-23-polo.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Barão de Cocais oferta 30 vagas para pós-graduação gratuita pelo IFMG</h2>
+      <p class="card-snippet">Curso de especialização em Administração Pública é à distância e tem inscrições até 17 de agosto 23/07/2026 – O Polo da Universidade Aberta do Brasil (UAB) em Barão de Cocais está com inscrições…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-23T19:21:05+00:00">
+          23/07/2026 19:21
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15498-reinaldo-lacerda-revida-e-diz-que-assessoria-de-marco-lage-mente" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-23-reinaldo.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Reinaldo Lacerda revida e diz que assessoria de Marco Lage mente</h2>
+      <p class="card-snippet">Reinaldo Lacerda classificou a atitude da Prefeitura como vergonhosa 23/07/2026 – A assessoria de Comunicação do prefeito Marco Antônio Lage (PSB) disparou nota à imprensa apontando que o vereador…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-23T19:07:28+00:00">
+          23/07/2026 19:07
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15400-minas-em-risco-barragens-e-falhas-no-monitoramento-colocam-em-risco" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/SITE-23-sistema.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Minas em risco – Barragens e falhas no monitoramento colocam em risco abastecimento de água</h2>
+      <p class="card-snippet">Sistema Integrado Rio das Velhas, com captação em Bela Fama, em Nova Lima, responde por cerca de 70% do abastecimento de Belo Horizonte 23/07/2026 – Minas Gerais permanece, de forma isolada, como…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-23T12:42:52+00:00">
+          23/07/2026 12:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15015-santa-maria-de-itabira-alcanca-a-12a-posicao-em-minas-no-icms-esportivo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-desafio-garrucheiro-de-MTB-300x200.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Santa Maria de Itabira alcança a 12ª posição em Minas no ICMS Esportivo</h2>
+      <p class="card-snippet">Município coleciona participações e conquistas em diversos eventos internos e externos, como na Taça Valadares de Futsal Na microrregião, a segunda cidade melhor posicionada é são domingos do prata…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T21:52:00+00:00">
+          21/07/2026 21:52
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14975-musico-itabirano-propoe-metodo-democratico-para-o-ensino-da-bateria-em-oficina" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-barba-azul.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Músico itabirano propõe método democrático para o ensino da bateria em oficina no Festival de Inverno</h2>
+      <p class="card-snippet">Ronan Barbazul apresenta a oficina “Música sem Academia”, que aposta na prática, na escuta e na experimentação para tornar o aprendizado da bateria mais acessível 21/07/2026 – Aprender música sem…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T18:26:29+00:00">
+          21/07/2026 18:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14885-mpmg-obtem-liminar-para-proteger-mobilidade-urbana-e-uso-do-espaco-publico-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/SITE-21-MP-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">MPMG obtém liminar para proteger mobilidade urbana e uso do espaço público em Itabira</h2>
+      <p class="card-snippet">Empresa foi denunciada por uso irregular de rua Dona Verônica, na vila Santa Rosa 21/07/2026 – O Ministério Público de Minas Gerais (MPMG) obteve decisão favorável em Ação Civil Pública (ACP)…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T12:46:42+00:00">
+          21/07/2026 12:46
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14874-sinais-do-cancer-colorretal-devem-ser-checados-com-rapidez-saiba-mais" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-cancer.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Sinais do câncer colorretal devem ser checados com rapidez; saiba mais</h2>
+      <p class="card-snippet">Pesquisa indica que parte dos brasileiros adia ida ao médico 21/07/2026 – Apesar de reconhecerem que sintomas como presença de sangue nas fezes e mudança no fucionamento do intestino por mais de um…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T12:34:34+00:00">
+          21/07/2026 12:34
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14860-edicao-860-do-folha-popular" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-capa-860.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Edição 860 do Folha Popular</h2>
+      <p class="card-snippet">21/07/2026 Edição 860 do Folha Popular – AQUI The post Edição 860 do Folha Popular first appeared on Folha Popular . O post Edição 860 do Folha Popular apareceu primeiro em Folha Popular .</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T12:03:13+00:00">
+          21/07/2026 12:03
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14861-edicao-859-do-folha-popular" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-capa-859.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Edição 859 do Folha Popular</h2>
+      <p class="card-snippet">21/07/2026 Edição 859 do Folha Popular – AQUI The post Edição 859 do Folha Popular first appeared on Folha Popular . O post Edição 859 do Folha Popular apareceu primeiro em Folha Popular .</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T11:57:05+00:00">
+          21/07/2026 11:57
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14862-edicao-858-do-folha-popular" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-capa-858.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Edição 858 do Folha Popular</h2>
+      <p class="card-snippet">21/07/2026 Edição 858 do Folha Popular – AQUI The post Edição 858 do Folha Popular first appeared on Folha Popular . O post Edição 858 do Folha Popular apareceu primeiro em Folha Popular .</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T11:52:56+00:00">
+          21/07/2026 11:52
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14863-edicao-857-do-folha-popular" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-capa-857.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Edição 857 do Folha Popular</h2>
+      <p class="card-snippet">21/07/2026 Edição 857 do Folha Popular – AQUI The post Edição 857 do Folha Popular first appeared on Folha Popular . O post Edição 857 do Folha Popular apareceu primeiro em Folha Popular .</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T11:49:14+00:00">
+          21/07/2026 11:49
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14843-camara-de-sao-goncalo-realizara-agendamento-de-identidade-durante-a-14a-edicao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-21-sg-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de São Gonçalo realizará agendamento de identidade durante a 14ª edição do Cidadão Legal</h2>
+      <p class="card-snippet">Serviço gratuito será oferecido na praça Central durante a 14ª edição do Cidadão Legal 21/07/2026 – A Câmara Municipal de São Gonçalo do Rio Abaixo oferecerá o serviço de agendamento para emissão da…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T11:26:13+00:00">
+          21/07/2026 11:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14844-alerta-estado-gasta-quase-o-dobro-para-limpar-os-escombros-do-que-para-prevenir" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ecp.yusercontent.com/mail?url=https%3A%2F%2Ftce.homemurbano.com.br%2Ffrontend%2Fassets%2Ffiles%2Fcustomer%2Fsf719vo39fdce%2Fe%2Fimagem-1-centro.jpg&amp;t=1784631792&amp;ymreqid=f6cdeec0-8f65-56a2-1c61-680003013a00&amp;sig=eEgWKTUrPcCebv2lL9vXUA--~D" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Alerta: Estado gasta quase o dobro para limpar os escombros do que para prevenir desastres</h2>
+      <p class="card-snippet">Minas Gerais é a unidade da federação com o maior número de municípios em situação de vulnerabilidade a desastres 21/07/2026 – Em 2025, Minas Gerais registrou 520 desastres provocados por condições…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T11:21:52+00:00">
+          21/07/2026 11:21
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14766-torneio-pes-de-pomba-de-futsal-comeca-nesta-segunda-feira-e-reune-12-equipes-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-20-barao.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Torneio Pés de Pomba de Futsal começa nesta segunda-feira e reúne 12 equipes em Barão de Cocais</h2>
+      <p class="card-snippet">Disputas seguem até o dia 1º de agosto 20/07/2026 – A emoção do esporte toma conta do Ginásio Poliesportivo de Barão de Cocais a partir desta segunda-feira (20), com o início do Torneio Pés de Pomba…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T22:19:50+00:00">
+          20/07/2026 22:19
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14767-pedala-tour-movimenta-conceicao-do-mato-dentro-com-passeio-ciclistico-gratuito" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2023/07/LG-cabeca-julho-23-cel-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Pedala Tour movimenta Conceição do Mato Dentro com passeio ciclístico gratuito no dia 2 de agosto</h2>
+      <p class="card-snippet">Ciclistas poderão se inscrever gratuitamente no site oficial do evento; todas as pessoas inscritas receberão um kit com camiseta, sacochila e squeeze 20/07/2026 – O Pedala Tour Anglo American, um…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T22:14:49+00:00">
+          20/07/2026 22:14
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14754-forro-do-morro-passa-a-ser-patrimonio-cultural-e-imaterial-do-municipio" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/MATERIA-DESTAQUE-300x234.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Forró do Morro passa a ser Patrimônio Cultural e Imaterial do município</h2>
+      <p class="card-snippet">O documento foi assinado pelo prefeito Clerinho e pela secretária municipal de Cultura, Josiele 20/07/2026 – A história de Morro do Pilar fica mais rica com o certificado que reconhece o Forró do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T19:41:22+00:00">
+          20/07/2026 19:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14618-prefeitura-esta-aplicando-fertilizantes-em-terras-rurais-destinadas-ao-plantio" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-20-sara-a.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura está aplicando fertilizantes em terras rurais destinadas ao plantio</h2>
+      <p class="card-snippet">A iniciativa contribui para a melhoria da qualidade do solo 20/07/2026 – Os produtores rurais de Santo Antônio do Rio Abaixo estão recebendo transporte e aplicação de agrosilício em terras…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T12:20:58+00:00">
+          20/07/2026 12:20
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14603-forro-do-jubileu-em-sao-sebastiao-promete-grande-publico-nos-dias-24-e-25" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-20-jubilru.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Forró do Jubileu em São Sebastião promete grande público nos dias 24 e 25</h2>
+      <p class="card-snippet">O evento social é promovido pela Prefeitura e promete lotar a quadra poliesportiva 20/07/2026 – O xote, o baião, o arrasta-pé e o xaxado são presenças garantidas no 37º Forró do Jubileu do Bom…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T12:15:03+00:00">
+          20/07/2026 12:15
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14604-santo-antonio-recebe-nova-van-para-complementar-a-frota-escolar" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/site-20-sara.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Santo Antônio recebe nova van para complementar a frota escolar</h2>
+      <p class="card-snippet">Conforme Erick Quintão, também por meio de emenda parlamentar, foi liberado o recurso de R$ 1 milhão para a construção da quadra poliesportiva da Escola Municipal 20/07/2026 – A Prefeitura de Santo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T12:03:40+00:00">
+          20/07/2026 12:03
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14496-37o-forro-do-morro-rodeio-shows-de-alto-nivel-concurso-marcha-e-economia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/07/SITE-18-CLERINHO-300x169.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">37º FORRÓ DO MORRO: rodeio, shows de alto nível, concurso marcha e economia aquecida</h2>
+      <p class="card-snippet">Noite de sábado com casa cheia DEZENAS DE FOTOS NO FIM DA MATÉRIA 19/07/2026 – O 37º Forró do Morro entrou para o terceiro dia de programação na noite deste sábado (18), com casa cheia para o rodeio…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-19T18:16:11+00:00">
+          19/07/2026 18:16
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/folha-popular" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/folha-popular?page=3" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=3">3</a>
+    <span class="page-btn active" aria-current="page">4</span>
+    <a class="page-btn" href="/fonte/folha-popular?page=5">5</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=6">6</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=7">7</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=8">8</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/folha-popular?page=5" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

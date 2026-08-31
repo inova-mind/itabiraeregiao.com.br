@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Notícias UAI em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Notícias UAI | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Notícias UAI | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Notícias UAI | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Notícias UAI</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/noticias-uai"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/noticias-uai?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/24422-sao-goncalo-do-rio-abaixo-valoriza-trajetoria-de-servidores-com-o-marco-de-ouro" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/marcodeouro.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">São Gonçalo do Rio Abaixo valoriza trajetória de servidores com o Marco de Ouro</h2>
+      <p class="card-snippet">A Prefeitura de São Gonçalo do Rio Abaixo realizou, na noite da última terça-feira (25), no Centro Cultural, a primeira edição do Marco de Ouro – Título Servidor Emérito de São Gonçalo do Rio…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-26T21:20:02+00:00">
+          26/08/2026 21:20
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24445-irmandade-nossa-senhora-das-dores-de-itabira-assume-gestao-do-hospital-de-sao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/hnsd-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Irmandade Nossa Senhora das Dores de Itabira assume gestão do Hospital de São João de Deus, em Santa Luzia</h2>
+      <p class="card-snippet">O Hospital de São João de Deus, em Santa Luzia, passa a ter uma nova gestão a partir deste mês. A administração da unidade será assumida pela Irmandade Nossa Senhora das Dores de Itabira (INSD)…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T21:01:49+00:00">
+          25/08/2026 21:01
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23136-encontro-regional-debate-valorizacao-dos-trabalhadores-e-fortalecimento-do-suas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/suas.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Encontro regional debate valorização dos trabalhadores e fortalecimento do SUAS em São Gonçalo do Rio Abaixo</h2>
+      <p class="card-snippet">São Gonçalo do Rio Abaixo recebeu, na segunda-feira (24), profissionais e representantes da área de Assistência Social para a Plenária Ampliada do FORTSUAS/Entre Serras – Região Entre Serras do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T20:22:36+00:00">
+          25/08/2026 20:22
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23137-sao-goncalo-do-rio-abaixo-camara-mirim-inicia-mandato-de-2026-com-posse-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/camaramirim.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">São Gonçalo do Rio Abaixo: Câmara Mirim inicia mandato de 2026 com posse de estudantes e eleição da Mesa Diretora</h2>
+      <p class="card-snippet">A noite de segunda-feira (24) marcou o início oficial das atividades dos vereadores mirins de São Gonçalo do Rio Abaixo. Em cerimônia realizada pela Câmara Municipal, os estudantes eleitos para o…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T20:18:40+00:00">
+          25/08/2026 20:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23138-acidente-entre-carro-e-onibus-estacionado-deixa-dois-idosos-feridos" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/acidente.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Acidente entre carro e ônibus estacionado deixa dois idosos feridos</h2>
+      <p class="card-snippet">Um homem de 67 anos e uma mulher de 60 ficaram feridos após o carro em que estavam atingir a traseira de um ônibus do transporte público de Juiz de Fora, na Zona da Mata de Minas Gerais. O acidente…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T20:12:18+00:00">
+          25/08/2026 20:12
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23131-mulher-e-presa-apos-simular-proprio-sequestro-para-pedir-r-14-mil-a-familia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2023/11/Delegada-da-Policia-Civil-deixa-apartamento-apos-mais-de-30-horas-de-negociacao.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Mulher é presa após simular próprio sequestro para pedir R$ 14 mil à família</h2>
+      <p class="card-snippet">Uma mulher foi presa em flagrante em Belo Horizonte após, segundo a Polícia Civil, simular o próprio sequestro para tentar extorquir familiares. A fraude foi descoberta nessa segunda-feira (24/8)…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T20:06:14+00:00">
+          25/08/2026 20:06
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23132-guarda-municipal-socorre-bebe-de-13-dias-apos-engasgo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/guardamunicipal.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Guarda Municipal socorre bebê de 13 dias após engasgo</h2>
+      <p class="card-snippet">Um recém-nascido de 13 dias foi socorrido por agentes da Guarda Civil Municipal de Belo Horizonte (GCMBH) após se engasgar e apresentar dificuldade para respirar na região Nordeste da capital. O…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T19:54:11+00:00">
+          25/08/2026 19:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23127-incendio-em-imovel-mobiliza-corpo-de-bombeiros-em-sao-goncalo-do-rio-abaixo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/incendiosgra.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Incêndio em imóvel mobiliza Corpo de Bombeiros em São Gonçalo do Rio Abaixo</h2>
+      <p class="card-snippet">Um incêndio atingiu uma casa que também funcionava como bar em São Gonçalo do Rio Abaixo, na região Central de Minas Gerais, na segunda-feira (24/8). O Corpo de Bombeiros Militar foi acionado para…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T19:49:43+00:00">
+          25/08/2026 19:49
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22850-xadrez-de-sao-goncalo-do-rio-abaixo-ganha-experiencia-em-torneio-realizado-em-bh" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/xadrez.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Xadrez de São Gonçalo do Rio Abaixo ganha experiência em torneio realizado em BH</h2>
+      <p class="card-snippet">Quatro atletas representaram São Gonçalo do Rio Abaixo no 5º Torneio do Rei, realizado no domingo, 23 de agosto, na Esplanada da Arena MRV, em Belo Horizonte. A competição reuniu enxadristas de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T21:51:16+00:00">
+          24/08/2026 21:51
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22839-atletas-de-sao-goncalo-do-rio-abaixo-conquistam-posicoes-de-destaque-em-prova" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/atletas.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Atletas de São Gonçalo do Rio Abaixo conquistam posições de destaque em prova de MTB em Acuruí</h2>
+      <p class="card-snippet">O Pedal dos Artistas, equipe de ciclismo de São Gonçalo do Rio Abaixo, teve uma participação de destaque no Desafio Avante Entre Serras – Etapa Acuruí, realizado nos dias 22 e 23 de agosto, no…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T21:41:32+00:00">
+          24/08/2026 21:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22832-sao-goncalo-do-rio-abaixo-escola-manoel-goncalves-promove-dialogo-com-familias" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/dialogo.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">São Gonçalo do Rio Abaixo: Escola Manoel Gonçalves promove diálogo com famílias sobre os desafios da adolescência</h2>
+      <p class="card-snippet">A Escola Municipal Manoel Gonçalves iniciou, no dia 21 de agosto, uma nova iniciativa de aproximação com as famílias dos estudantes. A primeira Roda de Conversa com as Famílias teve como proposta…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T21:25:35+00:00">
+          24/08/2026 21:25
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22831-ex-agente-penitenciario-e-condenado-a-19-anos-por-matar-mulher-a-facadas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/condenado.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ex-agente penitenciário é condenado a 19 anos por matar mulher a facadas</h2>
+      <p class="card-snippet">O ex-agente penitenciário Flávio Márcio Chaves foi condenado a 19 anos de prisão por matar a companheira a facadas. O julgamento ocorreu nesta segunda-feira (24/8), no 1º Tribunal do Júri da Comarca…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T21:15:14+00:00">
+          24/08/2026 21:15
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24441-vale-movimenta-r-13-bilhoes-em-compras-em-minas-gerais-no-primeiro-semestre" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/funcesi.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vale movimenta R$ 13 bilhões em compras em Minas Gerais no primeiro semestre</h2>
+      <p class="card-snippet">Fornecedores instalados no Estado concentraram 78% das aquisições da empresa no período A Vale destinou R$ 16 bilhões em compras para suas operações e projetos em Minas Gerais no primeiro semestre…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T20:18:00+00:00">
+          24/08/2026 20:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22688-homem-morre-apos-queda-em-cisterna-de-65-metros-em-area-de-mineradora" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/mineradora.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Homem morre após queda em cisterna de 65 metros em área de mineradora</h2>
+      <p class="card-snippet">Um homem de aproximadamente 25 anos morreu na manhã deste domingo (23) depois de cair em uma cisterna com cerca de 65 metros de profundidade, nas proximidades do distrito de Pedregulho, em Bocaiuva…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T11:59:51+00:00">
+          24/08/2026 11:59
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22676-inss-libera-consignado-sem-biometria-facial-para-aposentados" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/01/previdenciasocial.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">INSS libera consignado sem biometria facial para aposentados</h2>
+      <p class="card-snippet">Aposentados e pensionistas do Instituto Nacional do Seguro Social (INSS) sem biometria facial nas bases do governo federal voltaram a poder contratar empréstimos consignados. A autorização poderá…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T11:51:44+00:00">
+          24/08/2026 11:51
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22677-canetas-emagrecedoras-pediatras-alertam-para-risco-de-uso-em-criancas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-body">
+      <h2 class="card-title">Canetas emagrecedoras: pediatras alertam para risco de uso em crianças</h2>
+      <p class="card-snippet">A Sociedade Brasileira de Pediatria (SBP) publicou nota de alerta sobre o uso sem indicação e sem acompanhamento médico de medicamentos da classe dos agonistas do receptor GLP 1, popularmente…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T11:49:26+00:00">
+          24/08/2026 11:49
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22678-receita-libera-consulta-ao-ultimo-lote-de-restituicao-do-ir-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-body">
+      <h2 class="card-title">Receita libera consulta ao último lote de restituição do IR 2026</h2>
+      <p class="card-snippet">A Receita Federal libera, nesta segunda-feira (24), a consulta ao quarto e último lote de restituição do imposto de Renda 2026. Um total de R$ 1,24 bilhão será pago a 521.935 contribuintes. O…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T11:46:46+00:00">
+          24/08/2026 11:46
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22355-sao-goncalo-do-rio-abaixo-bombeiros-resgatam-cachorro-preso-no-alto-de-montanha" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/sao-goncalo-do-rio-abaixo-bombeiros-resgatam-cachorro-preso-no-alto-de-montanha.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">SÃO GONÇALO DO RIO ABAIXO: BOMBEIROS RESGATAM CACHORRO PRESO NO ALTO DE MONTANHA</h2>
+      <p class="card-snippet">Para salvar o animal, militares do Corpo de Bombeiros utilizaram técnicas de escalada e rapel em uma área de difícil acesso Um cachorro que estava preso no alto de uma montanha, em uma área de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-23T23:44:42+00:00">
+          23/08/2026 23:44
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24430-nova-era-jovem-de-18-anos-morre-e-quatro-ficam-feridos-apos-carro-despencar-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/Caina-Simoes-Ferreira-Souza-de-18-anos-morreu-no-local.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">NOVA ERA: JOVEM DE 18 ANOS MORRE E QUATRO FICAM FERIDOS APÓS CARRO DESPENCAR EM RIBANCEIRA NA BR-381</h2>
+      <p class="card-snippet">Cainã Simões Ferreira Souza, de 18 anos morreu no local • Redes sociais/ Reprodução | CBMMG/ Divulgação Um grave acidente registrado na madrugada deste domingo deixou um jovem de 18 anos morto e…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-23T23:30:52+00:00">
+          23/08/2026 23:30
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21775-minas-gerais-no-centro-do-mapa-global-projeto-de-terras-raras-de-us-449-milhoes" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/minas-gerais-no-centro-do-mapa-global-projeto-de-terras-raras-de-us-449-milhoes-pode-gerar-quase-us-6-bilhoes-em-ebitda.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">MINAS GERAIS NO CENTRO DO MAPA GLOBAL: PROJETO DE TERRAS RARAS DE US$ 449 MILHÕES PODE GERAR QUASE US$ 6 BILHÕES EM EBITDA</h2>
+      <p class="card-snippet">Projeto Colossus, da australiana Viridis Mining and Minerals, prevê 25 anos de operação, retorno do investimento em menos de três anos e receita estimada em US$ 8,54 bilhões Minas Gerais pode ganhar…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-23T13:05:08+00:00">
+          23/08/2026 13:05
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22822-itabira-motociclista-gravemente-ferido-apos-colisao-com-onibus-e-transferido-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/itabira-motociclista-gravemente-ferido-apos-colisao-com-onibus-e-transferido-de-helicoptero-para-bh.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">ITABIRA: MOTOCICLISTA GRAVEMENTE FERIDO APÓS COLISÃO COM ÔNIBUS É TRANSFERIDO DE HELICÓPTERO PARA BH</h2>
+      <p class="card-snippet">Um grave acidente de trânsito registrado na manhã deste sábado (22), na Rua Humberto Campos, no bairro João XXIII, em Itabira, mobilizou equipes do SAMU e do Corpo de Bombeiros após uma colisão…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-23T12:55:27+00:00">
+          23/08/2026 12:55
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22351-ipatinga-motorista-morre-apos-grave-colisao-entre-carro-e-onibus-na-br-381" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/ipatinga-motorista-morre-apos-grave-colisao-entre-carro-e-onibus-na-br-381.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">IPATINGA: MOTORISTA MORRE APÓS GRAVE COLISÃO ENTRE CARRO E ÔNIBUS NA BR-381</h2>
+      <p class="card-snippet">Um motorista de 39 anos morreu após não resistir aos graves ferimentos provocados por uma colisão frontal entre um Volkswagen Gol e um ônibus na BR-381, no trecho do Contorno Rodoviário do Vale do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-23T12:42:58+00:00">
+          23/08/2026 12:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21843-mulher-e-executada-com-21-tiros-apos-sair-de-bar-na-grande-bh" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2026/08/mulher-e-executada-com-21-tiros-apos-sair-de-bar-na-grande-bh-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">MULHER É EXECUTADA COM 21 TIROS APÓS SAIR DE BAR NA GRANDE BH</h2>
+      <p class="card-snippet">Josemara Macarete, de 47 anos anos foi brutalmente assassinada na noite deste sábado (22/8), na Rua Saulo Rocha Diniz, no bairro Cristina, em Santa Luzia, na Região Metropolitana de Belo Horizonte…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-23T11:35:30+00:00">
+          23/08/2026 11:35
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21720-policia-militar-prende-pai-suspeito-de-agredir-a-filha-de-cinco-meses-com-socos" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://noticiasuai.com/wp-content/uploads/2025/02/pmmgtrabalha.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Polícia Militar prende pai suspeito de agredir a filha de cinco meses com socos e tapas</h2>
+      <p class="card-snippet">A Polícia Militar prendeu neste sábado, 22 de agosto, um homem suspeito de agredir a filha, de cinco meses, com socos e tapas no rosto. O fato aconteceu em Belo Horizonte. Segundo informações, a mãe…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-22T21:36:59+00:00">
+          22/08/2026 21:36
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/noticias-uai" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/noticias-uai?page=1" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/noticias-uai?page=1">1</a>
+    <span class="page-btn active" aria-current="page">2</span>
+    <a class="page-btn" href="/fonte/noticias-uai?page=3">3</a>
+    <a class="page-btn" href="/fonte/noticias-uai?page=4">4</a>
+    <a class="page-btn" href="/fonte/noticias-uai?page=5">5</a>
+    <a class="page-btn" href="/fonte/noticias-uai?page=6">6</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/noticias-uai?page=3" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

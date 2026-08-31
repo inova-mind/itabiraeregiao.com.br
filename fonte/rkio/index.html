@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do RKIO em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>RKIO | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RKIO | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RKIO | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>RKIO</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/rkio"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/rkio?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/26542-tamandua-e-resgatado-apos-ser-acuado-por-caes-em-rua-de-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/tamandua-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Tamanduá é resgatado após ser acuado por cães em rua de Itabira</h2>
+      <p class="card-snippet">Animal foi encontrado em via pública no bairro Vila Paciência e, após avaliação dos bombeiros, foi devolvido com segurança ao O post Tamanduá é resgatado após ser acuado por cães em rua de Itabira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T16:16:48+00:00">
+          31/08/2026 16:16
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26543-itabira-tera-primeira-mostra-de-teatro-de-rua-com-atracoes-gratuitas-em-setembro" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/ISNT-ALC.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabira terá primeira Mostra de Teatro de Rua com atrações gratuitas em setembro</h2>
+      <p class="card-snippet">MOSI 2026 acontece entre os dias 14 e 20 e terá espetáculos, cortejos, oficinas, música, dança, circo e feira de O post Itabira terá primeira Mostra de Teatro de Rua com atrações gratuitas em…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T12:37:32+00:00">
+          31/08/2026 12:37
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26544-confira-as-vagas-de-emprego-desta-segunda-feira-no-sine-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2023/11/EMPREGO.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Confira as vagas de emprego desta segunda-feira no SINE Itabira</h2>
+      <p class="card-snippet">Atendimento: Avenida das Rosas, nº410, São Pedro – Itabira – MG CEP: 35.900-117. Telefones: (31) 3839-2141/ 3839-2140/ 3839-2502/ 3839-2527/ 3839-2861/ 3839-2146. O post Confira as vagas de emprego…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T11:23:19+00:00">
+          31/08/2026 11:23
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26545-tragedia-no-himalaia-quase-800-mortos-e-mais-de-3-mil-desaparecidos-apos" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/NEPAL.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Tragédia no Himalaia: quase 800 mortos e mais de 3 mil desaparecidos após colapso de geleira</h2>
+      <p class="card-snippet">Colapso de uma geleira provocou uma devastadora sequência de enchentes e deslizamentos entre o Nepal e o Tibete; equipes enfrentam O post Tragédia no Himalaia: quase 800 mortos e mais de 3 mil…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T11:15:31+00:00">
+          31/08/2026 11:15
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26546-caixa-paga-bolsa-familia-de-agosto-a-beneficiarios-com-nis-de-final-0" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/whatsapp_image_2026-08-21_at_20.30.10.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Caixa paga Bolsa Família de agosto a beneficiários com NIS de final 0</h2>
+      <p class="card-snippet">A Caixa Econômica Federal conclui nesta segunda-feira (31) o pagamento da parcela de agosto do Bolsa Família. Receberão o benefício os cadastrados O post Caixa paga Bolsa Família de agosto a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T11:05:54+00:00">
+          31/08/2026 11:05
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26371-receita-paga-nesta-segunda-ultimo-lote-de-restituicao-do-ir-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/mcam20022020.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Receita paga nesta segunda último lote de restituição do IR 2026</h2>
+      <p class="card-snippet">Cerca de 500 mil contribuintes recebem, nesta segunda-feira (31), o quarto e último lote de restituição do Imposto de Renda O post Receita paga nesta segunda último lote de restituição do IR 2026…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T10:53:45+00:00">
+          31/08/2026 10:53
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26372-defesa-civil-reconhece-situacao-de-emergencia-em-seis-cidades-do-sul" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/captura_de_tela_2025-11-08_as_17.15.18.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Defesa Civil reconhece situação de emergência em seis cidades do Sul</h2>
+      <p class="card-snippet">A Secretaria Nacional de Proteção e Defesa Civil reconheceu situação de emergência em seis municípios da Região Sul atingidos por granizo e O post Defesa Civil reconhece situação de emergência em…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T10:49:04+00:00">
+          31/08/2026 10:49
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26368-bebe-de-apenas-11-dias-e-salvo-por-bombeira-apos-se-engasgar" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/bombeiros-mg-bebe.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Bebê de apenas 11 dias é salvo por bombeira após se engasgar</h2>
+      <p class="card-snippet">Família levou o recém-nascido às pressas para o quartel dos Bombeiros, onde uma militar realizou os procedimentos de emergência e O post Bebê de apenas 11 dias é salvo por bombeira após se engasgar…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T10:31:09+00:00">
+          31/08/2026 10:31
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26350-pm-prende-jovem-de-20-anos-que-era-procurado-pela-justica-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2024/03/PRESO.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">PM prende jovem de 20 anos que era procurado pela Justiça em Itabira</h2>
+      <p class="card-snippet">Homem era procurado pela Justiça e foi localizado durante uma ação para cumprimento de mandados na região ITABIRA (MG) – O post PM prende jovem de 20 anos que era procurado pela Justiça em Itabira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T09:48:06+00:00">
+          31/08/2026 09:48
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26351-homem-procurado-pela-justica-se-entrega-a-guarda-municipal-em-sao-goncalo-do" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/guarda-civil.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Homem procurado pela Justiça se entrega à Guarda Municipal em São Gonçalo do Rio Abaixo</h2>
+      <p class="card-snippet">Suspeito havia fugido durante uma operação no bairro Guanabara, mas posteriormente compareceu espontaneamente à base da corporação SÃO GONÇALO DO O post Homem procurado pela Justiça se entrega à…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T09:43:29+00:00">
+          31/08/2026 09:43
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26342-sistema-de-abastecimento-de-agua-podera-sofrer-alteracoes-na-proxima-quarta" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2023/11/AGUA-2.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Sistema de abastecimento de água poderá sofrer alterações na próxima quarta-feira (02/09)</h2>
+      <p class="card-snippet">Manobras para amenizar o risco de desabastecimento serão realizadas pelo SAAE. Uma parada programada pela mineradora Vale afetará temporariamente o O post Sistema de abastecimento de água poderá…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T09:33:46+00:00">
+          31/08/2026 09:33
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26343-apos-discussao-mulher-e-atacada-com-facadas-pelo-proprio-marido-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2024/11/GIRO-02.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Após discussão, mulher é atacada com facadas pelo próprio marido em Itabira</h2>
+      <p class="card-snippet">Vítima, de 23 anos, sofreu ferimentos no abdômen, na mão e na região do peito; suspeito fugiu após o ataque O post Após discussão, mulher é atacada com facadas pelo próprio marido em Itabira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T09:22:42+00:00">
+          31/08/2026 09:22
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26086-operacao-da-pm-termina-com-tres-presos-e-apreensao-de-drogas-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-29-at-12.43.50.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Operação da PM termina com três presos e apreensão de drogas em Itabira</h2>
+      <p class="card-snippet">Ação no bairro Major Lage de Baixo resultou na apreensão de maconha, cocaína, dinheiro, balanças e celulares Uma ação da O post Operação da PM termina com três presos e apreensão de drogas em…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T15:51:17+00:00">
+          29/08/2026 15:51
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25852-itabira-recebe-etapa-inedita-do-circuito-corrida-vale-neste-domingo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4c5.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabira recebe etapa inédita do Circuito Corrida Vale neste domingo</h2>
+      <p class="card-snippet">Evento terá provas de 5 km e 10 km, além da Corrida Kids, e reúne atletas, corredores amadores, empregados da O post Itabira recebe etapa inédita do Circuito Corrida Vale neste domingo apareceu…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T13:33:58+00:00">
+          28/08/2026 13:33
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25842-horario-eleitoral-no-radio-e-tv-comeca-nesta-sexta-feira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/ELEICOES.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Horário eleitoral no rádio e TV começa nesta sexta-feira</h2>
+      <p class="card-snippet">O horário eleitoral gratuito do primeiro turno começa a ser veiculado nesta sexta-feira (28) nas emissoras de rádio e televisão em todo O post Horário eleitoral no rádio e TV começa nesta…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T13:09:10+00:00">
+          28/08/2026 13:09
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25843-oposicao-reage-apos-lula-negar-conhecer-lobista-durante-entrevista-no-jn" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/lula.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Oposição reage após Lula negar conhecer lobista durante entrevista no JN</h2>
+      <p class="card-snippet">Políticos da oposição compartilharam registros que mostram o presidente ao lado de Roberta Luchsinger A declaração do presidente Luiz Inácio O post Oposição reage após Lula negar conhecer lobista…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T12:44:04+00:00">
+          28/08/2026 12:44
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25844-trabalhador-e-demitido-por-justa-causa-apos-posts-no-whatsapp-durante-atestado" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/Destaque-Canais-do-WhatsApp-Brasil.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Trabalhador é demitido por justa causa após posts no WhatsApp durante atestado</h2>
+      <p class="card-snippet">Imagens publicadas pelo funcionário ajudaram a empresa a comprovar que ele estaria trabalhando para outro empregador Um trabalhador de Belo O post Trabalhador é demitido por justa causa após posts…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T12:31:18+00:00">
+          28/08/2026 12:31
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25810-creas-inicia-mudanca-de-endereco-nesta-sexta-feira-28-atencao-as-alteracoes-no" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-27-at-17.18.56.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">CREAS inicia mudança de endereço nesta sexta-feira (28); atenção às alterações no atendimento</h2>
+      <p class="card-snippet">Centro de Referência Especializado de Assistência Social passa a funcionar em nova sede a partir de 8 de setembro A O post CREAS inicia mudança de endereço nesta sexta-feira (28); atenção às…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T12:09:50+00:00">
+          28/08/2026 12:09
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25800-servico-da-cemig-provoca-interdicao-parcial-na-rua-juca-machado-nesta-sexta-e" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-27-at-19.17.33-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Serviço da Cemig provoca interdição parcial na rua Juca Machado nesta sexta e domingo</h2>
+      <p class="card-snippet">Trecho será parcialmente bloqueado para substituição de poste elétrico; motoristas devem utilizar rotas alternativas Um serviço de substituição de poste O post Serviço da Cemig provoca interdição…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T11:59:24+00:00">
+          28/08/2026 11:59
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25801-homem-de-24-anos-morre-apos-ser-atropelado-e-espancado-com-barra-de-ferro" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2024/11/GIRO-02.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Homem de 24 anos morre após ser atropelado e espancado com barra de ferro</h2>
+      <p class="card-snippet">Vítima, de 24 anos, chegou a ser socorrida e encaminhada para atendimento médico, mas não resistiu aos ferimentos Um homem O post Homem de 24 anos morre após ser atropelado e espancado com barra de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T11:52:42+00:00">
+          28/08/2026 11:52
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25802-motorista-sem-habilitacao-e-com-sinais-de-embriaguez-causa-acidente-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-28-at-08.30.03.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Motorista sem habilitação e com sinais de embriaguez causa acidente em Itabira</h2>
+      <p class="card-snippet">Uma colisão frontal entre um Chevrolet Vectra e um Toyota deixou dois motoristas feridos no fim da tarde desta quinta-feira O post Motorista sem habilitação e com sinais de embriaguez causa acidente…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T11:44:04+00:00">
+          28/08/2026 11:44
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25791-homem-e-preso-apos-tentar-invadir-casas-e-ameacar-moradores-em-sao-goncalo-do" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2026/08/guarda-civil.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Homem é preso após tentar invadir casas e ameaçar moradores em São Gonçalo do Rio Abaixo</h2>
+      <p class="card-snippet">Segundo a Guarda Civil Municipal, três suspeitos teriam causado danos e provocado pânico entre moradores do bairro Patrimônio A Guarda O post Homem é preso após tentar invadir casas e ameaçar…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T11:26:32+00:00">
+          28/08/2026 11:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25792-tentativa-de-homicidio-homem-e-esfaqueado-e-socorrido-em-estado-grave-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2025/03/facada.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Tentativa de homicídio: homem é esfaqueado e socorrido em estado grave em Itabira</h2>
+      <p class="card-snippet">Vítima, de 38 anos, foi atingida na coxa e socorrida em estado grave; suspeita é de que o golpe tenha O post Tentativa de homicídio: homem é esfaqueado e socorrido em estado grave em Itabira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T11:11:47+00:00">
+          28/08/2026 11:11
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24683-confira-as-vagas-de-emprego-desta-quinta-feira-no-sine-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/wp-content/uploads/2023/11/EMPREGO.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Confira as vagas de emprego desta quinta-feira no SINE Itabira</h2>
+      <p class="card-snippet">Atendimento: Avenida das Rosas, nº410, São Pedro – Itabira – MG CEP: 35.900-117. Telefones: (31) 3839-2141/ 3839-2140/ 3839-2502/ 3839-2527/ 3839-2861/ 3839-2146. O post Confira as vagas de emprego…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-27T20:15:34+00:00">
+          27/08/2026 20:15
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+    <span class="page-btn active" aria-current="page">1</span>
+    <a class="page-btn" href="/fonte/rkio?page=2">2</a>
+    <a class="page-btn" href="/fonte/rkio?page=3">3</a>
+    <a class="page-btn" href="/fonte/rkio?page=4">4</a>
+    <a class="page-btn" href="/fonte/rkio?page=5">5</a>
+    <a class="page-btn" href="/fonte/rkio?page=6">6</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/rkio?page=2" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

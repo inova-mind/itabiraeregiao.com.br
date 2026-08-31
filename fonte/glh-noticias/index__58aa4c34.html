@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do GLH Notícias em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>GLH Notícias | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GLH Notícias | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GLH Notícias | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>GLH Notícias</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/glh-noticias"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/glh-noticias?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/22331-previsao-do-tempo-para-itabira-nesta-quarta-feira-12-08" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/07/Previsao-do-tempo-Itabira-e1784240939781.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Previsão do tempo para Itabira nesta quarta-feira (12/08)</h2>
+      <p class="card-snippet">A quarta-feira (12) será de tempo predominantemente nublado em Itabira, com possibilidade de algumas aberturas de sol ao longo do dia. Neste momento, a temperatura está na casa dos 21°C, e a máxima…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-12T13:41:36+00:00">
+          12/08/2026 13:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22332-prefeitura-de-itabira-amplia-vacinacao-antirrabica-com-dias-d-em-15-e-29-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-12-at-10.11.51-1.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura de Itabira amplia vacinação antirrábica com Dias D em 15 e 29 de agosto; confira os locais</h2>
+      <p class="card-snippet">Campanha será reforçada nos sábados, 15 e 29 de agosto, com atendimento das 8h às 16h em UBSs e pontos de apoio espalhados pela cidadeA Prefeitura de Itabira vai ampliar a Campanha de Vacinação…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-12T13:18:08+00:00">
+          12/08/2026 13:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22333-versiculo-do-dia-quarta-feira-12-de-agosto-de-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/06/Biblia-aberta-com-destaque-para-o-versiculo-de-Mateus-2521-sobre-fidelidade-confianca-em-Deus-e-recompensa-para-os-servos-fieis-e1782384945574.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Versículo do Dia | quarta-feira, 12 de agosto de 2026</h2>
+      <p class="card-snippet">Assim como um pai se compadece de seus filhos, assim o Senhor se compadece daqueles que o temem. Salmos 103:13</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-12T12:35:14+00:00">
+          12/08/2026 12:35
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22334-sine-itabira-oferece-57-vagas-de-emprego-nesta-quarta-feira-12-confira-as" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/06/Vagas-de-emprego-SINE-Itabira.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Sine Itabira oferece 57 vagas de emprego nesta quarta-feira (12); confira as oportunidades</h2>
+      <p class="card-snippet">Atendimento aos candidatos acontece na unidade do SINE, no bairro São Pedro. Documento de identificação com foto é obrigatório para concorrer às vagas.O SINE de Itabira divulgou nesta quarta-feira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-12T12:14:39+00:00">
+          12/08/2026 12:14
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22335-vai-jogar-sofa-ou-movel-velho-fora-presidente-da-itaurb-explica-o-que-fazer-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/Vai-jogar-sofa-ou-movel-velho-fora-Presidente-da-Itaurb-explica-o-que-fazer-em-Itabira.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vai jogar sofá ou móvel velho fora? Presidente da Itaurb explica o que fazer em Itabira</h2>
+      <p class="card-snippet">Leonardo Gonçalves pediu colaboração dos moradores e explicou como funciona a coleta de móveis e pequenos entulhos em Itabira.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-12T01:01:22+00:00">
+          12/08/2026 01:01
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22336-cruzeiro-e-atletico-vao-se-enfrentar-nas-quartas-de-final-da-copa-do-brasil" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/ATLETICO-X-CRUZEIRO-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cruzeiro e Atlético vão se enfrentar nas quartas de final da Copa do Brasil</h2>
+      <p class="card-snippet">Vai ter clássico mineiro valendo vaga na semifinal da Copa do Brasil. A Confederação Brasileira de Futebol (CBF) realizou nesta terça-feira (11) o sorteio das quartas de final e definiu Cruzeiro x…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T14:55:53+00:00">
+          11/08/2026 14:55
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22337-grave-acidente-entre-carro-e-caminhao-deixa-dois-feridos-e-fecha-br-381-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-11-at-10.26.28.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Grave acidente entre carro e caminhão deixa dois feridos e fecha BR-381 em Santa Luzia</h2>
+      <p class="card-snippet">Duas pessoas ficaram gravemente feridas após uma colisão frontal entre um carro e um caminhão na manhã desta terça-feira (11), na BR-381, em Santa Luzia, na Região Metropolitana de Belo Horizonte. O…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T13:27:57+00:00">
+          11/08/2026 13:27
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22338-atletico-e-cruzeiro-conhecem-hoje-adversarios-das-quartas-de-final-da-copa-do" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2024/07/atl-tico-atletico-copa-do-brasil-galo-e-crb-1721325922.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Atlético e Cruzeiro conhecem hoje adversários das quartas de final da Copa do Brasil</h2>
+      <p class="card-snippet">Atlético e Cruzeiro conhecerão nesta terça-feira (11) seus adversários nas quartas de final da Copa do Brasil. A Confederação Brasileira de Futebol (CBF) realizará, a partir das 11h, em sua sede no…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T12:23:08+00:00">
+          11/08/2026 12:23
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22339-previsao-do-tempo-para-itabira-nesta-terca-feira-11-08" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/07/Previsao-do-tempo-Itabira-e1784240939781.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Previsão do tempo para Itabira nesta terça-feira (11/08)</h2>
+      <p class="card-snippet">A terça-feira será de tempo predominantemente nublado em Itabira, com temperaturas mais amenas ao longo do dia. Pela manhã, os termômetros ficam próximos dos 19°C, com bastante nebulosidade. Durante…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T11:50:51+00:00">
+          11/08/2026 11:50
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22340-versiculo-do-dia-terca-feira-11-de-agosto-de-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/06/Biblia-aberta-com-destaque-para-o-versiculo-de-Mateus-2521-sobre-fidelidade-confianca-em-Deus-e-recompensa-para-os-servos-fieis-e1782384945574.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Versículo do Dia | terça-feira, 11 de agosto de 2026</h2>
+      <p class="card-snippet">Faze-me ouvir a tua benignidade pela manhã, pois em ti confio; faze-me saber o caminho que devo seguir, porque a ti levanto a minha alma. Salmos 143:8</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T11:36:18+00:00">
+          11/08/2026 11:36
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22341-sine-itabira-oferece-57-vagas-de-emprego-nesta-terca-feira-11-confira-as" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/06/Vagas-de-emprego-SINE-Itabira.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Sine Itabira oferece 57 vagas de emprego nesta terça-feira (11); confira as oportunidades</h2>
+      <p class="card-snippet">Atendimento aos candidatos acontece na unidade do SINE, no bairro São Pedro. Documento de identificação com foto é obrigatório para concorrer às vagas.O SINE de Itabira divulgou nesta terça-feira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T11:23:32+00:00">
+          11/08/2026 11:23
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22342-lixo-acumulado-mau-cheiro-e-reclamacao-moradores-dizem-estar-ha-dias-sem-coleta" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/Lixo-acumulado-mau-cheiro-e-reclamacao-moradores-dizem-estar-ha-dias-sem-coleta.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Lixo acumulado, mau cheiro e reclamação: moradores dizem estar há dias sem coleta</h2>
+      <p class="card-snippet">Moradores da região entre os bairros Gabiroba e Bethânia, em Itabira, denunciam que estão há quase três semanas enfrentando problemas com a coleta de lixo.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T10:31:25+00:00">
+          11/08/2026 10:31
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22343-da-prestacao-de-contas-aos-problemas-dos-bairros-veja-o-que-movimentou-a-camara" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/Da-prestacao-de-contas-aos-problemas-dos-bairros-veja-o-que-movimentou-a-Camara-nesta-segunda-e1786408947112.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Da prestação de contas aos problemas dos bairros: veja o que movimentou a Câmara nesta segunda</h2>
+      <p class="card-snippet">A Câmara Municipal de Itabira realizou nesta segunda-feira (10) a 28ª Reunião Ordinária da Segunda Sessão Legislativa, com análise e votação de projetos, além da apresentação de indicações…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T01:07:21+00:00">
+          11/08/2026 01:07
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22344-corpo-de-homem-desaparecido-apos-acidente-com-embarcacao-e-encontrado-na" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/Corpo-de-homem-desaparecido-apos-acidente-com-embarcacao-e-encontrado-na-Represa-Peti-e1786407905591.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Corpo de homem desaparecido após acidente com embarcação é encontrado na Represa Peti</h2>
+      <p class="card-snippet">O corpo do homem que estava desaparecido desde a última quarta-feira (5), após um acidente envolvendo uma embarcação na Represa Peti, em Santa Bárbara, foi encontrado na manhã desta segunda-feira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T00:30:18+00:00">
+          11/08/2026 00:30
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22345-onibus-da-vita-atinge-poste-proximo-ao-hospital-carlos-chagas-empresa-explica" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/Onibus-da-Vita-atinge-poste-proximo-ao-Hospital-Carlos-Chagas-empresa-explica-acidente-e1786405117239.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ônibus da Vita atinge poste próximo ao Hospital Carlos Chagas; empresa explica acidente</h2>
+      <p class="card-snippet">Ônibus da Vita atingiu e quebrou um poste no Santo Antônio, em Itabira. Coletivo estava sem passageiros e ninguém ficou ferido.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-11T00:00:08+00:00">
+          11/08/2026 00:00
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22346-ex-cruzeiro-kaua-prates-estreia-pelo-borussia-dortmund-aos-17-anos-em-vitoria" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/FotoJet-2026-08-10T154610.117.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ex-Cruzeiro, Kauã Prates estreia pelo Borussia Dortmund aos 17 anos em vitória sobre o Arsenal</h2>
+      <p class="card-snippet">Aos 17 anos, Kauã Prates deu o primeiro passo dentro de campo em sua trajetória pelo Borussia Dortmund. Revelado pelo Cruzeiro, o lateral-esquerdo fez sua estreia pelo clube alemão na vitória por 3…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T19:02:34+00:00">
+          10/08/2026 19:02
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22347-incendio-atinge-vegetacao-material-plastico-e-rede-eletrica-em-joao-monlevade" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/d39ca6e7-5e71-4911-bdab-45e2ffbd1d33.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Incêndio atinge vegetação, material plástico e rede elétrica em João Monlevade</h2>
+      <p class="card-snippet">Uma ocorrência de incêndio mobilizou várias equipes na Praça Minas Gerais, no bairro Satélite, neste domingo (9).Segundo o Corpo de Bombeiros, a ocorrência começou por volta das 14h37, inicialmente…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T17:51:23+00:00">
+          10/08/2026 17:51
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22348-consulta-publica-avalia-inclusao-no-sus-de-remedio-para-hipertensao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2024/09/sus_vale_esta-1.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Consulta pública avalia inclusão no SUS de remédio para hipertensão</h2>
+      <p class="card-snippet">A Comissão Nacional de Incorporação de Tecnologias no Sistema Único de Saúde (Conitec) abriu consulta pública para avaliar a inclusão do medicamento sotatercepte na rede pública, para tratamento de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T14:49:31+00:00">
+          10/08/2026 14:49
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24173-joao-costa-e-wesley-brilham-na-estreia-e-ajudam-cruzeiro-a-vencer-o-mirassol-no" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/joaocosta.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">João Costa e Wesley brilham na estreia e ajudam Cruzeiro a vencer o Mirassol no Mineirão</h2>
+      <p class="card-snippet">Os reforços João Costa e Wesley tiveram uma estreia de impacto com a camisa do Cruzeiro neste domingo (9). Anunciados ao longo da semana e ainda sem apresentação oficial, os dois atacantes saíram do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T13:58:45+00:00">
+          10/08/2026 13:58
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24174-previsao-do-tempo-para-itabira-nesta-segunda-feira-10-08" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/07/Previsao-do-tempo-Itabira-e1784240939781.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Previsão do tempo para Itabira nesta segunda-feira (10/08)</h2>
+      <p class="card-snippet">A segunda-feira (10) será de tempo firme e muito sol em Itabira. A manhã começou com temperaturas mais amenas, mas o calor aumenta rapidamente ao longo do dia. A previsão aponta máxima de 31°C e…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T12:44:13+00:00">
+          10/08/2026 12:44
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24175-versiculo-do-dia-segunda-feira-10-de-agosto-de-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/06/Biblia-aberta-com-destaque-para-o-versiculo-de-Mateus-2521-sobre-fidelidade-confianca-em-Deus-e-recompensa-para-os-servos-fieis-e1782384945574.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Versículo do Dia | segunda-feira, 10 de agosto de 2026</h2>
+      <p class="card-snippet">O Senhor tem estabelecido o seu trono nos céus, e o seu reino domina sobre tudo. Salmos 103:19</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T12:28:29+00:00">
+          10/08/2026 12:28
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24176-sine-itabira-oferece-57-vagas-de-emprego-nesta-segunda-feira-10-confira-as" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/06/Vagas-de-emprego-SINE-Itabira.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Sine Itabira oferece 57 vagas de emprego nesta segunda-feira (10); confira as oportunidades</h2>
+      <p class="card-snippet">Atendimento aos candidatos acontece na unidade do SINE, no bairro São Pedro. Documento de identificação com foto é obrigatório para concorrer às vagas.O SINE de Itabira divulgou nesta quinta-feira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T11:03:09+00:00">
+          10/08/2026 11:03
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24177-motocicleta-pega-fogo-apos-acidente-na-mg-129-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/Motocicleta-pegou-fogo-apos-acidente-na-MG-129-proximo-ao-acesso-a-Ipoema-em-Itabira.-Duas-pessoas-estavam-conscientes-apos-a-ocorrencia.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Motocicleta pega fogo após acidente na MG-129, em Itabira</h2>
+      <p class="card-snippet">Um acidente de trânsito envolvendo uma motocicleta mobilizou equipes de emergência na manhã deste domingo (9), na MG-129, em Itabira. A ocorrência foi registrada por volta das 11h30, na região do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-09T18:17:34+00:00">
+          09/08/2026 18:17
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24178-colisao-entre-carro-e-moto-deixa-motociclista-ferido-em-joao-monlevade" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://glhnoticias.com.br/wp-content/uploads/2026/08/Colisao-entre-carro-e-moto-deixa-motociclista-ferido-em-Joao-Monlevade.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Colisão entre carro e moto deixa motociclista ferido em João Monlevade</h2>
+      <p class="card-snippet">Uma colisão envolvendo um Chevrolet Cobalt e uma motocicleta Honda deixou um homem de 33 anos ferido na manhã deste sábado (8), na Avenida Armando Fajardo, em João Monlevade. O acidente aconteceu…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-09T13:42:46+00:00">
+          09/08/2026 13:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/glh-noticias" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/glh-noticias?page=5" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/glh-noticias?page=5">5</a>
+    <span class="page-btn active" aria-current="page">6</span>
+    <a class="page-btn" href="/fonte/glh-noticias?page=7">7</a>
+    <a class="page-btn" href="/fonte/glh-noticias?page=8">8</a>
+    <a class="page-btn" href="/fonte/glh-noticias?page=9">9</a>
+    <a class="page-btn" href="/fonte/glh-noticias?page=10">10</a>
+  <a class="page-btn page-btn-nav" href="/fonte/glh-noticias?page=7" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

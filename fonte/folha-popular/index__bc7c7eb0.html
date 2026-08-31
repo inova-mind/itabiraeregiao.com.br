@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Folha Popular em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Folha Popular | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Folha Popular | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Folha Popular | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Folha Popular</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/folha-popular"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/folha-popular?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/20735-cac-da-camara-de-sao-goncalo-realiza-1-486-atendimentos-em-julho" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-18-cac.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">CAC da Câmara de São Gonçalo realiza 1.486 atendimentos em julho</h2>
+      <p class="card-snippet">O Centro de Atenção ao Cidadão (CAC) oferece suporte na realização de diversos serviços 18/08/2026 – O CAC da Câmara Municipal de São Gonçalo do Rio Abaixo divulgou o relatório de atendimentos…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T11:30:25+00:00">
+          18/08/2026 11:30
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20729-camara-de-barao-realiza-dia-1o-audiencia-publica-sobre-os-direitos-das-pessoas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-18-barao-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de Barão realiza dia 1º audiência pública sobre os direitos das pessoas com deficiência</h2>
+      <p class="card-snippet">A iniciativa, aprovada por unanimidade pelo Poder Legislativo, foi estabelecida por meio da Resolução nº 06/2026 18/08/2026 – A Câmara Municipal de Barão de Cocais promove na terça-feira, dia 1º de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T11:13:37+00:00">
+          18/08/2026 11:13
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20556-plenaria-regional-do-parlamento-jovem-reune-estudantes-do-medio-piracicaba-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-17-cam-pj-a-300x225.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Plenária Regional do Parlamento Jovem reúne estudantes do Médio Piracicaba em São Gonçalo</h2>
+      <p class="card-snippet">O encontro aconteceu no Centro Administrativo Municipal Encontro reuniu jovens de seis municípios do Polo Médio Piracicaba para debater e priorizar propostas sobre inclusão da pessoa com deficiência…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-17T18:40:24+00:00">
+          17/08/2026 18:40
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20557-camara-de-sao-goncalo-sedia-audiencia-publica-sobre-o-plano-municipal-pela" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-17-cam-sg-3.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de São Gonçalo sedia Audiência Pública sobre o Plano Municipal pela Primeira Infância</h2>
+      <p class="card-snippet">Encontro reuniu representantes do poder público e da comunidade para debater propostas e ações voltadas às crianças do município 17/08/2026 – A Câmara Municipal de São Gonçalo do Rio Abaixo sediou…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-17T18:32:41+00:00">
+          17/08/2026 18:32
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20437-santa-maria-de-itabira-realiza-nesta-terca-18-audiencia-publica-para-elaboracao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-17-sm-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Santa Maria de Itabira realiza nesta terça (18) audiência pública para elaboração do Plano Diretor</h2>
+      <p class="card-snippet">Vista panorâmica da cidade. O encontro debate o desenvolvimento da cidade e será aberto a participação de toda a população 17/08/2026 – A Prefeitura de Santa Maria de Itabira realiza, nesta…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-17T12:09:07+00:00">
+          17/08/2026 12:09
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20397-estrada-de-pacas-segue-sem-reparo-e-vereador-cobra-intervencao-da-bemisa-e-da" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-17-kito-205x300.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Estrada de Pacas segue sem reparo e vereador cobra intervenção da Bemisa e da Prefeitura</h2>
+      <p class="card-snippet">Trânsito intenso de carretas carregadas afundou a lateral da estrada 17/08/2026 – O vereador Marcos Antônio Bicalho “Kito”, usou a tribuna da Câmara Municipal de São Gonçalo do Rio Abaixo na noite…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-17T10:11:05+00:00">
+          17/08/2026 10:11
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20383-tensao-dos-penaltis-marca-final-do-6o-campeonato-municipal-de-sao-sebastiao-do" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-17-andrea-300x276.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Tensão dos pênaltis marca final do 6º Campeonato Municipal de São Sebastião do Rio Preto</h2>
+      <p class="card-snippet">Barra venceu o campeonato pela primeira vez e recebeu o troféu das mãos da prefeita Andrea Otone MAIS FOTOS NO FIM DA MATÉRIA 17/08/2026 – A emoção marcou a final da 6ª edição do Campeonato…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-17T08:51:41+00:00">
+          17/08/2026 08:51
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20205-edicao-862-do-folha-popular" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-15-capa-862.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Edição 862 do Folha Popular</h2>
+      <p class="card-snippet">15/08/2026 Edição 862 do Folha Popular – AQUI The post Edição 862 do Folha Popular first appeared on Folha Popular . O post Edição 862 do Folha Popular apareceu primeiro em Folha Popular .</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-15T17:09:24+00:00">
+          15/08/2026 17:09
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20203-edicao-861-do-folha-popular" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-15-capa.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Edição 861 do Folha Popular</h2>
+      <p class="card-snippet">15/08/2026 Edição 861 do Folha Popular – AQUI The post Edição 861 do Folha Popular first appeared on Folha Popular . O post Edição 861 do Folha Popular apareceu primeiro em Folha Popular .</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-15T17:04:27+00:00">
+          15/08/2026 17:04
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20164-santo-antonio-do-rio-abaixo-e-destaque-estadual-ao-conquistar-nota-historica-no" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-15-tabela-242x300.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Santo Antônio do Rio Abaixo é destaque estadual ao conquistar nota histórica no Ideb</h2>
+      <p class="card-snippet">Alunos da rede municipal de ensino. Nota foi de 7,5 15/08/2026 – A rede municipal de ensino de Santo Antônio do Rio Abaixo conquistou nota histórica de 7,5 no Índice de Desenvolvimento da Educação…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-15T11:51:42+00:00">
+          15/08/2026 11:51
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20161-camara-de-sao-goncalo-aprova-indicacoes-mocoes-e-projetos-na-sessao-de-quinta" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-15-cam-sg-5.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de São Gonçalo aprova indicações, moções e projetos na sessão de quinta-feira</h2>
+      <p class="card-snippet">Ao todo, 36 indicações foram aprovadas durante a reunião 15/08/2026 – A Câmara Municipal de São Gonçalo do Rio Abaixo realizou, na quinta-feira (6), a 12ª Reunião Ordinária de 2026. Durante a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-15T11:41:45+00:00">
+          15/08/2026 11:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/19563-cidadao-legal-2026-garante-115-agendamentos-para-emissao-da-carteira-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-12-cid-agenda.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cidadão Legal 2026 garante 115 agendamentos para emissão da Carteira de Identidade</h2>
+      <p class="card-snippet">Ação realizada durante o evento facilitou o acesso da população ao serviço de emissão da Carteira de Identidade Nacional 12/08/2026 – A 14ª edição do Cidadão Legal, realizada pela Câmara Municipal…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-12T15:26:21+00:00">
+          12/08/2026 15:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/19473-abade-assina-parceria-publica-para-reforma-e-ampliacao-da-capela-velorio" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-12-barao-1-300x154.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Abade assina parceria pública para reforma e ampliação da capela velório</h2>
+      <p class="card-snippet">Com investimento de R$ 918 mil, obra garantirá acessibilidade e novos ambientes 12/08/2026 – O governo de Barão de Cocais assinou, nesta terça-feira (11), o termo de colaboração para a reforma e…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-12T10:24:02+00:00">
+          12/08/2026 10:24
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/19160-vila-tanque-em-joao-monlevade-recebe-o-pocket-show-gratuito-a-bela-e-a-fera" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-10-jm-2.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vila Tanque, em João Monlevade, recebe o pocket-show gratuito “A Bela e a Fera” nesta terça (11)</h2>
+      <p class="card-snippet">Adaptação do clássico infantil de Madame de Beaumont é apresentada pelo programa Diversão em Cena, promovido pela Fundação ArcelorMittal 10/08/2026 – Um dos contos de fada mais icônicos do mundo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-10T20:54:32+00:00">
+          10/08/2026 20:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18900-14o-cidadao-legal-da-camara-de-sao-goncalo-evento-cresce-gracas-ao-dialogo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/1-150x150.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">14º Cidadão Legal da Câmara de São Gonçalo: evento cresce graças ao diálogo entre os poderes</h2>
+      <p class="card-snippet">DEZENAS DE FOTOS NO FIM DA MATÉRIA 09/08/2026- A 14ª edição do Cidadão Legal parou a região central de São Gonçalo do Rio Abaixo na manhã deste sábado (8), com a realização das provas de corrida…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-09T12:14:59+00:00">
+          09/08/2026 12:14
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18743-alexandre-rodrigues-e-rilton-carlos-recorrem-de-decisao-que-pede-cassacao-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-nota-alexandre-213x300.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Alexandre Rodrigues e Rilton Carlos recorrem de decisão que pede cassação de seus mandatos</h2>
+      <p class="card-snippet">O vice e o prefeito de Santo Antônio tiveram seus mandatos cassados pelo TRE na terça-feira (4) 07/08/2026 – O prefeito de Santo Antônio do Rio Abaixo, Alexandre Rodrigues, e o vice, Rilton Carlos…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-08T01:10:45+00:00">
+          08/08/2026 01:10
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18680-transito-de-caminhoes-volta-a-ser-proibido-na-rua-ibia-e-avenida-getulio-vargas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-barao-1-300x197.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Trânsito de caminhões volta a ser proibido na rua Ibiá e avenida Getúlio Vargas</h2>
+      <p class="card-snippet">07/08/2026 – A Prefeitura de Barão de Cocais, por meio da Secretaria Municipal de Segurança Pública e Transporte, restabeleceu a proibição do trânsito de caminhões e carretas com mais de um eixo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-07T18:02:14+00:00">
+          07/08/2026 18:02
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18674-estrada-de-pacas-esta-em-situacao-lastimavel-e-vereador-cobra-providencia-da" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-pacas-a-300x256.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Estrada de Pacas está em situação lastimável e vereador cobra providência da Bemisa e da Prefeitura</h2>
+      <p class="card-snippet">Governo municipal informou que a empresa assumiria manutenção da via, o que não aconteceu, ainda 07/08/2026 – O vereador Marcos Antônio Bicalho “Kito”, usou a tribuna da Câmara Municipal de São…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-07T17:16:29+00:00">
+          07/08/2026 17:16
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18659-cidadao-legal-2026-reune-dezenas-de-servicos-gratuitos-para-a-populacao-neste" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-cam-sg-cid.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cidadão Legal 2026 reúne dezenas de serviços gratuitos para a população neste sábado</h2>
+      <p class="card-snippet">Evento reúne serviços gratuitos nas áreas de saúde, educação, cidadania, empregabilidade, meio ambiente e desenvolvimento rural para toda a população 07/08/2026 – A 14ª edição do Cidadão Legal…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-07T15:48:42+00:00">
+          07/08/2026 15:48
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18660-camara-de-sao-goncalo-alteracoes-no-transito-neste-sabado-marcam-a-programacao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-transito.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de São Gonçalo: Alterações no trânsito neste sábado marcam a programação da 14ª edição do Cidadão Legal</h2>
+      <p class="card-snippet">Interdições temporárias e alterações no fluxo de veículos serão realizadas entre 7h30 e 12h 07/08/2026 – Em razão da realização da Corrida, do Ciclismo e da Caminhada da 14ª edição do Cidadão Legal…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-07T15:41:47+00:00">
+          07/08/2026 15:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18613-campeonato-municipal-de-futebol-de-sao-sebastiao-entra-para-a-fase-final-neste" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-seba-a-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Campeonato Municipal de Futebol de São Sebastião entra para a fase final neste sábado (8)</h2>
+      <p class="card-snippet">Tabela de classificação 07/08/2026 – A sexta edição do Campeonato Municipal de Futebol de São Sebastião do Rio Preto revela neste sábado (8), os dois times que vão disputar a grande final, agendada…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-07T13:03:34+00:00">
+          07/08/2026 13:03
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18606-santa-maria-de-itabira-lanca-campanha-agosto-lilas-e-destaca-conscientizacao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-lilas.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Santa Maria de Itabira lança campanha Agosto Lilás e destaca conscientização</h2>
+      <p class="card-snippet">EM FAVOR DA VIDA 07/08/2026 – A conscientização e o enfrentamento à violência contra a mulher em Santa Maria de Itabira ganham importante aliado com a campanha Agosto Lilás, apresentada pelo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-07T12:49:36+00:00">
+          07/08/2026 12:49
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18557-sao-goncalo-devera-assinar-convenio-com-clinica-de-reabilitacao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-7-maria-l.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">São Gonçalo deverá assinar convênio com clínica de reabilitação</h2>
+      <p class="card-snippet">Maria de Lourdes convidou os colegas vereadores para visita à clínica em Mariana 07/08/2026 – Após a sessão desta quinta-feira (6) da Câmara Municipal de São Gonçalo do Rio Abaixo, a vereadora Maria…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-07T10:30:15+00:00">
+          07/08/2026 10:30
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/18200-camara-de-sao-goncalo-promove-grupo-de-trabalho-regional-do-parlamento-jovem" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-5-cam-sg-a-1-300x185.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de São Gonçalo promove grupo de trabalho regional do Parlamento Jovem Minas 2026</h2>
+      <p class="card-snippet">Encontro reuniu representantes do Polo Médio Piracicaba e definiu as propostas que serão debatidas na Plenária Regional, marcada para o dia 13 de agosto 05/08/2026 – A Câmara Municipal de São…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-05T20:32:55+00:00">
+          05/08/2026 20:32
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/folha-popular" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/folha-popular?page=1" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=1">1</a>
+    <span class="page-btn active" aria-current="page">2</span>
+    <a class="page-btn" href="/fonte/folha-popular?page=3">3</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=4">4</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=5">5</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=6">6</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/folha-popular?page=3" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

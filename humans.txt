@@ -1,0 +1,11 @@
+Site: Itabira e Região
+URL: https://itabiraeregiao.com.br
+Mirror: https://www.itabiraeregiao.com.br
+Built by: Inovamind
+Developer site: https://inovamind.dev
+Contact: victor.gabriel@inovamind.dev
+From: Brasil
+Language: Portuguese (Brazil)
+Standards: HTML5, CSS3
+Hosted: Debian + Nginx + Cloudflare
+Stack: Python + FastAPI + PostgreSQL

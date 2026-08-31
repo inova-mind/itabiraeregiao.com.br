@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sugira um novo portal de notícias para o Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Sugerir uma fonte | Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sugerir uma fonte">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sugerir uma fonte">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<article class="prose">
+  <h1>Sugerir uma nova fonte</h1>
+  <p>
+    Conhece um portal de notícias local que deveria estar no nosso feed?
+    Envie a sugestão abaixo.
+  </p>
+  <h2>Sugerir portal</h2>
+  <form method="post" id="form-sugestao" class="form-stack" autocomplete="off" novalidate>
+    <div class="field-group">
+      <label class="field-label" for="sug-url">URL do portal</label>
+      <input type="url" id="sug-url" name="portal_url" required minlength="8" maxlength="500" class="field-input" placeholder="https://www.exemplo.com.br/">
+    </div>
+    <div class="field-row">
+      <div class="field-group">
+        <label class="field-label" for="sug-nome">Nome do portal (opcional)</label>
+        <input type="text" id="sug-nome" name="portal_nome" maxlength="160" class="field-input">
+      </div>
+      <div class="field-group">
+        <label class="field-label" for="sug-email">Seu e-mail (opcional)</label>
+        <input type="email" id="sug-email" name="email_contato" maxlength="200" class="field-input">
+      </div>
+    </div>
+    <div class="field-group">
+      <label class="field-label" for="sug-motivo">Por que esse portal? (opcional)</label>
+      <textarea id="sug-motivo" name="motivo" maxlength="2000" rows="4" class="field-input"></textarea>
+    </div>
+    <div class="field-group">
+      <label class="field-label" for="sug-captcha"><span id="captcha-pergunta">Carregando verificação…</span></label>
+      <input type="text" id="sug-captcha" required maxlength="6" class="field-input" inputmode="numeric" autocomplete="off">
+      <input type="hidden" id="sug-captcha-token" name="captcha_token">
+    </div>
+    <div class="form-error" id="sug-err"></div>
+    <div class="form-actions">
+      <button type="submit" class="btn-primary" id="sug-submit">Enviar sugestão</button>
+    </div>
+  </form>
+  <div id="sug-sucesso" class="alert-ok hidden">
+    <strong>Recebemos.</strong> Sua sugestão entrou na fila com o
+    identificador <code id="sug-uuid">-</code>. Vamos avaliar e, se for o
+    caso, adicionar a fonte ao feed.
+  </div>
+</article>
+<script src="/js/sugestao-form.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

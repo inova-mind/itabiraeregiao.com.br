@@ -1,0 +1,44 @@
+# #ItabiraERegiao
+
+> Itabira e Região
+
+`#ItabiraERegiao` é um agregador de notícias: coleta manchetes, snippets curtos e thumbnails de portais públicos via RSS/scrape e expõe um feed cronológico com link direto pra cada matéria original. **Não publicamos o texto completo das notícias**; snippets seguem limite de 200 caracteres truncado em fronteira de palavra. Imagens são hotlink dos portais (não baixamos).
+
+## URLs
+
+- Site: https://itabiraeregiao.com.br
+- Mirror: https://www.itabiraeregiao.com.br
+- Sitemap: https://itabiraeregiao.com.br/sitemap.xml
+- Sobre: https://itabiraeregiao.com.br/sobre
+- Política de remoção: https://itabiraeregiao.com.br/politica-de-remocao
+- Contato: https://itabiraeregiao.com.br/contato
+- Sugerir uma fonte: https://itabiraeregiao.com.br/sugestoes
+
+## Conteúdo
+
+- Manchetes + snippet ≤ 200 chars + thumbnail + link pro portal original.
+- Remoção via pedido (LGPD) ou detecção automática de link morto.
+
+## Política editorial
+
+- Conteúdo NÃO é nosso: pertence aos portais de origem. Linkamos sempre pro original.
+- Não reescrevemos nem reproduzimos artigos.
+- Aceitamos pedidos de remoção via página dedicada (link acima).
+- Sugestões de novas fontes são públicas e moderadas.
+
+## Para agentes / scrapers
+
+- Respeitamos `robots.txt`. Veja https://itabiraeregiao.com.br/robots.txt.
+- `/noticia/<id>` é redirect 302 pro portal original; desencorajamos indexar essas URLs (duplicate content + URLs efêmeras).
+- Para descoberta de conteúdo, use o sitemap acima.
+- Não há API pública.
+
+## Stack
+
+- Backend: Python + FastAPI + PostgreSQL.
+- Frontend: HTML5 + CSS3 server-side rendered, sem framework client.
+- Infra: Debian + Nginx + Cloudflare.
+
+## Operador
+
+Painel desenvolvido e operado por **Inovamind** (https://inovamind.dev).

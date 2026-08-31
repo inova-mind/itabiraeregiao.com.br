@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Folha Popular em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Folha Popular | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Folha Popular | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Folha Popular | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Folha Popular</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/folha-popular"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/folha-popular?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/26185-primeira-edicao-do-festival-de-vinhos-de-itabira-coloca-a-cidade-no-mapa-da" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/SITE-30-FESTIVAL-A.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Primeira edição do Festival de Vinhos de Itabira coloca a cidade no mapa da vitivinicultura de Minas Gerais</h2>
+      <p class="card-snippet">Evento atraiu expositores e grande público 30/08/2026 – A primeira edição do Festival de Vinhos de Itabira, realizada neste sábado (29), chegou preenchendo uma lacuna gastronômica e social que…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-30T10:35:02+00:00">
+          30/08/2026 10:35
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26122-otacilio-neto-destaca-uniao-dos-prefeitos-e-novas-conquistas-durante-mais-um" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-29-amme-b-300x169.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Otacílio Neto destaca união dos prefeitos e novas conquistas durante mais um encontro itinerante da Amme</h2>
+      <p class="card-snippet">Prefeita de São Sebastião, cidade anfitriã, Andrea Otone; prefeito de Conceição e presidente da Amme, Otacílio Neto; prefeito de Ferros, Carlos Elísio; prefeito de Morro do Pilar e 2º…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T18:43:15+00:00">
+          29/08/2026 18:43
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26107-cimme-vai-implantar-usina-regional-de-asfalto-em-ferros" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-29-amme-b-300x169.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cimme vai implantar usina regional de asfalto em Ferros</h2>
+      <p class="card-snippet">Diretoria do consórcio e o prefeito de Ferros, Calor Elísio, apresentando o termo após a assinatura 29/08/2026 – O Consórcio Intermunicipal Multifinalitário do Médio Espinhaço (Cimme), com sede em…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T17:08:22+00:00">
+          29/08/2026 17:08
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26056-santa-maria-segue-com-discussoes-ferrenhas-junto-a-copasa-para-solucionar-a" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-29-ana-300x186.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">“Santa Maria segue com discussões ferrenhas junto a Copasa para solucionar a questão da água”</h2>
+      <p class="card-snippet">Prefeito André Torres REUNIÃO ITINERANTE DA AMME 29/08/2026 – Santa Maria de Itabira segue com tratativas para equacionar o contrato de concessão para o fornecimento de água, atualmente sob gerência…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T11:59:49+00:00">
+          29/08/2026 11:59
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25968-prefeitura-de-barao-abre-cadastro-para-financiamento-de-160-apartamentos" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/SITE-28-BARAO-AP.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura de Barão abre cadastro para financiamento de 160 apartamentos populares</h2>
+      <p class="card-snippet">Moradias do Minha Casa, Minha Vida serão destinadas a famílias com renda entre um e cinco salários mínimos A Secretaria Municipal de Assistência Social abre na terça-feira, 1º de setembro, as…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T20:54:22+00:00">
+          28/08/2026 20:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25969-voce-sabe-quanto-custa-cinco-minutos-a-mais-no-banho-veja-a-diferenca" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-28-cemig-1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Você sabe quanto custa cinco minutos a mais no banho? Veja a diferença</h2>
+      <p class="card-snippet">Simulação da Cemig mostra que tempo de uso de um dos equipamentos que mais consome energia na casa pode fazer diferença no orçamento das famílias 28/08/2026 – No inverno, os banhos costumam ficar…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T20:50:30+00:00">
+          28/08/2026 20:50
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25961-barao-open-de-taekwondo-reunira-356-atletas-neste-domingo-30" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-28-barao-2.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Barão Open de Taekwondo reunirá 356 atletas neste domingo (30)</h2>
+      <p class="card-snippet">A programação do evento começa às 8h 28/08/2026 – O ginásio poliesportivo do bairro Viúva receberá neste domingo (30/8) o evento Barão Open de Taekwondo. A competição contará com a participação de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T20:33:14+00:00">
+          28/08/2026 20:33
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25958-santa-maria-de-itabira-recebe-a-partir-deste-sabado-mais-de-mil-atletas-durante" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-27-sm.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Santa Maria de Itabira recebe a partir deste sábado mais de mil atletas durante os Jogos Abertos da Juventude</h2>
+      <p class="card-snippet">Evento é promovido pela Prefeitura e reunirá 16 cidades durante quatro finais de semana 28/08/2026 – Santa Maria de Itabira se prepara para realizar um dos maiores eventos esportivos da região. Os…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T20:07:26+00:00">
+          28/08/2026 20:07
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/24550-prefeituras-devem-preencher-ate-dia-31-vaar-para-ter-acesso-a-complementacao-do" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-27-tc.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeituras devem preencher até dia 31 Vaar para ter acesso a complementação do Fundeb</h2>
+      <p class="card-snippet">Na foto, da esquerda para a direita, o chefe de gabinete da Secretaria de Estado da Educação, Cristina Andrade, o secretário Daniel Medrado, Telmo Passareli, a secretária adjunta de Educação…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-27T12:26:30+00:00">
+          27/08/2026 12:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23176-hospital-nossa-senhora-das-dores-promove-integracao-com-estudantes-de-medicina" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-25-ana-paula-300x247.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Hospital Nossa Senhora das Dores promove integração com estudantes de medicina da UniFuncesi</h2>
+      <p class="card-snippet">A iniciativa reforça a aproximação entre o hospital e a instituição de ensino 25/08/2026 – O Hospital Católico Nossa Senhora das Dores (HNSD) recebeu, na última quinta-feira (13), estudantes do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T22:58:28+00:00">
+          25/08/2026 22:58
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23168-vereadores-mirins-de-sao-goncalo-tomam-posse-e-elegem-mesa-diretora-para-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-25-cam-mirin-mesa.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vereadores mirins de São Gonçalo tomam posse e elegem mesa diretora para 2026</h2>
+      <p class="card-snippet">Miguel Henrique de Oliveira, assumiu como presidente; Júlia Cecília Fidelis, vice-presidente; e Cristina Emanuela Miguel dos Santos, secretária. Ao fundo, os atuais componentes da mesa: vice, Rafael…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T22:43:39+00:00">
+          25/08/2026 22:43
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/23163-camara-de-sao-goncalo-diploma-vereadores-mirins-para-a-legislatura-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-25-cam-mirim.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de São Gonçalo diploma vereadores mirins para a legislatura 2026</h2>
+      <p class="card-snippet">Jovens são-gonçalenses terão a oportunidade de vivenciar, na prática, experiências relacionadas a função parlamentar 25/08/2026 – A Câmara Municipal de São Gonçalo do Rio Abaixo realizou, nesta…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T22:24:28+00:00">
+          25/08/2026 22:24
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22981-samba-do-quinto-chega-a-3a-edicao-e-transforma-a-praca-do-rotary-em-palco-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-25-samba.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Samba do Quinto chega a 3ª edição e transforma a praça do Rotary em palco de cultura, convivência e valorização dos artistas locais</h2>
+      <p class="card-snippet">Evento gratuito será realizado no dia 12 de setembro, a partir das 15h, no bairro Amazonas, com apresentações de Ariela, Jeff e Ana Maria 25/08/2026 – O samba vai tomar conta do bairro Amazonas. No…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T12:01:27+00:00">
+          25/08/2026 12:01
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22982-vereadores-de-rio-piracicaba-rejeitam-veto-do-executivo-e-mantem-emendas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-25-rio-pira.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vereadores de Rio Piracicaba rejeitam veto do Executivo e mantêm emendas parlamentares na LDO de 2027</h2>
+      <p class="card-snippet">O presidente do Legislativo, Aleksandro Silva, argumentou seu voto contrário ao veto 25/08/2026 – A Câmara Municipal de Rio Piracicaba rejeitou, por unanimidade, o Veto nº 003/2026, apresentado pelo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-25T11:49:02+00:00">
+          25/08/2026 11:49
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22821-oab-itabira-inaugura-na-esplanada-da-estacao-sede-propria-nesta-terca-feira-25" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-24-oab-300x280.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">OAB Itabira inaugura na Esplanada da Estação sede própria nesta terça-feira (25)</h2>
+      <p class="card-snippet">Terreno com 528,74 metros quadrados foi doado pela Prefeitura de Itabira em dezembro de 2019 O novo prédio possui 764,45 m² de área construída, distribuídos em três pavimentos Solenidade marca um…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T20:09:35+00:00">
+          24/08/2026 20:09
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/22811-apos-47-anos-dedicados-ao-taekwondo-martinho-alvarenga-busca-certificacao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-24-5-265x300.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Após 47 anos dedicados ao taekwondo, Martinho Alvarenga busca certificação internacional na Coreia do Sul</h2>
+      <p class="card-snippet">Referência da modalidade em Itabira, grão-mestre esteve no Kukkiwon, em Seul, onde passou por avaliação para a graduação de 8º Dan; resultado oficial será divulgado nos próximos meses 24/08/2026 –…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-24T19:43:46+00:00">
+          24/08/2026 19:43
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21701-andre-torres-declara-apoio-aos-deputados-diego-e-gustavo-durante-inauguracao-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-23-andre-a-300x161.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">André Torres declara apoio aos deputados Diego e Gustavo durante inauguração de comitê e corpo-a-corpo com eleitores</h2>
+      <p class="card-snippet">Prefeito André Torres; deputado Diego Andrade; secretário de Relações Institucionais, Diego Oliveira; e deputado Gustavo Valadares “União que gera resultados para Santa Maria de Itabira”, disse…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-22T17:12:25+00:00">
+          22/08/2026 17:12
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21333-vereadores-de-sao-goncalo-visitam-neste-sabado-clinica-de-reabilitacao-antes-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-20-loudinha-184x300.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vereadores de São Gonçalo visitam neste sábado clínica de reabilitação antes de sugerir parceria</h2>
+      <p class="card-snippet">Maria de Lourdes convidou os colegas vereadores para visita à clínica em Mariana 20/08/2026 – Os vereadores de São Gonçalo do Rio Abaixo visitam neste sábado (22), a Comunidade Terapêutica Semente…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T18:14:19+00:00">
+          20/08/2026 18:14
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21259-tcemg-aponta-falhas-em-contratacao-de-coleta-de-residuos-em-esmeraldas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-20-tc.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">TCEMG aponta falhas em contratação de coleta de resíduos em Esmeraldas</h2>
+      <p class="card-snippet">O termo de referência do edital não definiu de forma satisfatória as áreas do município a serem atendidas 20/08/2026 – O Tribunal de Contas do Estado de Minas Gerais (TCEMG) identificou…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T13:04:01+00:00">
+          20/08/2026 13:04
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21253-frota-do-transporte-escolar-de-santo-antonio-segue-sendo-renovada" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-20-frota-300x225.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Frota do transporte escolar de Santo Antônio segue sendo renovada</h2>
+      <p class="card-snippet">Ônibus 0km foi entregue nesta quarta-feira ((19) 20/08/2026 – A Prefeitura de Santo Antônio do Rio Abaixo recebeu um novo ônibus escolar com capacidade para 45 lugares, renovando e ampliando a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T12:50:44+00:00">
+          20/08/2026 12:50
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/21254-prefeitura-de-sao-sebastiao-entrega-onibus-0km-para-reforcar-transporte-escolar" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-20-onibus.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura de São Sebastião entrega ônibus 0km para reforçar transporte escolar</h2>
+      <p class="card-snippet">Veículo foi adquirido por meio de emenda parlamentar 20/08/2026 – A Prefeitura de São Sebastião do Rio Preto realizou nesta quarta-feira (19), a entrega de um novo micro-ônibus escolar, que será…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T12:40:03+00:00">
+          20/08/2026 12:40
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20984-santa-maria-de-itabira-inicia-estudos-para-implantar-plano-diretor" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-19-verea-300x200.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Santa Maria de Itabira inicia estudos para implantar Plano Diretor</h2>
+      <p class="card-snippet">O prefeito André Torres destacou a importância do estudo para o desenvolvimento do município 19/08/2026 – Atendendo a recomendação do Ministério Público de Minas Gerais (MPMG), publicado em…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T09:54:58+00:00">
+          19/08/2026 09:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20750-abade-envia-a-camara-projeto-de-gratificacao-a-profissionais-dos-postos-de-saude" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-18-barao-saude.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Abade envia à Câmara projeto de gratificação a profissionais dos postos de saúde</h2>
+      <p class="card-snippet">Projeto de lei busca valorizar servidores do SUS, estimular o alcance de metas e elevar a qualidade do atendimento à população (Foto: Secom/PBC) O prefeito de Barão de Cocais, Geraldo Abade das…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T12:21:01+00:00">
+          18/08/2026 12:21
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/20742-pipas-deixam-mais-de-313-mil-clientes-sem-energia-em-minas-gerais-no-1o" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://ofolhapopular.com.br/wp-content/uploads/2026/08/site-18-cemig.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Pipas deixam mais de 313 mil clientes sem energia em Minas Gerais no 1º semestre de 2026</h2>
+      <p class="card-snippet">Na região Leste de Minas, foram 66 ocorrências que afetaram quase 20 mil clientes 18/08/20206 – Empinar pipas próximo à rede elétrica continua provocando impactos significativos no fornecimento de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T11:42:27+00:00">
+          18/08/2026 11:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+    <span class="page-btn active" aria-current="page">1</span>
+    <a class="page-btn" href="/fonte/folha-popular?page=2">2</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=3">3</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=4">4</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=5">5</a>
+    <a class="page-btn" href="/fonte/folha-popular?page=6">6</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/folha-popular?page=2" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

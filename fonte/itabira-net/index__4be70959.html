@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Itabira.NET em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Itabira.NET | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Itabira.NET | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Itabira.NET | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Itabira.NET</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/itabira-net"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/itabira-net?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/16014-incendio-destroi-veiculo-na-br-381-em-nova-era" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-25-at-19.12.45-e1785080800303.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Incêndio destrói veículo na BR-381 em Nova Era</h2>
+      <p class="card-snippet">Um veículo foi destruído por um incêndio na tarde deste sábado (25), na Rodovia BR-381, em Nova Era, na Região Central de Minas Gerais. A ocorrência foi atendida pelo Corpo de Bombeiros Militar de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-26T15:47:50+00:00">
+          26/07/2026 15:47
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/16005-campeonatos-de-farmar-aura-transformam-meme-em-competicao-presencial" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/farma_aura-e1785076615933.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Campeonatos de “Farmar Aura” transformam meme em competição presencial</h2>
+      <p class="card-snippet">Os Campeonatos de Farmar Aura, inspirados em uma gíria popular das redes sociais, estão ganhando espaço em diversas cidades brasileiras. O objetivo da competição é simples: demonstrar o máximo de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-26T14:39:43+00:00">
+          26/07/2026 14:39
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/16003-ambulancia-de-prontidao-e-alvo-de-vandalismo-em-dom-silverio" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-26-at-11.05.18-1-e1785074951393.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ambulância de prontidão é alvo de vandalismo em Dom Silvério</h2>
+      <p class="card-snippet">Uma ambulância que permanece de prontidão para atender os moradores do Bairro Campestre, em Dom Silvério, foi alvo de vandalismo neste domingo (26). O veículo amanheceu com o para-brisa quebrado e…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-26T14:10:21+00:00">
+          26/07/2026 14:10
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15999-cruzeiro-e-botafogo-medem-forcas-em-duelo-decisivo-no-mineirao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2022/10/Mineirao-noticia.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cruzeiro e Botafogo medem forças em duelo decisivo no Mineirão</h2>
+      <p class="card-snippet">O Mineirão será palco de um dos confrontos mais aguardados da 20ª rodada do Campeonato Brasileiro neste domingo (26). Cruzeiro e Botafogo entram em campo em busca de pontos importantes na luta pelas…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-26T13:29:03+00:00">
+          26/07/2026 13:29
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15996-pl-oficializa-candidatura-de-flavio-bolsonaro-a-presidencia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/flavio_bolsonaro-e1785071914936.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">PL oficializa candidatura de Flávio Bolsonaro à Presidência</h2>
+      <p class="card-snippet">O Partido Liberal (PL) formalizou, na tarde deste sábado (25), em São Paulo, a candidatura de Flávio Bolsonaro à Presidência da República. O anúncio foi feito durante a Convenção Nacional do…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-26T13:18:56+00:00">
+          26/07/2026 13:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15811-prf-apreende-cerca-de-300-kg-de-maconha-em-j-monlevade" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-24-at-21.06.47-e1784938140267.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">PRF apreende cerca de 300 kg de maconha em J. Monlevade</h2>
+      <p class="card-snippet">A Polícia Rodoviária Federal (PRF) apreendeu cerca de 300 quilos de maconha e prendeu um homem de 35 anos e uma mulher de 28 anos na noite de quinta-feira (23), na BR-381, em João Monlevade. A…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-25T00:10:25+00:00">
+          25/07/2026 00:10
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15810-dois-postos-sao-autuados-e-tem-bicos-interditados-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/procon_fiscaliz-e1784937280352.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Dois postos são autuados e têm bicos interditados em Itabira</h2>
+      <p class="card-snippet">O Procon do Ministério Público de Minas Gerais (Procon-MPMG) autuou dois postos de combustíveis em Itabira durante uma operação de fiscalização realizada entre os dias 21 e 23 de julho em municípios…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-24T23:54:57+00:00">
+          24/07/2026 23:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15807-itaurb-amplia-convenio-e-credencia-otica-para-venda-consignada" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-31-at-09.51.08-e1769863900332.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">ITAURB amplia convênio e credencia ótica para venda consignada</h2>
+      <p class="card-snippet">A Empresa de Desenvolvimento de Itabira Ltda – ITAURB homologou o credenciamento da empresa Brulliz e Meireles Ltda., conhecida como Loop Ótica, no Chamamento Público nº 003/2026. A decisão foi…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-24T23:38:36+00:00">
+          24/07/2026 23:38
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15803-governo-descarta-retomada-de-subsidio-extra-ao-diesel" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2021/10/caminhao-tanque_em_refinaria_da_petrobras_em_canoas_rs-e1635187027593.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Governo descarta retomada de subsídio extra ao diesel</h2>
+      <p class="card-snippet">O governo federal não pretende retomar, neste momento, o subsídio adicional de R$ 0,35 por litro do diesel, suspenso no início de julho. A informação foi confirmada pelo ministro do Planejamento e…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-24T23:11:23+00:00">
+          24/07/2026 23:11
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15502-motociclista-morre-em-grave-acidente-na-mgc-120-em-passabem" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-23-at-16.31.28-e1784835595264.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Motociclista morre em grave acidente na MGC-120, em Passabém</h2>
+      <p class="card-snippet">Um grave acidente registrado na tarde desta quinta-feira (23) resultou na morte de um motociclista na Rodovia MGC-120, entre os municípios de Santa Maria de Itabira e Ferros, na região Central de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-23T19:41:10+00:00">
+          23/07/2026 19:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15492-cruzeiro-vence-o-internacional-e-inicia-segundo-turno-em-alta" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/Captura-de-tela-2026-07-23-e1784831784638.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cruzeiro vence o Internacional e inicia segundo turno em alta</h2>
+      <p class="card-snippet">O Cruzeiro começou a segunda metade do Campeonato Brasileiro com o pé direito. Na noite desta quarta-feira (22), a equipe celeste venceu o Internacional por 2 a 1 no Estádio Beira-Rio, em Porto…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-23T18:36:43+00:00">
+          23/07/2026 18:36
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15307-consmepi-abre-licitacao-de-r-22-8-milhoes-para-contratacao-de-estruturas-e" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/palco_som-e1784767628693.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">CONSMEPI abre licitação de R$ 22,8 milhões para contratação de estruturas e serviços para eventos</h2>
+      <p class="card-snippet">O Consórcio Intermunicipal Multissetorial do Médio Rio Piracicaba (CONSMEPI) publicou aviso de licitação para a realização do Pregão Eletrônico para Registro de Preços nº 003/2026, destinado à…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-23T00:47:17+00:00">
+          23/07/2026 00:47
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15306-adolescente-e-socorrido-de-helicoptero-apos-acidente-de-bicicleta-em-barao-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-22-at-21.15.28-e1784765806361.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Adolescente é socorrido de helicóptero após acidente de bicicleta em Barão de Cocais</h2>
+      <p class="card-snippet">Um adolescente de 16 anos ficou gravemente ferido após sofrer um acidente de bicicleta em Barão de Cocais, na região Central de Minas Gerais. A vítima foi socorrida inicialmente por uma ambulância…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-23T00:18:26+00:00">
+          23/07/2026 00:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15292-caminhao-com-melancias-tomba-e-deixa-motorista-preso-as-ferragens" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-22-at-19.06.09-2-e1784758603233.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Caminhão com melancias tomba e deixa motorista preso às ferragens</h2>
+      <p class="card-snippet">Um caminhão carregado com melancias tombou na madrugada desta quarta-feira (22) na BR-262, na altura do km 157, em São Domingos do Prata, na Região Central de Minas Gerais. O motorista, de 32 anos…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-22T22:17:12+00:00">
+          22/07/2026 22:17
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15284-tentativa-de-roubo-termina-com-tiros-e-fuga-de-suspeitos-em-nova-era" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-22-at-18.31.08-e1784757003144.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Tentativa de roubo termina com tiros e fuga de suspeitos em Nova Era</h2>
+      <p class="card-snippet">Uma tentativa de roubo de motocicleta mobilizou equipes da Polícia Militar no final da tarde desta quarta-feira (22), em Nova Era, na região Central de Minas Gerais. Dois suspeitos armados abordaram…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-22T21:53:48+00:00">
+          22/07/2026 21:53
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15032-rede-santana-e-multada-por-irregularidades-em-posto-de-bom-jesus-do-amparo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/fiscalizacao-Procon-MPMG.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Rede Santana é multada por irregularidades em posto de Bom Jesus do Amparo</h2>
+      <p class="card-snippet">O Procon-MPMG, órgão de defesa do consumidor do Ministério Público de Minas Gerais (MPMG), aplicou uma multa de quase R$ 60 mil à empresa Rede Santana Combustíveis Castelo Bom Jesus do Amparo 2…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T23:46:28+00:00">
+          21/07/2026 23:46
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15028-carro-capota-e-deixa-dois-feridos-na-mgc-120-em-ferros" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-21-at-19.54.50-e1784676303591.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Carro capota e deixa dois feridos na MGC-120, em Ferros</h2>
+      <p class="card-snippet">Na manhã desta terça-feira (21), um acidente foi registrado na Rodovia MGC-120, na altura do km 386, em Ferros. A ocorrência mobilizou uma equipe da Polícia Militar Rodoviária e do Serviço de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T23:26:22+00:00">
+          21/07/2026 23:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/15022-motociclista-sofre-grave-ferimento-em-acidente-no-joao-xxiii" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/colisao_moto.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Motociclista sofre grave ferimento em acidente no João XXIII</h2>
+      <p class="card-snippet">Um motociclista ficou ferido após uma colisão envolvendo uma Honda CG e uma Fiat Strada na tarde desta terça-feira (21), por volta das 13h30, no cruzamento das ruas Antônio Carolino e Humberto…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-21T22:48:06+00:00">
+          21/07/2026 22:48
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14784-saae-de-itabira-abre-licitacao-para-fornecimento-de-alimentos-e-refeicoes" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2021/09/saae.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Saae de Itabira abre licitação para fornecimento de alimentos e refeições</h2>
+      <p class="card-snippet">O Serviço Autônomo de Água e Esgoto (Saae) de Itabira publicou aviso de licitação para a realização do Pregão Eletrônico nº 07/2026, que tem como objetivo o registro de preços para eventual…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T23:26:11+00:00">
+          20/07/2026 23:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14780-pagamento-do-bolsa-familia-de-julho-comecou-nesta-segunda-20" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2024/02/novo-cartao-bolsa-familia-2023-e1708353463368.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Pagamento do Bolsa Família de julho começou nesta segunda (20)</h2>
+      <p class="card-snippet">O calendário de pagamento do Programa Bolsa Família de julho começa nesta segunda-feira (20) e termina no dia 31. Os repasses seguem o cronograma do programa, sendo liberados nos últimos dez dias…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T23:12:25+00:00">
+          20/07/2026 23:12
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14776-ex-arbitro-alarcon-morre-aos-70-anos-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/WhatsApp-Image-2026-07-20-at-19.47.47-e1784587712925.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ex-árbitro Alarcon morre aos 70 anos em Itabira</h2>
+      <p class="card-snippet">A Liga Itabirana de Futebol Amador (LIFA) lamentou, nesta segunda-feira (20), o falecimento do ex-árbitro Alarcon Antônio das Dores, aos 70 anos. Nascido em 1º de abril de 1956, Alarcon dedicou…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T22:55:04+00:00">
+          20/07/2026 22:55
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14770-tjmg-garante-auxilio-acidente-a-professora-com-doenca-cronica-nas-cordas-vocais" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/ChatGPT-Image-20-de-jul.-de-2026-19_34_50-749x499.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">TJMG garante auxílio-acidente a professora com doença crônica nas cordas vocais</h2>
+      <p class="card-snippet">A 15ª Câmara Cível do Tribunal de Justiça de Minas Gerais (TJMG) reformou uma sentença da Comarca de Bambuí, no Oeste de Minas, e determinou a concessão de auxílio-acidente a uma professora que…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T22:35:57+00:00">
+          20/07/2026 22:35
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14765-conecta-talentos-forma-1a-turma-de-robotica-em-sao-goncalo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://itabiranet.com.br/wp-content/uploads/2026/07/Conecta1-e1784585137468.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Conecta Talentos forma 1ª turma de robótica em São Gonçalo</h2>
+      <p class="card-snippet">A Prefeitura de São Gonçalo do Rio Abaixo realizou, na última quinta-feira (15), a cerimônia de encerramento da primeira turma do Projeto Conecta Talentos – Curso de Robótica. O evento aconteceu no…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T22:06:53+00:00">
+          20/07/2026 22:06
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/14763-espanha-vence-argentina-e-conquista-a-copa-do-mundo-de-2026" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://digitalhub.fifa.com/transform/e068bf2e-79c6-431d-9cb3-35a0a605f419/Spain-v-Argentina-Final-FIFA-World-Cup-2026?focuspoint=0.5,0.35&amp;io=transform:fill,width:1024&amp;quality=75" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Espanha vence Argentina e conquista a Copa do Mundo de 2026</h2>
+      <p class="card-snippet">A Espanha é a nova campeã do mundo. Em uma final equilibrada disputada neste domingo (19), no MetLife Stadium, em Nova Jersey (EUA), a seleção espanhola derrotou a Argentina por 1 a 0 na prorrogação…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-07-20T22:01:02+00:00">
+          20/07/2026 22:01
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/itabira-net" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/itabira-net?page=4" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/itabira-net?page=4">4</a>
+    <span class="page-btn active" aria-current="page">5</span>
+    <a class="page-btn" href="/fonte/itabira-net?page=6">6</a>
+    <a class="page-btn" href="/fonte/itabira-net?page=7">7</a>
+    <a class="page-btn" href="/fonte/itabira-net?page=8">8</a>
+    <a class="page-btn" href="/fonte/itabira-net?page=9">9</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/itabira-net?page=6" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>

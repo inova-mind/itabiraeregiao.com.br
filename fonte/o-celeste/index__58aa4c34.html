@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do O Celeste em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>O Celeste | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="O Celeste | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="O Celeste | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>O Celeste</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/o-celeste"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/o-celeste?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/9331-construcao-da-nova-ubs-altera-temporariamente-atendimentos-do-csu-loanda" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/antigo-CEO-1-800x445.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Construção da nova UBS altera temporariamente atendimentos do CSU Loanda</h2>
+      <p class="card-snippet">A Prefeitura de João Monlevade, por meio da Secretaria Municipal de Saúde, informa que, a partir da próxima segunda-feira (29), os</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-25T18:45:02+00:00">
+          25/06/2026 18:45
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9332-nova-ubs-do-bairro-jose-de-alencar-recebera-nome-de-jose-alberto-grijo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/fernando-e1782413068341-720x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Nova UBS do bairro José de Alencar receberá nome de José Alberto Grijó</h2>
+      <p class="card-snippet">Como forma de eternizar a história de dedicação de José Alberto Grijó os vereadores aprovaram em turno único na reunião</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-25T18:44:34+00:00">
+          25/06/2026 18:44
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9322-anteprojeto-que-propoe-reforco-na-higienizacao-de-equipamentos-utilizados-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/reuniao-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Anteprojeto que propõe reforço na higienização de equipamentos utilizados em atendimentos de saúde</h2>
+      <p class="card-snippet">A Câmara Municipal de João Monlevade aprovou, durante a reunião ordinária realizada nesta quarta-feira, 24, o Anteprojeto de Lei nº</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-25T18:43:21+00:00">
+          25/06/2026 18:43
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9323-joao-monlevade-mantem-tarifa-de-onibus-congelada-pelo-sexto-ano-consecutivo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/Onibus-da-Enscon-Sergio-Henrique-Braga-ACOM-PMJM-800x445.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">João Monlevade mantém tarifa de ônibus congelada pelo sexto ano consecutivo</h2>
+      <p class="card-snippet">A Prefeitura de João Monlevade manterá, pelo sexto ano consecutivo, o valor da tarifa do transporte coletivo urbano sem reajuste.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-25T18:41:57+00:00">
+          25/06/2026 18:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9324-grupo-lider-multimarcas-recebe-mocao-de-aplausos-na-camara-municipal" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/lider-1-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Grupo Líder Multimarcas recebe Moção de Aplausos na Câmara Municipal</h2>
+      <p class="card-snippet">Na noite dessa quarta-feira, 24, a Câmara Municipal de João Monlevade realizou a entrega de Moção de Aplausos ao Grupo</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-25T18:41:39+00:00">
+          25/06/2026 18:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9325-secretaria-de-assistencia-social-promove-acoes-do-junho-violeta-para" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/Junho-Violeta-2-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Secretaria de Assistência Social promove ações do Junho Violeta para conscientização e valorização da pessoa idosa</h2>
+      <p class="card-snippet">A Secretaria Municipal de Assistência Social, por meio do Cras Bem Viver, realizou durante todo o mês de junho uma</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-25T18:40:37+00:00">
+          25/06/2026 18:40
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9064-show-na-italia-destaca-cancoes-de-compositores-de-joao-monlevade-e-homenageia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/Da-esq-p-dir-Kal-dos-Santos-Toni-Julio-e-Davide-Perduca-foto-Julye-Jacomel-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Show na Itália destaca canções de compositores de João Monlevade e homenageia escravizados</h2>
+      <p class="card-snippet">Show do Trio Migrazioni tem canções interpretadas pelo cantor monlevadense Toni Julio, residente na Itália, quase todas com letras assinadas</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-24T19:46:13+00:00">
+          24/06/2026 19:46
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9065-prefeito-dr-laercio-recebe-representante-de-joao-monlevade-na-i-conferencia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/Giovani-Pedro-Dr-6-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeito Dr. Laércio recebe representante de João Monlevade na I Conferência Nacional dos ODS</h2>
+      <p class="card-snippet">O prefeito de João Monlevade, Dr. Laércio Ribeiro (PT), recebeu em seu gabinete, na manhã desta terça-feira (23), o jovem</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-24T19:45:30+00:00">
+          24/06/2026 19:45
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9066-nova-381-apresenta-para-os-vereadores-obras-para-melhorar-mobilidade-e" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/reuniao-nova-381-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Nova 381 apresenta para os vereadores obras para melhorar mobilidade e segurança nos acessos de João Monlevade</h2>
+      <p class="card-snippet">A concessionária Nova 381 apresentou, nesta terça-feira, 23, as intervenções que serão realizadas em João Monlevade para melhorar a mobilidade</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-24T19:45:27+00:00">
+          24/06/2026 19:45
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/9067-prova-nacional-docente-pnd-sera-pre-requisito-para-ingresso-na-rede-municipal" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-13-768x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prova Nacional Docente (PND) será pré-requisito para ingresso na rede municipal de educação de João Monlevade</h2>
+      <p class="card-snippet">A Prefeitura de João Monlevade, por meio da Secretaria Municipal de Educação, emitiu um comunicado oficial aos educadores interessados em</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-24T19:44:02+00:00">
+          24/06/2026 19:44
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/8848-prefeitura-de-joao-monlevade-publica-edital-de-licitacao-para-realizacao-da" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-11-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura de João Monlevade publica edital de licitação para realização da XXXIII Cavalgada</h2>
+      <p class="card-snippet">A empresa vencedora deverá apresentar área para realização da festa, que será submetida à avaliação técnica da administração municipal A Prefeitura</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-23T18:51:45+00:00">
+          23/06/2026 18:51
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/8849-sus-retoma-aplicacao-de-duas-doses-de-reforco-contra-a-poliomielite-para" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-10-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">SUS retoma aplicação de duas doses de reforço contra a poliomielite para crianças</h2>
+      <p class="card-snippet">Novo esquema de vacinação começa em agosto e prevê que todas as doses sejam aplicadas com vacina injetável; mudança busca</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-23T18:50:57+00:00">
+          23/06/2026 18:50
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/8850-inss-passa-a-exigir-comprovacao-biometrica-para-novos-pedidos-de-beneficios" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-9-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">INSS passa a exigir comprovação biométrica para novos pedidos de benefícios</h2>
+      <p class="card-snippet">Medida vale para solicitações de aposentadorias, auxílios e benefícios assistenciais; regra tem exceções para alguns grupos de segurados O Instituto</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-23T18:50:06+00:00">
+          23/06/2026 18:50
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7814-anvisa-determina-recolhimento-de-antibioticos-e-soro-fisiologico-por-problemas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-8-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Anvisa determina recolhimento de antibióticos e soro fisiológico por problemas de qualidade</h2>
+      <p class="card-snippet">A Agência Nacional de Vigilância Sanitária (Anvisa) determinou nesta quinta-feira (18) o recolhimento de lotes de dois antibióticos e de</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-18T18:16:30+00:00">
+          18/06/2026 18:16
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7815-neymar-desfalca-brasil-contra-o-haiti-e-fica-em-nova-jersey-para-acelerar" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-7-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Neymar desfalca Brasil contra o Haiti e fica em Nova Jersey para acelerar recuperação</h2>
+      <p class="card-snippet">Neymar não estará em campo pela Seleção Brasileira no confronto contra o Haiti, marcado para esta sexta-feira (19), pela segunda</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-18T18:14:34+00:00">
+          18/06/2026 18:14
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7816-pf-realiza-nova-fase-de-operacao-e-cumpre-mandados-contra-suspeitos-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-6-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">PF realiza nova fase de operação e cumpre mandados contra suspeitos de envolvimento em irregularidades no sistema financeiro</h2>
+      <p class="card-snippet">A Polícia Federal deflagrou nesta quinta-feira (18) a 9ª fase da Operação Compliance Zero, que investiga possíveis irregularidades envolvendo agentes</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-18T18:13:46+00:00">
+          18/06/2026 18:13
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7817-camara-municipal-de-joao-monlevade-prepara-concurso-publico-com-12-vagas-em-7" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2023/03/Camara-Municipal-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara Municipal de João Monlevade prepara concurso público com 12 vagas em 7 cargos efetivos</h2>
+      <p class="card-snippet">Certame será organizado pelo IDEAP; datas de inscrição e de provas serão divulgadas em breve no edital A Câmara Municipal</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-18T18:12:05+00:00">
+          18/06/2026 18:12
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7818-vereadores-aprovam-projetos-para-combate-a-esporotricose-e-apoio-a-produtores" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/reuniao-17-junho-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vereadores aprovam projetos para combate à esporotricose e apoio a produtores rurais</h2>
+      <p class="card-snippet">Em segundo turno e redação final, os vereadores aprovaram na reunião dessa quarta-feira, 17, o Projeto de Lei 1.626/2026, de</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-18T18:11:17+00:00">
+          18/06/2026 18:11
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7819-horarios-e-locais-do-dia-d-da-campanha-de-multivacinacao-em-joao-monlevade" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/2-1-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Horários e locais do Dia D da Campanha de Multivacinação em João Monlevade sofrem alteração</h2>
+      <p class="card-snippet">A Secretaria Municipal de Saúde, por meio da Vigilância em Saúde (Visa), informa que alguns horários e locais de atendimento do Dia D</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-18T18:11:14+00:00">
+          18/06/2026 18:11
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7550-ibge-abre-inscricoes-para-1-4-mil-vagas-temporarias-com-salarios-de-ate-r-5-2" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-5-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">IBGE abre inscrições para 1,4 mil vagas temporárias com salários de até R$ 5,2 mil</h2>
+      <p class="card-snippet">O Instituto Brasileiro de Geografia e Estatística (IBGE) iniciou nesta quarta-feira (17) as inscrições para um novo processo seletivo com</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-17T18:40:05+00:00">
+          17/06/2026 18:40
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7551-enem-2026-prazo-para-pagamento-da-taxa-de-inscricao-e-prorrogado-ate-segunda" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-4-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Enem 2026: prazo para pagamento da taxa de inscrição é prorrogado até segunda-feira (22)</h2>
+      <p class="card-snippet">Candidatos que ainda não quitaram a taxa de inscrição do Enem 2026 ganharam mais alguns dias para realizar o pagamento.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-17T18:38:49+00:00">
+          17/06/2026 18:38
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7552-neymar-participa-de-treino-da-selecao-antes-de-duelo-contra-o-haiti-mas-retorno" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/image-3-800x445.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Neymar participa de treino da Seleção antes de duelo contra o Haiti, mas retorno aos jogos ainda é incerto</h2>
+      <p class="card-snippet">O atacante Neymar voltou a trabalhar com o elenco da Seleção Brasileira nesta quarta-feira (17), durante a preparação para o</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-17T18:37:36+00:00">
+          17/06/2026 18:37
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7553-fanfarra-da-emip-e-pentacampea-do-campeonato-mineiro-de-bandas-e-fanfarras" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/Trofeus-Fanfarra-800x445.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Fanfarra da Emip é pentacampeã do Campeonato Mineiro de Bandas e Fanfarras</h2>
+      <p class="card-snippet">Com 48 anos de tradição, a corporação conquistou o pódio e estreou novas modalidades técnicas na arena. No último domingo</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-17T18:34:06+00:00">
+          17/06/2026 18:34
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/7554-dr-laercioe-dorinha-acompanham-andamento-das-obras-da-nova-ubs-no-jose-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://oceleste.com.br/wp-content/uploads/2026/06/Obras-nova-UBS-no-Jose-de-Alencar-1-800x445.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Dr. Laércioe Dorinha acompanham andamento das obras da nova UBS no José de Alencar</h2>
+      <p class="card-snippet">O prefeito de João Monlevade, Dr. Laércio Ribeiro (PT), a vice-prefeita Dorinha Machado (MDB), e o secretário municipal de Planejamento, Fabrício Lopes,</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-06-17T18:33:59+00:00">
+          17/06/2026 18:33
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/o-celeste" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/o-celeste?page=5" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/o-celeste?page=4">4</a>
+    <a class="page-btn" href="/fonte/o-celeste?page=5">5</a>
+    <span class="page-btn active" aria-current="page">6</span>
+    <a class="page-btn" href="/fonte/o-celeste?page=7">7</a>
+    <a class="page-btn" href="/fonte/o-celeste?page=8">8</a>
+    <a class="page-btn" href="/fonte/o-celeste?page=9">9</a>
+  <a class="page-btn page-btn-nav" href="/fonte/o-celeste?page=7" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>
