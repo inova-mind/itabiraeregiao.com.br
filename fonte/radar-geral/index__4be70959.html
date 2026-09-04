@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Radar Geral em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Radar Geral | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Radar Geral | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Radar Geral | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Radar Geral</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/radar-geral"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/radar-geral?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/25424-mariana-denuncia-leva-pm-a-apreender-adolescente-de-16-anos-por-trafico-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-21T080133.982.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Mariana: denúncia leva PM a apreender adolescente (de 16 anos) por tráfico de drogas no Prainha</h2>
+      <p class="card-snippet">A Polícia Militar (PM) apreendeu um adolescente (de 16 anos) por envolvimento com o tráfico de drogas durante uma operação realizada no bairro Santo Antônio, conhecido como Prainha, em Mariana (MG)…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-21T12:00:05+00:00">
+          21/08/2026 12:00
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25425-jovem-de-itabirito-passa-3h-escondido-em-buraco-ao-ser-emboscado-e-ter-carro" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-20-at-22.10.23.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Jovem de Itabirito passa 3h escondido em buraco ao ser emboscado e ter carro roubado nos Coelhos</h2>
+      <p class="card-snippet">Um jovem de 27 anos, morador de Itabirito (MG), viveu momentos de terror na noite de terça (18/8) e madrugada de quarta (19/8) após ser vítima de uma emboscada. O pesadelo começou numa estrada da…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-21T01:25:23+00:00">
+          21/08/2026 01:25
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25426-itabirito-familia-promove-almoco-beneficente-para-ajudar-no-tratamento-de-gael" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-20T133937.987.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabirito: família promove almoço beneficente para ajudar no tratamento de Gael (de 5 anos)</h2>
+      <p class="card-snippet">Um almoço beneficente será realizado no dia 20/9, a partir das 11h, na Associação Comunitária Pedro Góes, no bairro São José, em Itabirito (MG), com o objetivo de arrecadar recursos para ajudar a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T23:12:25+00:00">
+          20/08/2026 23:12
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25427-apos-denuncia-pm-prende-traficante-com-mais-de-100-buchas-de-maconha-em-ouro" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-20T170000.767.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Após denúncia, PM prende traficante com mais de 100 buchas de maconha em Ouro Preto</h2>
+      <p class="card-snippet">Um homem (de 24 anos) foi preso em flagrante pela Polícia Militar (PM) por tráfico de drogas na Rua Geraldo Galdino, no bairro Alto da Cruz, em Ouro Preto. O caso aconteceu ontem (19/8). Segundo a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T22:18:23+00:00">
+          20/08/2026 22:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25428-gcms-de-itabirito-bancam-capacitacao-de-320-horas-para-aprimorar-atuacao-na" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-1.jpg-7.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">GCMs de Itabirito bancam capacitação de 320 horas para aprimorar atuação na zona rural</h2>
+      <p class="card-snippet">Agentes da Guarda Civil Municipal (GCM) de Itabirito (MG) concluíram uma capacitação voltada à atuação tática ambiental e patrulha rural, com o objetivo de aprimorar os conhecimentos e ampliar a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T19:30:38+00:00">
+          20/08/2026 19:30
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25429-gcm-de-itabirito-localiza-jovem-desaparecida-e-proporciona-reencontro-com-a-mae" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima.jpg-27.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">GCM de Itabirito localiza jovem desaparecida e proporciona reencontro com a mãe</h2>
+      <p class="card-snippet">A Guarda Civil Municipal (GCM) de Itabirito (MG) localizou, na tarde desta quarta (19/8), uma jovem de 26 anos que estava registrada como desaparecida no sistema de segurança. O fato aconteceu por…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T18:48:31+00:00">
+          20/08/2026 18:48
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25430-cidades-declaram-emergencia-economica" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a870ceba738b-gNeWWo.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cidades declaram emergência econômica</h2>
+      <p class="card-snippet">Foto: Prefeitura de São Gotardo COLUNA MGPrincipais destaques dos jornais e portais integrantes da Rede Sindijori MGwww.sindijorimg.com.br Cidades declaram emergência econômicaDuas cidades do Alto…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T15:18:22+00:00">
+          20/08/2026 15:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25431-itabirito-colisao-entre-carros-deixa-vitima-presa-as-ferragens-na-br-356-entre" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-20T084144.080.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabirito: colisão entre carros deixa vítima presa às ferragens na BR-356, entre a UPA e o Jeca Tatu</h2>
+      <p class="card-snippet">Uma colisão entre dois carros foi registrada na madrugada desta quinta (20/8), na BR-356, entre a UPA de Itabirito e o Jeca Tatu. O acidente aconteceu por volta das 4h41. Conforme as informações…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T12:24:49+00:00">
+          20/08/2026 12:24
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25432-presidente-da-oab-mg-debate-transformacoes-nas-relacoes-de-trabalho-em-palestra" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a864543d5656-3sOQV1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Presidente da OAB-MG debate transformações nas relações de trabalho em palestra na Fecomércio MG</h2>
+      <p class="card-snippet">Gustavo Chalfun destacou os impactos do e-commerce, da terceirização, do trabalho autônomo e da inteligência artificial, além de enfatizar a importância da segurança jurídica nas decisões judiciais…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-20T11:18:29+00:00">
+          20/08/2026 11:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25433-ouro-preto-itabirito-rio-negro-nao-respeita-descanso-de-motoristas-que" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-19T174809.633.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ouro Preto/Itabirito: ‘Rio Negro não respeita descanso de motoristas que transportam trabalhadores da Vale’</h2>
+      <p class="card-snippet">Motoristas da Rio Negro Transportes e Turismo, empresa que atua no deslocamento de trabalhadores da Vale e de empresas terceirizadas, denunciam que a companhia de ônibus não está respeitando o…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T20:54:16+00:00">
+          19/08/2026 20:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25434-homem-e-preso-por-trafico-de-drogas-no-bairro-cartuxa-em-mariana" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-19T165219.696.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Homem é preso por tráfico de drogas no bairro Cartuxa, em Mariana</h2>
+      <p class="card-snippet">Um homem foi preso pela Polícia Militar (PM) por envolvimento com o tráfico de drogas no bairro Cartuxa, em Mariana (MG). A ocorrência foi registrada na Rua Capitão Lúcio, na última segunda (17/8)…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T20:48:09+00:00">
+          19/08/2026 20:48
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25435-flavio-confirma-roscoe-como-seu-candidato-em-minas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a84ff61dda2f-oEHFVO.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Flávio confirma Roscoe como seu candidato em Minas</h2>
+      <p class="card-snippet">Foto: Divulgação/Campanha COLUNA MGPrincipais destaques dos jornais e portais integrantes da Rede Sindijori MGwww.sindijorimg.com.br Flávio confirma Roscoe como seu candidato em MinasO candidato à…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T15:18:20+00:00">
+          19/08/2026 15:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25436-jovem-fica-ferido-apos-acidente-envolvendo-moto-e-carro-no-alvaro-maia-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-19T112202.217.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Jovem fica ferido após acidente envolvendo moto e carro no Álvaro Maia, em Itabirito</h2>
+      <p class="card-snippet">Um jovem (de 24 anos) ficou ferido após um acidente envolvendo uma motocicleta e um carro na manhã desta quarta (19/8), no bairro Álvaro Maia, em Itabirito (MG). A ocorrência foi registrada por…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T14:30:31+00:00">
+          19/08/2026 14:30
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25437-itabirito-casal-e-preso-apos-furto-em-sitio-no-saboeiro-bens-sao-recuperados" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-19T103220.583.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabirito: casal é preso após furto em sítio no Saboeiro; bens são recuperados</h2>
+      <p class="card-snippet">Um casal e um terceiro suspeito foram presos pela Polícia Militar (PM) após a investigação de um furto ocorrido em um sítio na região do Saboeiro, zona rural de Itabirito (MG). A ocorrência foi…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T13:58:12+00:00">
+          19/08/2026 13:58
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25438-ifl-bh-anuncia-17a-edicao-do-forum-liberdade-e-democracia-com-foco-em-lideranca" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/06/image_870x580_6a2732c8af330-2ZR062.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">IFL BH anuncia 17ª edição do Fórum Liberdade e Democracia com foco em liderança</h2>
+      <p class="card-snippet">Evento será realizado no dia 4 de setembro, na Sala Minas Gerais, em Belo Horizonte, e terá como tema “Coragem para Liderar” O Instituto de Formação de Líderes de Belo Horizonte (IFL BH) realiza, no…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T12:18:20+00:00">
+          19/08/2026 12:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25439-iron-biker-brasil-2026-reune-atletas-de-todo-o-pais-em-mariana-entre-11-e-13-9" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-18T204524.324.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Iron Biker Brasil 2026 reúne atletas de todo o país em Mariana entre 11 e 13/9</h2>
+      <p class="card-snippet">Mariana (MG) será palco de mais uma edição do Iron Biker Brasil, considerada uma das principais competições de mountain bike da América Latina. O evento será realizado entre os dias 11 e 13/9 e deve…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-19T11:10:08+00:00">
+          19/08/2026 11:10
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25440-itabirito-tem-4-atletas-convocadas-para-representar-o-brasil-no-sul-americano" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-18T183158.454.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabirito tem 4 atletas convocadas para representar o Brasil no Sul-Americano de Ginástica Acrobática</h2>
+      <p class="card-snippet">A Confederação Brasileira de Ginástica (CBG) convocou quatro atletas de Itabirito (MG) para representar o Brasil no Campeonato Sul-Americano de Ginástica Acrobática, que será realizado em outubro…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T21:41:45+00:00">
+          18/08/2026 21:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25441-itabirito-com-titulo-invicto-e-vitoria-na-liga-mineira-pentas-voleibol-celebra" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-18T165858.559.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabirito: com título invicto e vitória na Liga Mineira, Pentas Voleibol celebra fim de semana de conquistas</h2>
+      <p class="card-snippet">O Pentas Voleibol teve um fim de semana de muita competição e conquistas. Entre os dias 14 e 16/8, a equipe participou de três competições, em diferentes cidades e categorias, com destaque para o…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T20:47:50+00:00">
+          18/08/2026 20:47
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25442-pipas-deixam-mais-de-313-mil-clientes-sem-energia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a8474ad4f071-6yyRz0.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Pipas deixam mais de 313 mil clientes sem energia</h2>
+      <p class="card-snippet">Foto: Divulgação Cemig COLUNA MGPrincipais destaques dos jornais e portais integrantes da Rede Sindijori MGwww.sindijorimg.com.br Pipas deixam mais de 313 mil clientes sem energia Empinar pipas…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T15:18:22+00:00">
+          18/08/2026 15:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25443-profissionais-da-rede-municipal-de-mariana-podem-participar-de-curso-gratuito" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-18T101036.505.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Profissionais da rede municipal de Mariana podem participar de curso gratuito de audiovisual</h2>
+      <p class="card-snippet">Professores e demais profissionais da rede municipal de educação de Mariana podem se inscrever, até 31/8, no curso gratuito de formação do Minuto Escola 2026. A formação é 100% online, tem carga…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T14:00:54+00:00">
+          18/08/2026 14:00
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25444-rede-do-agro-amplia-compras-coletivas-e-projeta-economia-de-r-1-3-milhao-para" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a7e47e543810-AS2uLN.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Rede do Agro amplia compras coletivas e projeta economia de R$ 1,3 milhão para produtores mineiros</h2>
+      <p class="card-snippet">Iniciativa do Inaes pretende alcançar 55 Sindicatos dos Produtores Rurais, atender mais de 950 produtores e movimentar R$ 10 milhões em compras nos próximos 12 meses Reunir a demanda de produtores…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T12:18:25+00:00">
+          18/08/2026 12:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25445-ezkiel-de-itabirito-e-guarda-de-mocambique-de-ouro-preto-sao-selecionados-pelo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-18T082330.956.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ezkiel, de Itabirito, e Guarda de Moçambique de Ouro Preto são selecionados pelo Selo Sesc Minas Musical</h2>
+      <p class="card-snippet">O artista Ezkiel, de Itabirito (MG), e a tradicional Guarda de Moçambique Nossa Senhora do Rosário e Santa Efigênia, de Ouro Preto (MG), estão entre os artistas e grupos selecionados para integrar o…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-18T11:41:56+00:00">
+          18/08/2026 11:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25446-estudante-de-itabirito-e-selecionada-para-intercambio-na-australia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-17T181444.332.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Estudante de Itabirito é selecionada para intercâmbio na Austrália</h2>
+      <p class="card-snippet">A estudante Rafaella Silva Alves de Castro, aluna do 2º ano do Ensino Médio da Escola Estadual Henrique Michel, em Itabirito (MG), foi selecionada para participar do programa Passaporte Mineiro…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-17T21:39:55+00:00">
+          17/08/2026 21:39
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25447-carro-acerta-violentamente-guarda-corpo-as-margens-do-rio-itabirito" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-17T172326.341.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Carro acerta violentamente guarda-corpo às margens do Rio Itabirito</h2>
+      <p class="card-snippet">Neste domingo (16/8), um carro colidiu violentamente contra o guarda-corpo da ponte localizada na Rua João Pessoa, próximo à Praça São Sebastião, no Centro de Itabirito. O acidente aconteceu por…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-17T20:32:29+00:00">
+          17/08/2026 20:32
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/radar-geral" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/radar-geral?page=4" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=4">4</a>
+    <span class="page-btn active" aria-current="page">5</span>
+    <a class="page-btn" href="/fonte/radar-geral?page=6">6</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=7">7</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=8">8</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=9">9</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/radar-geral?page=6" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>
