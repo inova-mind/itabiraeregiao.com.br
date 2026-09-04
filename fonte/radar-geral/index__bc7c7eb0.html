@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Radar Geral em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Radar Geral | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Radar Geral | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Radar Geral | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?e0568ce94832",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?e0568ce94832">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Radar Geral</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/radar-geral"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/radar-geral?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/26866-araxa-e-uberlandia-se-unem-em-projeto-pioneiro" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/09/image_870x580_6a96ea7389a68-FrrhWV.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Araxá e Uberlândia se unem em projeto pioneiro</h2>
+      <p class="card-snippet">Foto: Divulgação St George Mining COLUNA MGPrincipais destaques dos jornais e portais integrantes da Rede Sindijori MGwww.sindijorimg.com.br Araxá e Uberlândia se unem em projeto pioneiroO Projeto…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-09-01T17:18:20+00:00">
+          01/09/2026 17:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26801-br-356-trevo-do-bh-shopping-sera-totalmente-interditado-a-partir-das-12h-deste" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/09/Projeto-169-2026-09-01T090418.202.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">BR-356: trevo do BH Shopping será totalmente interditado a partir das 12h deste sábado (5/9)</h2>
+      <p class="card-snippet">Motoristas que circularem pela região do BH Shopping, em Belo Horizonte, precisarão ficar atentos às mudanças no trânsito durante o feriado do Dia da Independência. Entre sábado (5/9) e segunda…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-09-01T14:10:25+00:00">
+          01/09/2026 14:10
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26645-pmrv-afirma-lei-seca-sera-rotina-na-br-356-em-itabirito-operacao-teve-207" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-31T212647.919.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">PMRv afirma: ‘Lei Seca será rotina na BR-356, em Itabirito’; operação teve 207 testes de bafômetro</h2>
+      <p class="card-snippet">As blitze de Lei Seca serão ainda mais frequentes na BR-356, na Barreira de Itabirito (MG). A afirmação foi feita, ao Radar Geral, pela Polícia Militar Rodoviária (PMRv). Na tarde deste domingo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-09-01T00:40:42+00:00">
+          01/09/2026 00:40
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26605-mariana-apos-fuga-homem-fratura-o-pe-passa-por-cirurgia-na-santa-casa-e-e-preso" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-31T180047.284.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Mariana: após fuga, homem fratura o pé, passa por cirurgia na Santa Casa e é preso no hospital</h2>
+      <p class="card-snippet">MARIANA (MG) – Um homem (de 31 anos) foi preso em flagrante por tráfico de drogas após ser localizado na Santa Casa de Ouro Preto (MG), no domingo (30/8). A ação é uma continuação de uma ocorrência…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T21:53:13+00:00">
+          31/08/2026 21:53
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26586-carlinhos-de-congonhas-uma-das-tres-pessoas-que-morreram-no-acidente-da-br-040" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima.jpg-28.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Carlinhos, de Congonhas: uma das três pessoas que morreram no acidente da BR-040, em Itabirito</h2>
+      <p class="card-snippet">Carlos Roberto Machado, de Congonhas (MG), foi identificado como uma das três pessoas que morreram no grave acidente que aconteceu na noite deste domingo (30/8), na BR-040, em Itabirito (MG)…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T20:18:33+00:00">
+          31/08/2026 20:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26566-futsal-em-itabirito-escola-flamengo-vence-no-sub-11-e-meninos-da-vila-leva-o" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-31T160830.275.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Futsal em Itabirito: Escola Flamengo vence no sub-11 e Meninos da Vila leva o sub-7 na Itacopa</h2>
+      <p class="card-snippet">A Prefeitura de Itabirito realizou no sábado (29/8) as finais das categorias sub-7 e sub-11 da Itacopa 2026. As partidas aconteceram no Poliesportivo Pedro Cardoso, no bairro Nossa Senhora de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T19:14:10+00:00">
+          31/08/2026 19:14
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26533-flavio-roscoe-visita-sistema-faemg-e-apresenta-propostas-para-fortalecer-a" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a937d9345bef-oDjEPq.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Flávio Roscoe visita Sistema Faemg e apresenta propostas para fortalecer a agropecuária mineira</h2>
+      <p class="card-snippet">Candidato ao governo de Minas conheceu números do setor e recebeu documento com os principais pleitos de produtores e sindicatos rurais do estado O candidato do PL ao governo de Minas Gerais, Flávio…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T17:18:18+00:00">
+          31/08/2026 17:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26511-prato-leva-sao-pedro-para-livro-de-recordes" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/04/RADAR-GERAL-scaled-970x250.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prato leva São Pedro para livro de recordes</h2>
+      <p class="card-snippet">Foto: Reprodução COLUNA MGPrincipais destaques dos jornais e portais integrantes da Rede Sindijori MGwww.sindijorimg.com.br Prato leva São Pedro para livro de recordesSão Pedro dos Ferros, município…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T16:18:29+00:00">
+          31/08/2026 16:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26438-mariana-casal-e-preso-por-trafico-de-drogas-mulher-quebra-celular-ao-ouvir" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-31T091939.739.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Mariana: casal é preso por tráfico de drogas; mulher quebra celular ao ouvir áudio sobre venda de cocaína</h2>
+      <p class="card-snippet">Uma mulher (de 20 anos) e um homem (de 32 anos) foram presos pela Polícia Militar (PM) por tráfico de drogas em Mariana (MG). O caso aconteceu na noite deste sábado (29/8). Os agentes realizavam…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T13:00:12+00:00">
+          31/08/2026 13:00
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26429-motorista-de-60-anos-com-sinais-de-embriaguez-invade-contramao-e-causa-colisao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-30T200920.136.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Motorista (de 60 anos) com sinais de embriaguez invade contramão e causa colisão frontal em Itabirito</h2>
+      <p class="card-snippet">Um acidente de trânsito mobilizou a Guarda Civil Municipal (GCM) na tarde deste domingo (30/8), no bairro Boa Viagem, em Itabirito (MG). O que aconteceu foi uma colisão frontal envolvendo um Ford Ka…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T12:39:50+00:00">
+          31/08/2026 12:39
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26323-itabirito-jovem-de-16-anos-e-2-idosos-sendo-1-de-sao-goncalo-do-bacao-morrem-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-31T003920.239.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabirito: jovem de 16 anos e 2 idosos (sendo 1 de São Gonçalo do Bação) morrem em acidente na BR-040</h2>
+      <p class="card-snippet">O Corpo de Bombeiros Militar de Minas Gerais (CBMMG) divulgou informações atualizadas a respeito do acidente que matou três pessoas na BR-040, em Itabirito (MG), nas proximidades do Restaurante da…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T03:42:59+00:00">
+          31/08/2026 03:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26322-ouro-preto-apos-obito-de-filho-pai-morre-depois-de-choque-entre-motos-na-mg-129" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-30T235102.526.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ouro Preto: após óbito de filho, pai morre depois de choque entre motos na MG-129</h2>
+      <p class="card-snippet">OURO PRETO (MG) — Em decorrência de um grave choque entre motos, que aconteceu na noite deste domingo (30/8), na MG-129, um pai e um filho morreram. Eles foram identificados como Claudinei (o pai) e…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T02:55:56+00:00">
+          31/08/2026 02:55
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26314-ouro-preto-filho-de-26-anos-morre-e-pai-fica-gravemente-ferido-em-colisao-entre" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-30T221203.854.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ouro Preto: filho de 26 anos morre e pai fica gravemente ferido em colisão entre motos na MG-129</h2>
+      <p class="card-snippet">Um jovem de 26 anos morreu e o pai dele ficou gravemente ferido após colisão envolvendo duas motos de trilha na MG-129, em Ouro Preto (MG), na noite deste domingo (30/8). O acidente aconteceu no km…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T01:39:48+00:00">
+          31/08/2026 01:39
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26309-br-040-itabirito-acidente-envolvendo-varios-veiculos-deixa-3-mortos-perto-da" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-30T214947.933.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">BR-040, Itabirito: acidente envolvendo vários veículos deixa 3 mortos perto da Celinha, em Ribeirão do Eixo</h2>
+      <p class="card-snippet">Três pessoas morreram em um acidente envolvendo vários veículos no km 589 da BR-040, em Itabirito (MG), na noite deste domingo (30/8). O local do fato fica próximo ao Restaurante da Celinha…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-31T00:53:18+00:00">
+          31/08/2026 00:53
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26274-lagoa-do-miguelao-homem-cai-de-moto-em-trilha-de-dificil-acesso-e-helicoptero" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-30T174608.169.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Lagoa do Miguelão: homem cai de moto em trilha de difícil acesso e helicóptero da PM o leva ao João XXIII</h2>
+      <p class="card-snippet">Oito quilômetros de estrada de terra e quase mais um quilômetro de trilha. Esse foi parte do percurso enfrentado pelo Corpo de Bombeiros do 1º Batalhão para resgatar um praticante de motocross que…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-30T20:55:37+00:00">
+          30/08/2026 20:55
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26200-safra-maior-de-cana-amplia-oferta-de-etanol-e-pressiona-precos" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a8c9e55b9d37-hsRfsK.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Safra maior de cana amplia oferta de etanol e pressiona preços</h2>
+      <p class="card-snippet">Antes de chegar à bomba, combustível passa por uma cadeia que começa no campo, depende da produtividade e dos custos enfrentados pelo produtor Antes de chegar à bomba, o etanol passa por uma cadeia…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-30T12:18:18+00:00">
+          30/08/2026 12:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26143-comercio-servicos-e-turismo-fazem-apelo-para-que-pec-do-fim-da-escala-6-1-nao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a935fcb0b417-j3QkXO.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Comércio, serviços e turismo fazem apelo para que PEC do fim da escala 6×1 não seja votada antes das eleições</h2>
+      <p class="card-snippet">Diante do avanço no Senado Federal da Proposta de Emenda à Constituição (PEC) que altera a jornada de trabalho e extingue a escala 6×1, a principal entidade representativa do setor terciário…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T23:18:25+00:00">
+          29/08/2026 23:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26139-e-ouro-ana-julia-de-itabirito-e-campea-sul-americana-de-ginastica" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-29T184345.548.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">É OURO! Ana Júlia, de Itabirito, é campeã sul-americana de ginástica</h2>
+      <p class="card-snippet">Itabirito (MG) tem uma campeã sul-americana! A ginasta Ana Júlia Avelino Machado, conhecida como Aninha, conquistou neste sábado (29/8) a medalha de ouro no Duplo Mini Trampolim Júnior durante o…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T22:14:02+00:00">
+          29/08/2026 22:14
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26128-carreta-e-destombada-na-br-356-em-cachoeira-do-campo-causa-do-acidente-e-apurada" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-29T172005.422-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Carreta é destombada na BR-356, em Cachoeira do Campo; causa do acidente é apurada</h2>
+      <p class="card-snippet">No fim da tarde deste sábado (29/8), a carreta que tombou às margens da BR-356, na região de Cachoeira do Campo, distrito de Ouro Preto (MG), foi destombada. Para a trabalho, a Polícia Militar…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T20:26:05+00:00">
+          29/08/2026 20:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26096-operacao-investiga-desmatamento-do-norte" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a92f55b861f2-oujJIY.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Operação investiga desmatamento do Norte</h2>
+      <p class="card-snippet">Foto: Reprodução GNM COLUNA MGPrincipais destaques dos jornais e portais integrantes da Rede Sindijori MGwww.sindijorimg.com.br Operação investiga desmatamento do NorteUma área de quase 2 mil…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T16:18:20+00:00">
+          29/08/2026 16:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26097-meteoric-resources-anuncia-investimento-de-r-60-milhoes-em-infraestrutura-no" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/image_870x580_6a90de0c63a19-RBFT2Z.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Meteoric Resources anuncia investimento de R$ 60 milhões em infraestrutura no Sul de Minas</h2>
+      <p class="card-snippet">Parceria prevê asfaltamento de 23 quilômetros entre Caldas e Andradas e deve beneficiar comunidades rurais, produtores, trabalhadores e atividades econômicas da região A Meteoric Resources e órgãos…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T16:18:19+00:00">
+          29/08/2026 16:18
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26075-br-356-carreta-tomba-em-cachoeira-do-campo-ouro-preto" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-29T104407.153.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">BR-356: carreta tomba em Cachoeira do Campo, Ouro Preto</h2>
+      <p class="card-snippet">Uma carreta tombou na madrugada deste sábado (29/8) às margens da BR-356, na região de Cachoeira do Campo, distrito de Ouro Preto (MG). A informação que se tem é que não houve retenção no trânsito…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T13:46:41+00:00">
+          29/08/2026 13:46
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/26061-mina-do-pico-itabirito-barragem-maravilhas-ii-da-vale-e-embargada-pela-anm" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Vitima-2026-08-29T094459.179.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">MINA DO PICO, ITABIRITO: barragem Maravilhas II, da Vale, é embargada pela ANM</h2>
+      <p class="card-snippet">A Agência Nacional de Mineração (ANM) determinou o embargo imediato da barragem Maravilhas II, da Vale, na Mina do Pico, em Itabirito (MG). A decisão foi publicada nesta sexta (28) no Diário Oficial…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-29T12:37:27+00:00">
+          29/08/2026 12:37
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/25975-mg-armas-motos-roubadas-e-mais-de-meia-tonelada-de-drogas-sao-encontradas-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://radargeral.com.br/wp-content/uploads/2026/08/Projeto-169-2026-08-28T104616.517.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">MG: armas, motos roubadas e mais de meia tonelada de drogas são encontradas em caminhão na BR-381</h2>
+      <p class="card-snippet">Uma fiscalização da Polícia Rodoviária Federal (PRF) terminou com a apreensão de armas, munições, veículos com registros de roubo ou furto e mais de 541 quilos de drogas na BR-381, em Santo Antônio…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-08-28T21:41:23+00:00">
+          28/08/2026 21:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+  <a class="page-btn page-btn-nav" href="/fonte/radar-geral" rel="first">« Primeira</a>
+  <a class="page-btn page-btn-nav" href="/fonte/radar-geral?page=1" rel="prev">‹ Anterior</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=1">1</a>
+    <span class="page-btn active" aria-current="page">2</span>
+    <a class="page-btn" href="/fonte/radar-geral?page=3">3</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=4">4</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=5">5</a>
+    <a class="page-btn" href="/fonte/radar-geral?page=6">6</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/radar-geral?page=3" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?e0568ce94832"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?e0568ce94832" defer></script>
+</body>
+</html>
