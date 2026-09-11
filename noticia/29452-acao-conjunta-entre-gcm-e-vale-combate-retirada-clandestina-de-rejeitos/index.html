@@ -13,16 +13,17 @@
 	<script>
 (()=>{var e={};e.g=function(){if("object"==typeof globalThis)return globalThis;try{return this||new Function("return this")()}catch(e){if("object"==typeof window)return window}}(),function({ampUrl:n,isCustomizePreview:t,isAmpDevMode:r,noampQueryVarName:o,noampQueryVarValue:s,disabledStorageKey:i,mobileUserAgents:a,regexRegex:c}){if("undefined"==typeof sessionStorage)return;const d=new RegExp(c);if(!a.some((e=>{const n=e.match(d);return!(!n||!new RegExp(n[1],n[2]).test(navigator.userAgent))||navigator.userAgent.includes(e)})))return;e.g.addEventListener("DOMContentLoaded",(()=>{const e=document.getElementById("amp-mobile-version-switcher");if(!e)return;e.hidden=!1;const n=e.querySelector("a[href]");n&&n.addEventListener("click",(()=>{sessionStorage.removeItem(i)}))}));const g=r&&["paired-browsing-non-amp","paired-browsing-amp"].includes(window.name);if(sessionStorage.getItem(i)||t||g)return;const u=new URL(location.href),m=new URL(n);m.hash=u.hash,u.searchParams.has(o)&&s===u.searchParams.get(o)?sessionStorage.setItem(i,"1"):m.href!==u.href&&(window.stop(),location.replace(m.href))}({"ampUrl":"https:\/\/itabiranet.com.br\/acao-conjunta-entre-gcm-e-vale-combate-retirada-clandestina-de-rejeitos\/?amp=1","noampQueryVarName":"noamp","noampQueryVarValue":"mobile","disabledStorageKey":"amp_mobile_redirect_disabled","mobileUserAgents":["Mobile","Android","Silk\/","Kindle","BlackBerry","Opera Mini","Opera Mobi"],"regexRegex":"^\\\/((?:.|\\n)+)\\\/([i]*)$","isCustomizePreview":false,"isAmpDevMode":false})})();
 </script>
-<style>
-#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
-	content: "\f160";
-	color: #02CA02;
-	top: 3px;
-}
-#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon {
-	transform: rotate(45deg);
-}
-</style>
+	<style>
+		#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
+			content: "\f160";
+			color: #02CA02;
+			top: 3px;
+		}
+
+		#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon {
+			transform: rotate(45deg);
+		}
+	</style>
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
 <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, height=device-height, width=device-width" />
@@ -171,249 +172,252 @@ gtag("config", "GT-KDB2NMV");
 			opacity: 1;
 		}
 	</style>
-	<script id="wpcp_disable_selection" type="text/javascript">
-var image_save_msg='You are not allowed to save images!';
-	var no_menu_msg='Context Menu disabled!';
-	var smessage = "É proibida a reprodução dos conteúdos desta página! Direitos Reservados.";
+		<script id="wpcp_disable_selection" type="text/javascript">
+		var image_save_msg = 'You are not allowed to save images!';
+		var no_menu_msg = 'Context Menu disabled!';
+		var smessage = "É proibida a reprodução dos conteúdos desta página! Direitos Reservados.";
 
-function disableEnterKey(e)
-{
-	var elemtype = e.target.tagName;
-	
-	elemtype = elemtype.toUpperCase();
-	
-	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
-	{
-		elemtype = 'TEXT';
-	}
-	
-	if (e.ctrlKey){
-     var key;
-     if(window.event)
-          key = window.event.keyCode;     //IE
-     else
-          key = e.which;     //firefox (97)
-    //if (key != 17) alert(key);
-     if (elemtype!= 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43 || key == 73))
-     {
-		if(wccp_free_iscontenteditable(e)) return true;
-		show_wpcp_message('You are not allowed to copy content or view source');
-		return false;
-     }else
-     	return true;
-     }
-}
+		function disableEnterKey(e) {
+			var elemtype = e.target.tagName;
 
-/*For contenteditable tags*/
-function wccp_free_iscontenteditable(e)
-{
-	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+			elemtype = elemtype.toUpperCase();
 
-	if(!e) return false;
-  	
-	var target = e.target || e.srcElement;
-
-	if(!target) return false;
-
-	var elemtype = target.nodeName || "";
-	
-	elemtype = elemtype.toUpperCase();
-	
-	var iscontenteditable = "false";
-		
-	if(typeof target.getAttribute!="undefined" ) iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
-	
-	var iscontenteditable2 = false;
-	
-	if(typeof target.isContentEditable!="undefined" ) iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
-
-	if(!iscontenteditable2 && target.parentElement && target.parentElement.isContentEditable) iscontenteditable2 = true;
-	
-	if (iscontenteditable == "true" || iscontenteditable2 == true)
-	{
-		if(typeof target.style!="undefined" ) target.style.cursor = "text";
-		
-		return true;
-	}
-}
-
-////////////////////////////////////
-function disable_copy(e)
-{	
-	var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
-	
-	var elemtype = e.target.tagName;
-	
-	elemtype = elemtype.toUpperCase();
-	
-	if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED")
-	{
-		elemtype = 'TEXT';
-	}
-	
-	if(wccp_free_iscontenteditable(e)) return true;
-	
-	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
-	
-	var checker_IMG = '';
-	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
-	if (elemtype != "TEXT")
-	{
-		if (smessage !== "" && e.detail == 2)
-			show_wpcp_message(smessage);
-		
-		if (isSafari)
-			return true;
-		else
-			return false;
-	}	
-}
-
-//////////////////////////////////////////
-function disable_copy_ie()
-{
-	var e = e || window.event;
-	var elemtype = window.event.srcElement.nodeName;
-	elemtype = elemtype.toUpperCase();
-	if(wccp_free_iscontenteditable(e)) return true;
-	if (elemtype == "IMG") {show_wpcp_message(alertMsg_IMG);return false;}
-	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
-	{
-		return false;
-	}
-}	
-function reEnable()
-{
-	return true;
-}
-document.onkeydown = disableEnterKey;
-document.onselectstart = disable_copy_ie;
-if(navigator.userAgent.indexOf('MSIE')==-1)
-{
-	document.onmousedown = disable_copy;
-	document.onclick = reEnable;
-}
-function disableSelection(target)
-{
-    //For IE This code will work
-    if (typeof target.onselectstart!="undefined")
-    target.onselectstart = disable_copy_ie;
-    
-    //For Firefox This code will work
-    else if (typeof target.style.MozUserSelect!="undefined")
-    {target.style.MozUserSelect="none";}
-    
-    //All other  (ie: Opera) This code will work
-    else
-    target.onmousedown=function(){return false}
-    target.style.cursor = "default";
-}
-//Calling the JS function directly just after body load
-window.onload = function(){disableSelection(document.body);};
-
-//////////////////special for safari Start////////////////
-var onlongtouch;
-var timer;
-var touchduration = 1000; //length of time we want the user to touch before we do something
-
-var elemtype = "";
-function touchstart(e) {
-	var e = e || window.event;
-  // also there is no e.target property in IE.
-  // instead IE uses window.event.srcElement
-  	var target = e.target || e.srcElement;
-	
-	elemtype = window.event.srcElement.nodeName;
-	
-	elemtype = elemtype.toUpperCase();
-	
-	if(!wccp_pro_is_passive()) e.preventDefault();
-	if (!timer) {
-		timer = setTimeout(onlongtouch, touchduration);
-	}
-}
-
-function touchend() {
-    //stops short touches from firing the event
-    if (timer) {
-        clearTimeout(timer);
-        timer = null;
-    }
-	onlongtouch();
-}
-
-onlongtouch = function(e) { //this will clear the current selection if anything selected
-	
-	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "EMBED" && elemtype != "OPTION")	
-	{
-		if (window.getSelection) {
-			if (window.getSelection().empty) {  // Chrome
-			window.getSelection().empty();
-			} else if (window.getSelection().removeAllRanges) {  // Firefox
-			window.getSelection().removeAllRanges();
+			if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
+				elemtype = 'TEXT';
 			}
-		} else if (document.selection) {  // IE?
-			document.selection.empty();
+
+			if (e.ctrlKey) {
+				var key;
+				if (window.event)
+					key = window.event.keyCode; //IE
+				else
+					key = e.which; //firefox (97)
+				//if (key != 17) alert(key);
+				if (elemtype != 'TEXT' && (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85 || key == 86 || key == 83 || key == 43 || key == 73)) {
+					if (wccp_free_iscontenteditable(e)) return true;
+					show_wpcp_message('You are not allowed to copy content or view source');
+					return false;
+				} else
+					return true;
+			}
 		}
-		return false;
-	}
-};
 
-document.addEventListener("DOMContentLoaded", function(event) { 
-    window.addEventListener("touchstart", touchstart, false);
-    window.addEventListener("touchend", touchend, false);
-});
+		/*For contenteditable tags*/
+		function wccp_free_iscontenteditable(e) {
+			var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
 
-function wccp_pro_is_passive() {
+			if (!e) return false;
 
-  var cold = false,
-  hike = function() {};
+			var target = e.target || e.srcElement;
 
-  try {
-	  const object1 = {};
-  var aid = Object.defineProperty(object1, 'passive', {
-  get() {cold = true}
-  });
-  window.addEventListener('test', hike, aid);
-  window.removeEventListener('test', hike, aid);
-  } catch (e) {}
+			if (!target) return false;
 
-  return cold;
-}
-/*special for safari End*/
-</script>
-<script id="wpcp_disable_Right_Click" type="text/javascript">
-document.ondragstart = function() { return false;}
-	function nocontext(e) {
-	   return false;
-	}
-	document.oncontextmenu = nocontext;
-</script>
-<style>
-.unselectable
-{
--moz-user-select:none;
--webkit-user-select:none;
-cursor: default;
-}
-html
-{
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
--webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-</style>
-<script id="wpcp_css_disable_selection" type="text/javascript">
-var e = document.getElementsByTagName('body')[0];
-if(e)
-{
-	e.setAttribute('unselectable',"on");
-}
-</script>
+			var elemtype = target.nodeName || "";
+
+			elemtype = elemtype.toUpperCase();
+
+			var iscontenteditable = "false";
+
+			if (typeof target.getAttribute != "undefined") iscontenteditable = target.getAttribute("contenteditable"); // Return true or false as string
+
+			var iscontenteditable2 = false;
+
+			if (typeof target.isContentEditable != "undefined") iscontenteditable2 = target.isContentEditable; // Return true or false as boolean
+
+			if (!iscontenteditable2 && target.parentElement && target.parentElement.isContentEditable) iscontenteditable2 = true;
+
+			if (iscontenteditable == "true" || iscontenteditable2 == true) {
+				if (typeof target.style != "undefined") target.style.cursor = "text";
+
+				return true;
+			}
+		}
+
+		////////////////////////////////////
+		function disable_copy(e) {
+			var e = e || window.event; // also there is no e.target property in IE. instead IE uses window.event.srcElement
+
+			var elemtype = e.target.tagName;
+
+			elemtype = elemtype.toUpperCase();
+
+			if (elemtype == "TEXT" || elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "PASSWORD" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") {
+				elemtype = 'TEXT';
+			}
+
+			if (wccp_free_iscontenteditable(e)) return true;
+
+			var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+			var checker_IMG = '';
+			if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {
+				show_wpcp_message(alertMsg_IMG);
+				return false;
+			}
+			if (elemtype != "TEXT") {
+				if (smessage !== "" && e.detail == 2)
+					show_wpcp_message(smessage);
+
+				if (isSafari)
+					return true;
+				else
+					return false;
+			}
+		}
+
+		//////////////////////////////////////////
+		function disable_copy_ie() {
+			var e = e || window.event;
+			var elemtype = window.event.srcElement.nodeName;
+			elemtype = elemtype.toUpperCase();
+			if (wccp_free_iscontenteditable(e)) return true;
+			if (elemtype == "IMG") {
+				show_wpcp_message(alertMsg_IMG);
+				return false;
+			}
+			if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED") {
+				return false;
+			}
+		}
+
+		function reEnable() {
+			return true;
+		}
+		document.onkeydown = disableEnterKey;
+		document.onselectstart = disable_copy_ie;
+		if (navigator.userAgent.indexOf('MSIE') == -1) {
+			document.onmousedown = disable_copy;
+			document.onclick = reEnable;
+		}
+
+		function disableSelection(target) {
+			//For IE This code will work
+			if (typeof target.onselectstart != "undefined")
+				target.onselectstart = disable_copy_ie;
+
+			//For Firefox This code will work
+			else if (typeof target.style.MozUserSelect != "undefined") {
+				target.style.MozUserSelect = "none";
+			}
+
+			//All other  (ie: Opera) This code will work
+			else
+				target.onmousedown = function() {
+					return false
+				}
+			target.style.cursor = "default";
+		}
+		//Calling the JS function directly just after body load
+		window.onload = function() {
+			disableSelection(document.body);
+		};
+
+		//////////////////special for safari Start////////////////
+		var onlongtouch;
+		var timer;
+		var touchduration = 1000; //length of time we want the user to touch before we do something
+
+		var elemtype = "";
+
+		function touchstart(e) {
+			var e = e || window.event;
+			// also there is no e.target property in IE.
+			// instead IE uses window.event.srcElement
+			var target = e.target || e.srcElement;
+
+			elemtype = window.event.srcElement.nodeName;
+
+			elemtype = elemtype.toUpperCase();
+
+			if (!wccp_pro_is_passive()) e.preventDefault();
+			if (!timer) {
+				timer = setTimeout(onlongtouch, touchduration);
+			}
+		}
+
+		function touchend() {
+			//stops short touches from firing the event
+			if (timer) {
+				clearTimeout(timer);
+				timer = null;
+			}
+			onlongtouch();
+		}
+
+		onlongtouch = function(e) { //this will clear the current selection if anything selected
+
+			if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "EMBED" && elemtype != "OPTION") {
+				if (window.getSelection) {
+					if (window.getSelection().empty) { // Chrome
+						window.getSelection().empty();
+					} else if (window.getSelection().removeAllRanges) { // Firefox
+						window.getSelection().removeAllRanges();
+					}
+				} else if (document.selection) { // IE?
+					document.selection.empty();
+				}
+				return false;
+			}
+		};
+
+		document.addEventListener("DOMContentLoaded", function(event) {
+			window.addEventListener("touchstart", touchstart, false);
+			window.addEventListener("touchend", touchend, false);
+		});
+
+		function wccp_pro_is_passive() {
+
+			var cold = false,
+				hike = function() {};
+
+			try {
+				const object1 = {};
+				var aid = Object.defineProperty(object1, 'passive', {
+					get() {
+						cold = true
+					}
+				});
+				window.addEventListener('test', hike, aid);
+				window.removeEventListener('test', hike, aid);
+			} catch (e) {}
+
+			return cold;
+		}
+		/*special for safari End*/
+	</script>
+	<script id="wpcp_disable_Right_Click" type="text/javascript">
+		document.ondragstart = function() {
+			return false;
+		}
+
+		function nocontext(e) {
+			return false;
+		}
+		document.oncontextmenu = nocontext;
+	</script>
+	<style>
+		.unselectable {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			cursor: default;
+		}
+
+		html {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		}
+	</style>
+	<script id="wpcp_css_disable_selection" type="text/javascript">
+		var e = document.getElementsByTagName('body')[0];
+		if (e) {
+			e.setAttribute('unselectable', "on");
+		}
+	</script>
 <link rel="alternate" type="text/html" media="only screen and (max-width: 640px)" href="https://itabiranet.com.br/acao-conjunta-entre-gcm-e-vale-combate-retirada-clandestina-de-rejeitos/?amp=1">	<style>
 	@font-face {
 		font-family: "bimber";
@@ -858,11 +862,11 @@ if(e)
 	<div class="adace-disclaimer">
 			</div>
 	<div class="adace-slot">
-			<div class="adace_ad_6aa3f5fde4c2d adace-dont-remove">
+			<div class="adace_ad_6aa448ce992d5 adace-dont-remove">
 
-					<a href="https://wa.me/553138406215" class="" target="_blank" rel="nofollow noopener">
+					<a href="https://alertafogo.institutobromelia.org/" class="" target="_blank" rel="nofollow noopener">
 		
-			<img data-expand="600" class="lazyload" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1080 150'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/08/Metbase_1080x150.png" width="1080" height="150" alt="" />
+			<img data-expand="600" class="lazyload" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 1120 91'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/09/PMI_SET_2026.png" width="1120" height="91" alt="" />
 			
 					</a>
 			</div>
@@ -961,7 +965,7 @@ if(e)
 	<div class="adace-disclaimer">
 			</div>
 	<div class="adace-slot">
-			<div class="adace_ad_6aa3f5fde776d adace-dont-remove">
+			<div class="adace_ad_6aa448ce9c996 adace-dont-remove">
 
 					<a href="https://www.transportescisne.com.br/horarios" class="" target="_blank" rel="nofollow noopener">
 		
@@ -1173,7 +1177,7 @@ if(e)
 	<aside id="adace_ads_widget-4" class="widget widget_adace_ads_widget"><div class="adace-slot-wrapper adace-widget-47155" >
 	<div class="adace-disclaimer">
 		</div>
-	<div class="adace-slot">	<div class="adace_ad_6aa3f5fe00643 adace-dont-remove">
+	<div class="adace-slot">	<div class="adace_ad_6aa448ceb162c adace-dont-remove">
 
 		
 			<img data-expand="600" class="lazyload" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 450 558'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2025/09/Matabase_Farma-e1757618143113.jpeg" width="450" height="558" alt="" />
@@ -1189,28 +1193,28 @@ if(e)
 			<ul class="g1-collection-items">
 									<li class="g1-collection-item">
 						
-<article class="entry-tpl-listxxs post-51813 post type-post status-publish format-standard has-post-thumbnail category-justica tag-andre-mendonca tag-banco-master tag-destaque tag-edson-fachin tag-ministros tag-sigilo tag-stf">
-	<div class="entry-featured-media" ><a title="Fachin pede fim do sigilo nas investigações do caso Banco Master" class="g1-frame" href="https://itabiranet.com.br/fachin-pede-fim-do-sigilo-nas-investigacoes-do-caso-banco-master/"><div class="g1-frame-inner"><img data-expand="600" width="90" height="67" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 90 67'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/09/edson_fachin-90x67.webp" class="lazyload attachment-bimber-list-xxs size-bimber-list-xxs wp-post-image" alt="fachin-pede-fim-do-sigilo-nas-investigacoes-do-caso-banco-master" decoding="async" loading="lazy" data-srcset="https://itabiranet.com.br/wp-content/uploads/2026/09/edson_fachin-90x67.webp 90w,   https://itabiranet.com.br/wp-content/uploads/2026/09/edson_fachin-192x144.webp 192w,   https://itabiranet.com.br/wp-content/uploads/2026/09/edson_fachin-384x288.webp 384w,   https://itabiranet.com.br/wp-content/uploads/2026/09/edson_fachin-180x135.webp 180w,   https://itabiranet.com.br/wp-content/uploads/2026/09/edson_fachin-554x415.webp 554w" data-sizes="auto, (max-width: 90px) 100vw, 90px" /><span class="g1-frame-icon g1-frame-icon-"></span></div></a></div>
+<article class="entry-tpl-listxxs post-51828 post type-post status-publish format-standard has-post-thumbnail category-regiao tag-auxilio tag-br-381 tag-destaque tag-joao-monlevade tag-pedagio">
+	<div class="entry-featured-media" ><a title="Moradores de J. Monlevade poderão receber auxílio para custos com pedágio na BR-381" class="g1-frame" href="https://itabiranet.com.br/moradores-de-j-monlevade-poderao-receber-auxilio-para-custos-com-pedagio-na-br-381/"><div class="g1-frame-inner"><img data-expand="600" width="90" height="67" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 90 67'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/09/pedagio_joao_monlevade-90x67.jpg" class="lazyload attachment-bimber-list-xxs size-bimber-list-xxs wp-post-image" alt="moradores-de-j-monlevade-poderao-receber-auxilio-para-custos-com-pedagio-na-br-381" decoding="async" loading="lazy" data-srcset="https://itabiranet.com.br/wp-content/uploads/2026/09/pedagio_joao_monlevade-90x67.jpg 90w,   https://itabiranet.com.br/wp-content/uploads/2026/09/pedagio_joao_monlevade-192x144.jpg 192w,   https://itabiranet.com.br/wp-content/uploads/2026/09/pedagio_joao_monlevade-384x288.jpg 384w,   https://itabiranet.com.br/wp-content/uploads/2026/09/pedagio_joao_monlevade-180x135.jpg 180w,   https://itabiranet.com.br/wp-content/uploads/2026/09/pedagio_joao_monlevade-554x415.jpg 554w" data-sizes="auto, (max-width: 90px) 100vw, 90px" /><span class="g1-frame-icon g1-frame-icon-"></span></div></a></div>
 	<header class="entry-header">
-		<h3 class="g1-epsilon g1-epsilon-1st entry-title"><a href="https://itabiranet.com.br/fachin-pede-fim-do-sigilo-nas-investigacoes-do-caso-banco-master/" rel="bookmark">Fachin pede fim do sigilo nas investigações do caso Banco Master</a></h3>	</header>
+		<h3 class="g1-epsilon g1-epsilon-1st entry-title"><a href="https://itabiranet.com.br/moradores-de-j-monlevade-poderao-receber-auxilio-para-custos-com-pedagio-na-br-381/" rel="bookmark">Moradores de J. Monlevade poderão receber auxílio para custos com pedágio na BR-381</a></h3>	</header>
 
 	</article>
 					</li>
 									<li class="g1-collection-item">
 						
-<article class="entry-tpl-listxxs post-51808 post type-post status-publish format-standard has-post-thumbnail category-policia tag-destaque tag-guarda-civil tag-rejeito tag-sao-goncalo-do-rio-abaixo">
-	<div class="entry-featured-media" ><a title="Ação conjunta entre GCM e Vale combate retirada clandestina de rejeitos" class="g1-frame" href="https://itabiranet.com.br/acao-conjunta-entre-gcm-e-vale-combate-retirada-clandestina-de-rejeitos/"><div class="g1-frame-inner"><img data-expand="600" width="90" height="67" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 90 67'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-90x67.jpeg" class="lazyload attachment-bimber-list-xxs size-bimber-list-xxs wp-post-image" alt="acao-conjunta-entre-gcm-e-vale-combate-retirada-clandestina-de-rejeitos" decoding="async" loading="lazy" data-srcset="https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-90x67.jpeg 90w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-300x225.jpeg 300w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-749x562.jpeg 749w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-768x576.jpeg 768w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-1536x1152.jpeg 1536w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-192x144.jpeg 192w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-384x288.jpeg 384w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-180x135.jpeg 180w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-554x416.jpeg 554w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-1108x831.jpeg 1108w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-271x203.jpeg 271w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-542x407.jpeg 542w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-365x274.jpeg 365w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-731x548.jpeg 731w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-608x456.jpeg 608w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-743x557.jpeg 743w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-1120x840.jpeg 1120w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-64x48.jpeg 64w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-128x96.jpeg 128w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-10-at-21.39.47-e1789090025985.jpeg 1049w" data-sizes="auto, (max-width: 90px) 100vw, 90px" /><span class="g1-frame-icon g1-frame-icon-"></span></div></a></div>
+<article class="entry-tpl-listxxs post-51823 post type-post status-publish format-standard has-post-thumbnail category-eventos tag-destaque tag-evento tag-itabira tag-musica">
+	<div class="entry-featured-media" ><a title="12ª Semana da Música leva concertos, oficinas e recitais a diferentes espaços de Itabira" class="g1-frame" href="https://itabiranet.com.br/12a-semana-da-musica-leva-concertos-oficinas-e-recitais-a-diferentes-espacos-de-itabira/"><div class="g1-frame-inner"><img data-expand="600" width="90" height="67" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 90 67'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-11-at-09.42.15-90x67.jpeg" class="lazyload attachment-bimber-list-xxs size-bimber-list-xxs wp-post-image" alt="" decoding="async" loading="lazy" data-srcset="https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-11-at-09.42.15-90x67.jpeg 90w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-11-at-09.42.15-192x144.jpeg 192w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-11-at-09.42.15-384x288.jpeg 384w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-11-at-09.42.15-180x135.jpeg 180w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-11-at-09.42.15-554x415.jpeg 554w,   https://itabiranet.com.br/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-11-at-09.42.15-1108x831.jpeg 1108w" data-sizes="auto, (max-width: 90px) 100vw, 90px" /><span class="g1-frame-icon g1-frame-icon-"></span></div></a></div>
 	<header class="entry-header">
-		<h3 class="g1-epsilon g1-epsilon-1st entry-title"><a href="https://itabiranet.com.br/acao-conjunta-entre-gcm-e-vale-combate-retirada-clandestina-de-rejeitos/" rel="bookmark">Ação conjunta entre GCM e Vale combate retirada clandestina de rejeitos</a></h3>	</header>
+		<h3 class="g1-epsilon g1-epsilon-1st entry-title"><a href="https://itabiranet.com.br/12a-semana-da-musica-leva-concertos-oficinas-e-recitais-a-diferentes-espacos-de-itabira/" rel="bookmark">12ª Semana da Música leva concertos, oficinas e recitais a diferentes espaços de Itabira</a></h3>	</header>
 
 	</article>
 					</li>
 									<li class="g1-collection-item">
 						
-<article class="entry-tpl-listxxs post-51805 post type-post status-publish format-standard has-post-thumbnail category-policia tag-destaque tag-homicidio tag-joao-monlevade tag-sepultamento tag-tiros">
-	<div class="entry-featured-media" ><a title="Jovem morto a tiros será sepultado nesta sexta (11) em J. Monlevade" class="g1-frame" href="https://itabiranet.com.br/jovem-morto-a-tiros-sera-sepultado-nesta-sexta-11-em-j-monlevade/"><div class="g1-frame-inner"><img data-expand="600" width="90" height="67" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 90 67'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/09/Nota-de-pesarFoi-identificado-o-homem-assassinado-no-bairro-Novo-Cruzeiro-em-Joao-Monlevade-ne-e1789086276848-90x67.jpg" class="lazyload attachment-bimber-list-xxs size-bimber-list-xxs wp-post-image" alt="jovem-morto-a-tiros-sera-sepultado-nesta-sexta-11-em-j-monlevade" decoding="async" loading="lazy" data-srcset="https://itabiranet.com.br/wp-content/uploads/2026/09/Nota-de-pesarFoi-identificado-o-homem-assassinado-no-bairro-Novo-Cruzeiro-em-Joao-Monlevade-ne-e1789086276848-90x67.jpg 90w,   https://itabiranet.com.br/wp-content/uploads/2026/09/Nota-de-pesarFoi-identificado-o-homem-assassinado-no-bairro-Novo-Cruzeiro-em-Joao-Monlevade-ne-e1789086276848-192x144.jpg 192w,   https://itabiranet.com.br/wp-content/uploads/2026/09/Nota-de-pesarFoi-identificado-o-homem-assassinado-no-bairro-Novo-Cruzeiro-em-Joao-Monlevade-ne-e1789086276848-384x288.jpg 384w,   https://itabiranet.com.br/wp-content/uploads/2026/09/Nota-de-pesarFoi-identificado-o-homem-assassinado-no-bairro-Novo-Cruzeiro-em-Joao-Monlevade-ne-e1789086276848-180x135.jpg 180w,   https://itabiranet.com.br/wp-content/uploads/2026/09/Nota-de-pesarFoi-identificado-o-homem-assassinado-no-bairro-Novo-Cruzeiro-em-Joao-Monlevade-ne-e1789086276848-554x415.jpg 554w,   https://itabiranet.com.br/wp-content/uploads/2026/09/Nota-de-pesarFoi-identificado-o-homem-assassinado-no-bairro-Novo-Cruzeiro-em-Joao-Monlevade-ne-e1789086276848-1108x830.jpg 1108w" data-sizes="auto, (max-width: 90px) 100vw, 90px" /><span class="g1-frame-icon g1-frame-icon-"></span></div></a></div>
+<article class="entry-tpl-listxxs post-51820 post type-post status-publish format-standard has-post-thumbnail category-saude tag-destaque tag-hospital tag-regiao-metropolitana-de-belo-horizonte tag-santa-luzia tag-sao-joao-de-deus">
+	<div class="entry-featured-media" ><a title="Hospital São João de Deus inicia nova etapa com retomada das atividades em Santa Luzia" class="g1-frame" href="https://itabiranet.com.br/hospital-sao-joao-de-deus-inicia-nova-etapa-com-retomada-das-atividades-em-santa-luzia/"><div class="g1-frame-inner"><img data-expand="600" width="90" height="67" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 90 67'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/09/799788076_1023399547400960_7509633376178077748_n-e1789133983652-90x67.jpg" class="lazyload attachment-bimber-list-xxs size-bimber-list-xxs wp-post-image" alt="hospital-sao-joao-de-deus-inicia-nova-etapa-com-retomada-das-atividades-em-santa-luzia" decoding="async" loading="lazy" data-srcset="https://itabiranet.com.br/wp-content/uploads/2026/09/799788076_1023399547400960_7509633376178077748_n-e1789133983652-90x67.jpg 90w,   https://itabiranet.com.br/wp-content/uploads/2026/09/799788076_1023399547400960_7509633376178077748_n-e1789133983652-192x144.jpg 192w,   https://itabiranet.com.br/wp-content/uploads/2026/09/799788076_1023399547400960_7509633376178077748_n-e1789133983652-384x288.jpg 384w,   https://itabiranet.com.br/wp-content/uploads/2026/09/799788076_1023399547400960_7509633376178077748_n-e1789133983652-180x135.jpg 180w,   https://itabiranet.com.br/wp-content/uploads/2026/09/799788076_1023399547400960_7509633376178077748_n-e1789133983652-554x415.jpg 554w" data-sizes="auto, (max-width: 90px) 100vw, 90px" /><span class="g1-frame-icon g1-frame-icon-"></span></div></a></div>
 	<header class="entry-header">
-		<h3 class="g1-epsilon g1-epsilon-1st entry-title"><a href="https://itabiranet.com.br/jovem-morto-a-tiros-sera-sepultado-nesta-sexta-11-em-j-monlevade/" rel="bookmark">Jovem morto a tiros será sepultado nesta sexta (11) em J. Monlevade</a></h3>	</header>
+		<h3 class="g1-epsilon g1-epsilon-1st entry-title"><a href="https://itabiranet.com.br/hospital-sao-joao-de-deus-inicia-nova-etapa-com-retomada-das-atividades-em-santa-luzia/" rel="bookmark">Hospital São João de Deus inicia nova etapa com retomada das atividades em Santa Luzia</a></h3>	</header>
 
 	</article>
 					</li>
@@ -1221,7 +1225,7 @@ if(e)
 			</aside><aside id="adace_ads_widget-5" class="widget widget_adace_ads_widget"><div class="adace-slot-wrapper adace-widget-44914" >
 	<div class="adace-disclaimer">
 		</div>
-	<div class="adace-slot">	<div class="adace_ad_6aa3f5fe02caa adace-dont-remove">
+	<div class="adace-slot">	<div class="adace_ad_6aa448ceb6895 adace-dont-remove">
 
 					<a href="https://www.comercialbetelbaterias.com.br/" class="" target="_blank" rel="nofollow noopener">
 		
@@ -1478,71 +1482,79 @@ if(e)
 </script>
 	<div id="wpcp-error-message" class="msgmsg-box-wpcp hideme"><span>error: </span>É proibida a reprodução dos conteúdos desta página! Direitos Reservados.</div>
 	<script>
-	var timeout_result;
-	function show_wpcp_message(smessage)
-	{
-		if (smessage !== "")
-			{
-			var smessage_text = '<span>Alert: </span>'+smessage;
-			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
-			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
-			clearTimeout(timeout_result);
-			timeout_result = setTimeout(hide_message, 3000);
+		var timeout_result;
+
+		function show_wpcp_message(smessage) {
+			if (smessage !== "") {
+				var smessage_text = '<span>Alert: </span>' + smessage;
+				document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+				document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+				clearTimeout(timeout_result);
+				timeout_result = setTimeout(hide_message, 3000);
 			}
-	}
-	function hide_message()
-	{
-		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
-	}
+		}
+
+		function hide_message() {
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+		}
 	</script>
-		<style>
-	@media print {
-	body * {display: none !important;}
-		body:after {
-		content: "É proibida a reprodução dos conteúdos desta página! Direitos Reservados."; }
-	}
-	</style>
+				<style>
+				@media print {
+					body * {
+						display: none !important;
+					}
+
+					body:after {
+						content: "É proibida a reprodução dos conteúdos desta página! Direitos Reservados.";
+					}
+				}
+			</style>
 		<style type="text/css">
-	#wpcp-error-message {
-	    direction: ltr;
-	    text-align: center;
-	    transition: opacity 900ms ease 0s;
-	    z-index: 99999999;
-	}
-	.hideme {
-    	opacity:0;
-    	visibility: hidden;
-	}
-	.showme {
-    	opacity:1;
-    	visibility: visible;
-	}
-	.msgmsg-box-wpcp {
-		border:1px solid #f5aca6;
-		border-radius: 10px;
-		color: #555;
-		font-family: Tahoma;
-		font-size: 11px;
-		margin: 10px;
-		padding: 10px 36px;
-		position: fixed;
-		width: 255px;
-		top: 50%;
-  		left: 50%;
-  		margin-top: -10px;
-  		margin-left: -130px;
-  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
-	}
-	.msgmsg-box-wpcp span {
-		font-weight:bold;
-		text-transform:uppercase;
-	}
+		#wpcp-error-message {
+			direction: ltr;
+			text-align: center;
+			transition: opacity 900ms ease 0s;
+			z-index: 99999999;
+		}
+
+		.hideme {
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.showme {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.msgmsg-box-wpcp {
+			border: 1px solid #f5aca6;
+			border-radius: 10px;
+			color: #555;
+			font-family: Tahoma;
+			font-size: 11px;
+			margin: 10px;
+			padding: 10px 36px;
+			position: fixed;
+			width: 255px;
+			top: 50%;
+			left: 50%;
+			margin-top: -10px;
+			margin-left: -130px;
+			-webkit-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+			-moz-box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+			box-shadow: 0px 0px 34px 2px rgba(242, 191, 191, 1);
+		}
+
+		.msgmsg-box-wpcp span {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
 		.warning-wpcp {
-		background:#ffecec url('https://itabiranet.com.br/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
-	}
-    </style>
+			background: #ffecec url('https://itabiranet.com.br/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
+		}
+	</style>
 
 <script data-cfasync="false" type="text/javascript" id="clever-core">
 /* <![CDATA[ */
@@ -1633,12 +1645,12 @@ window._googlesitekit.contentEvents = {"postID":51808,"isSinglePost":true,"hasVi
 </script>
 <script id="googlesitekit-events-provider-content-events-js" src="https://itabiranet.com.br/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-content-events-bb83c1a0aedefa5d25d1.js" defer></script>
 <script id="popup-maker-site-js-extra">
-var pum_vars = {"version":"1.24.0","pm_dir_url":"https://itabiranet.com.br/wp-content/plugins/popup-maker/","ajaxurl":"https://itabiranet.com.br/wp-admin/admin-ajax.php","restapi":"https://itabiranet.com.br/wp-json/pum/v1","rest_nonce":null,"default_theme":"277","debug_mode":"","disable_tracking":"","disable_url_params":"","home_url":"/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","paramNames":{"popup_id":"pid","cta":"cta","notrack":"notrack"},"analytics_enabled":"1","analytics_route":"analytics","analytics_api":"https://itabiranet.com.br/wp-json/pum/v1"};
+var pum_vars = {"version":"1.25.0","pm_dir_url":"https://itabiranet.com.br/wp-content/plugins/popup-maker/","ajaxurl":"https://itabiranet.com.br/wp-admin/admin-ajax.php","restapi":"https://itabiranet.com.br/wp-json/pum/v1","rest_nonce":null,"default_theme":"277","debug_mode":"","disable_tracking":"","disable_url_params":"","home_url":"/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","paramNames":{"popup_id":"pid","cta":"cta","notrack":"notrack"},"analytics_enabled":"1","analytics_route":"analytics","analytics_api":"https://itabiranet.com.br/wp-json/pum/v1"};
 var pum_sub_vars = {"ajaxurl":"https://itabiranet.com.br/wp-admin/admin-ajax.php","message_position":"top"};
 var pum_popups = [];
 //# sourceURL=popup-maker-site-js-extra
 </script>
-<script id="popup-maker-site-js" src="//itabiranet.com.br/wp-content/uploads/pum/pum-site-scripts.js?defer&#038;generated=1755185729&#038;ver=1.24.0"></script>
+<script id="popup-maker-site-js" src="//itabiranet.com.br/wp-content/uploads/pum/pum-site-scripts.js?defer&#038;generated=1755185729&#038;ver=1.25.0"></script>
 <script id="googlesitekit-events-provider-popup-maker-js" src="https://itabiranet.com.br/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-popup-maker-b946f1908d7c0c105eca.js" defer></script>
 <script id="flickity-js" src="https://itabiranet.com.br/wp-content/themes/bimber/js/flickity/flickity.pkgd.min.js"></script>
 <script id="bimber-back-to-top-js" src="https://itabiranet.com.br/wp-content/themes/bimber/js/back-to-top.js"></script>
