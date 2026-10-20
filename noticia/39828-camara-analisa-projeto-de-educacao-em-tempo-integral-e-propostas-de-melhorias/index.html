@@ -23,6 +23,32 @@
 		#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon {
 			transform: rotate(45deg);
 		}
+
+		/* Green glow while hovered, keyboard focused or its insights card is open.
+		   Inset, so it stays inside the bar and never fights the ::after rings. */
+		#wpadminbar #wp-admin-bar-wccp_free_top_button > .ab-item,
+		#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
+			transition: box-shadow .2s ease, text-shadow .2s ease;
+		}
+
+		#wpadminbar:not(.mobile) #wp-admin-bar-wccp_free_top_button:hover > .ab-item,
+		#wpadminbar #wp-admin-bar-wccp_free_top_button > .ab-item:focus-visible,
+		#wpadminbar #wp-admin-bar-wccp_free_top_button.wccp-abi-open > .ab-item {
+			box-shadow: inset 0 0 0 1px rgba(2, 202, 2, .45), inset 0 0 12px rgba(2, 202, 2, .35);
+		}
+
+		#wpadminbar:not(.mobile) #wp-admin-bar-wccp_free_top_button:hover .ab-icon:before,
+		#wpadminbar #wp-admin-bar-wccp_free_top_button > .ab-item:focus-visible .ab-icon:before,
+		#wpadminbar #wp-admin-bar-wccp_free_top_button.wccp-abi-open .ab-icon:before {
+			text-shadow: 0 0 6px rgba(2, 202, 2, .9);
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			#wpadminbar #wp-admin-bar-wccp_free_top_button > .ab-item,
+			#wpadminbar #wp-admin-bar-wccp_free_top_button .ab-icon:before {
+				transition: none;
+			}
+		}
 	</style>
 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
@@ -128,7 +154,7 @@ gtag("config", "GT-KDB2NMV");
 </script>
 <link rel="https://api.w.org/" href="https://itabiranet.com.br/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://itabiranet.com.br/wp-json/wp/v2/posts/52441" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://itabiranet.com.br/xmlrpc.php?rsd" />
 <link rel='shortlink' href='https://itabiranet.com.br/?p=52441' />
-<link rel="preload" href="https://itabiranet.com.br/wp-content/plugins/g1-socials/css/iconfont/fonts/g1-socials.woff" as="font" type="font/woff" crossorigin="anonymous"><meta name="generator" content="Site Kit by Google 1.189.0" /><meta name="facebook-domain-verification" content="7awrhho5gkqwrumbs3stov18y4hisc" />
+<link rel="preload" href="https://itabiranet.com.br/wp-content/plugins/g1-socials/css/iconfont/fonts/g1-socials.woff" as="font" type="font/woff" crossorigin="anonymous"><meta name="generator" content="Site Kit by Google 1.190.0" /><meta name="facebook-domain-verification" content="7awrhho5gkqwrumbs3stov18y4hisc" />
 <script data-cfasync="false" type="text/javascript" id="clever-core">
     /* <![CDATA[ */
     (function (document, window) {
@@ -188,7 +214,7 @@ gtag("config", "GT-KDB2NMV");
 				elemtype = 'TEXT';
 			}
 
-			if (e.ctrlKey) {
+			if (e.ctrlKey || e.metaKey) { // metaKey = Cmd on macOS
 				var key;
 				if (window.event)
 					key = window.event.keyCode; //IE
@@ -367,6 +393,14 @@ gtag("config", "GT-KDB2NMV");
 			window.addEventListener("touchend", touchend, false);
 		});
 
+		//Safari on macOS: a trackpad Force Click selects the word and opens Look Up
+		document.addEventListener("webkitmouseforcewillbegin", function(e) {
+			var elemtype = (e.target.nodeName || "").toUpperCase();
+			if (elemtype == "TEXTAREA" || elemtype == "INPUT" || elemtype == "SELECT" || elemtype == "OPTION" || elemtype == "EMBED") return;
+			if (wccp_free_iscontenteditable(e)) return;
+			e.preventDefault();
+		}, false);
+
 		function wccp_pro_is_passive() {
 
 			var cold = false,
@@ -388,11 +422,15 @@ gtag("config", "GT-KDB2NMV");
 		/*special for safari End*/
 	</script>
 	<script id="wpcp_disable_Right_Click" type="text/javascript">
+		var wpcp_right_click_msg = "É proibida a reprodução dos conteúdos desta página! Direitos Reservados.";
+
 		document.ondragstart = function() {
 			return false;
 		}
 
 		function nocontext(e) {
+			// show_wpcp_message() is printed in the footer, so guard against an early right click
+			if (typeof show_wpcp_message === "function") show_wpcp_message(wpcp_right_click_msg);
 			return false;
 		}
 		document.oncontextmenu = nocontext;
@@ -864,7 +902,7 @@ gtag("config", "GT-KDB2NMV");
 	<div class="adace-disclaimer">
 			</div>
 	<div class="adace-slot">
-			<div class="adace_ad_6ad760c71a3b9 adace-dont-remove">
+			<div class="adace_ad_6ad7b6cc0dad1 adace-dont-remove">
 
 					<a href="https://itabira.mg.gov.br/" class="" target="_blank" rel="nofollow noopener">
 		
@@ -967,7 +1005,7 @@ gtag("config", "GT-KDB2NMV");
 	<div class="adace-disclaimer">
 			</div>
 	<div class="adace-slot">
-			<div class="adace_ad_6ad760c71be77 adace-dont-remove">
+			<div class="adace_ad_6ad7b6cc0f7a5 adace-dont-remove">
 
 					<a href="https://www.transportescisne.com.br/horarios" class="" target="_blank" rel="nofollow noopener">
 		
@@ -1182,14 +1220,14 @@ gtag("config", "GT-KDB2NMV");
 			</div><!-- #primary -->
 
 			<div id="secondary" class="g1-sidebar g1-sidebar-padded g1-column g1-column-1of3">
-	<aside id="adace_ads_widget-4" class="widget widget_adace_ads_widget"><div class="adace-slot-wrapper adace-widget-48370" >
+	<aside id="adace_ads_widget-4" class="widget widget_adace_ads_widget"><div class="adace-slot-wrapper adace-widget-51622" >
 	<div class="adace-disclaimer">
 		</div>
-	<div class="adace-slot">	<div class="adace_ad_6ad760c726f2c adace-dont-remove">
+	<div class="adace-slot">	<div class="adace_ad_6ad7b6cc1dba7 adace-dont-remove">
 
-					<a href="https://hnsd.org.br/" class="" target="_blank" rel="nofollow noopener">
+					<a href="https://www.itabira.cam.mg.gov.br/" class="" target="_blank" rel="nofollow noopener">
 		
-			<img data-expand="600" class="lazyload" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 450 550'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/04/HNSD.png" width="450" height="550" alt="" />
+			<img data-expand="600" class="lazyload" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 300 250'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2026/10/cmi_out_2026.jpg" width="300" height="250" alt="" />
 			
 					</a>
 			</div>
@@ -1235,7 +1273,7 @@ gtag("config", "GT-KDB2NMV");
 			</aside><aside id="adace_ads_widget-5" class="widget widget_adace_ads_widget"><div class="adace-slot-wrapper adace-widget-47155" >
 	<div class="adace-disclaimer">
 		</div>
-	<div class="adace-slot">	<div class="adace_ad_6ad760c729365 adace-dont-remove">
+	<div class="adace-slot">	<div class="adace_ad_6ad7b6cc1ffb3 adace-dont-remove">
 
 		
 			<img data-expand="600" class="lazyload" src="data:image/svg+xml;charset=utf-8,  %3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 450 558'%2F%3E" data-src="https://itabiranet.com.br/wp-content/uploads/2025/09/Matabase_Farma-e1757618143113.jpeg" width="450" height="558" alt="" />
@@ -1656,7 +1694,7 @@ window._googlesitekit = window._googlesitekit || {};
 window._googlesitekit.contentEvents = {"postID":52441,"isReadableSinglePost":true,"hasVimeoEmbed":false,"wordCount":455,"estimatedReadTimeSeconds":115,"isLastPageOfMultiPagePost":true,"readTimeThresholdPercent":85,"minimumReadTimeSeconds":5};
 //# sourceURL=googlesitekit-events-provider-content-events-js-before
 </script>
-<script id="googlesitekit-events-provider-content-events-js" src="https://itabiranet.com.br/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-content-events-6b04077d00f0d606ba42.js" defer></script>
+<script id="googlesitekit-events-provider-content-events-js" src="https://itabiranet.com.br/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-content-events-90bacb156ab34fa090db.js" defer></script>
 <script id="popup-maker-site-js-extra">
 var pum_vars = {"version":"1.25.0","pm_dir_url":"https://itabiranet.com.br/wp-content/plugins/popup-maker/","ajaxurl":"https://itabiranet.com.br/wp-admin/admin-ajax.php","restapi":"https://itabiranet.com.br/wp-json/pum/v1","rest_nonce":null,"default_theme":"277","debug_mode":"","disable_tracking":"","disable_url_params":"","home_url":"/","message_position":"top","core_sub_forms_enabled":"1","popups":[],"cookie_domain":"","paramNames":{"popup_id":"pid","cta":"cta","notrack":"notrack"},"analytics_enabled":"1","analytics_route":"analytics","analytics_api":"https://itabiranet.com.br/wp-json/pum/v1"};
 var pum_sub_vars = {"ajaxurl":"https://itabiranet.com.br/wp-admin/admin-ajax.php","message_position":"top"};
@@ -1664,7 +1702,7 @@ var pum_popups = [];
 //# sourceURL=popup-maker-site-js-extra
 </script>
 <script id="popup-maker-site-js" src="//itabiranet.com.br/wp-content/uploads/pum/pum-site-scripts.js?defer&#038;generated=1755185729&#038;ver=1.25.0"></script>
-<script id="googlesitekit-events-provider-popup-maker-js" src="https://itabiranet.com.br/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-popup-maker-b946f1908d7c0c105eca.js" defer></script>
+<script id="googlesitekit-events-provider-popup-maker-js" src="https://itabiranet.com.br/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-popup-maker-7b96b6f8e13604bbb69c.js" defer></script>
 <script id="flickity-js" src="https://itabiranet.com.br/wp-content/themes/bimber/js/flickity/flickity.pkgd.min.js"></script>
 <script id="bimber-back-to-top-js" src="https://itabiranet.com.br/wp-content/themes/bimber/js/back-to-top.js"></script>
 <script id="wp-emoji-settings" type="application/json">
