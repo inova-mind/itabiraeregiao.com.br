@@ -1,0 +1,4 @@
+Contact: mailto:victor.gabriel@inovamind.dev
+Expires: 2027-11-05T13:58:45.000Z
+Preferred-Languages: pt-BR, en
+Canonical: https://itabiraeregiao.com.br/.well-known/security.txt

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do RKIO em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>RKIO | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="RKIO | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?aebc3a512f09">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="RKIO | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?aebc3a512f09">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?aebc3a512f09",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?aebc3a512f09">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>RKIO</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/rkio"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/rkio?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/44711-dolar-volta-a-aproximar-se-de-r-5-49-em-dia-de-instabilidade-global" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/dolares-8b9e86.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Dólar volta a aproximar-se de R$ 5,49 em dia de instabilidade global</h2>
+      <p class="card-snippet">O dólar fechou em alta e a bolsa encerrou em queda nesta quinta-feira (5), em um pregão marcado pelo aumento da aversão ao risco nos mercados internacionais. A pressão veio principalmente de Wall…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T12:25:00+00:00">
+          06/11/2026 12:25
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44712-homem-e-indiciado-pela-pcmg-por-feminicidio-da-irma" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/10/pcmg-viatura-luz-azul-mais-proxima-7-8-2025-1-8af4f4-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Homem é indiciado pela PCMG por feminicídio da irmã</h2>
+      <p class="card-snippet">O inquérito instaurado para apurar a morte de uma mulher, de 49 anos, atacada com 23 golpes de faca, foi concluído pela Polícia Civil de Minas Gerais (PCMG) com o indiciamento do irmão da vítima, de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T12:19:00+00:00">
+          06/11/2026 12:19
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44651-prefeitura-mobiliza-defesa-civil-e-secretarias-municipais-para-atender" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/whatsapp-image-2026-11-05-at-14-54-19-2893c3-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura mobiliza Defesa Civil e secretarias municipais para atender ocorrências após temporal em Itabira</h2>
+      <p class="card-snippet">Equipes atuam de forma integrada em diferentes regiões da cidade, com serviços de desobstrução de vias, retirada de árvores, sinalização e monitoramento de áreas de riscoA Prefeitura de Itabira…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T09:45:00+00:00">
+          06/11/2026 09:45
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44642-prefeitura-de-itabira-fortalece-a-saude-da-mulher-e-alcanca-2-1-mil-pessoas-no" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/arl-5e5c15-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura de Itabira fortalece a saúde da mulher e alcança 2,1 mil pessoas no Outubro Rosa</h2>
+      <p class="card-snippet">Com 21 ações realizadas nas unidades de saúde, campanha reforçou o diagnóstico precoce. Nos últimos dois anos, município registrou mais de 3,3 mil exames pelo SUS e realizou outras 1.060 mamografias…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T09:28:00+00:00">
+          06/11/2026 09:28
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44643-policia-militar-prende-homem-por-receptacao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/whatsapp-image-2026-11-05-at-11-34-44-d23557-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">POLÍCIA MILITAR PRENDE HOMEM POR RECEPTAÇÃO</h2>
+      <p class="card-snippet">A Polícia Militar de Minas Gerais, por meio do 26º BPM, prendeu um homem, de 58 anos, por receptação, na tarde de quarta-feira (04/11), em um sítio localizado na zona rural de Bom Jesus do Amparo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T09:25:00+00:00">
+          06/11/2026 09:25
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44644-policia-militar-prende-dois-homens-por-trafico-ilicito-de-drogas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/whatsapp-image-2026-11-05-at-12-12-10-32fff1-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">POLÍCIA MILITAR PRENDE DOIS HOMENS POR TRÁFICO ILÍCITO DE DROGAS</h2>
+      <p class="card-snippet">A Polícia Militar de Minas Gerais, por meio do 26º BPM, prendeu dois homens, de 32 e 30 anos, por envolvimento nos crimes de tráfico ilícito de drogas e associação para o tráfico, na tarde de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T09:23:00+00:00">
+          06/11/2026 09:23
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44639-defesa-civil-atualiza-balanco-das-chuvas-em-itabira-mais-de-60-profissionais" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/whatsapp-image-2026-11-05-at-20-58-16-90018b-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Defesa Civil atualiza balanço das chuvas em Itabira; mais de 60 profissionais foram mobilizados no atendimento à população</h2>
+      <p class="card-snippet">Levantamento registra 34 ocorrências de quedas de árvores, 25 destelhamentos de residências e cinco alagamentos. Bairros João XXIII, Machado e Centro estão entre as regiões mais afetadas. Não há…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T09:04:00+00:00">
+          06/11/2026 09:04
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44637-minas-ocupa-espaco-nas-decisoes-nacionais-sobre-o-futuro-da-mineracao-e-da" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/img-3082-8876e4.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Minas ocupa espaço nas decisões nacionais sobre o futuro da mineração e da indústria</h2>
+      <p class="card-snippet">O prefeito de Itabira, Marco Antônio Lage (PSB), participou, nesta quinta-feira (5), da primeira reunião do Conselho Nacional para Industrialização de Minerais Críticos e Estratégicos, realizada no…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-06T08:59:00+00:00">
+          06/11/2026 08:59
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44449-incendio-atinge-residencia-no-bairro-gabiroba-em-itabira" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/img-3019-e383e1.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Incêndio atinge residência no bairro Gabiroba, em Itabira</h2>
+      <p class="card-snippet">Um incêndio atingiu uma residência na noite de quarta-feira (4), por volta das 19h50, na Rua dos Eletricistas, no bairro Gabiroba, em Itabira.O Corpo de Bombei…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T13:32:00+00:00">
+          05/11/2026 13:32
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44438-acao-contra-o-trafico-termina-com-prisao-e-apreensao-de-drogas" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/manhuacu-trafico-drogas-4-do-11-de-2026-111c7d-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Ação contra o tráfico termina com prisão e apreensão de drogas</h2>
+      <p class="card-snippet">Uma investigação da Polícia Civil de Minas Gerais (PCMG) referente à prática de tráfico de drogas em Manhuaçu, região da Zona da Mata, resultou na prisão em fl…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T12:56:00+00:00">
+          05/11/2026 12:56
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44431-dolar-cai-a-r-5-45-apos-eleicoes-nos-eua-e-antes-do-copom" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/dolar-moeda-0803221212-94d325.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Dólar cai a R$ 5,45 após eleições nos EUA e antes do Copom</h2>
+      <p class="card-snippet">O dólar fechou em queda nesta quarta-feira (4), acompanhando o enfraquecimento da moeda estadunidense no exterior após a vitória dos democratas nas eleições de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T12:35:00+00:00">
+          05/11/2026 12:35
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44418-entenda-as-eleicoes-de-meio-de-mandato-do-presidente-nos-eua" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/eleicao-de-meio-de-mandato-nos-eua-reuters-b058f3.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Entenda as eleições de meio de mandato do presidente nos EUA</h2>
+      <p class="card-snippet">As eleições nos Estados Unidos (EUA) têm várias diferenças do processo eleitoral realizado no Brasil, desde a forma de votar – nos EUA a urna eletrônica é usada, mas também é possível votar com…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T12:04:00+00:00">
+          05/11/2026 12:04
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44387-camara-de-itabira-vota-denominacao-de-rua-na-chapada-e-apresenta-demandas-por" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/whatsapp-image-2026-11-03-at-16-51-43-35fbde-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Câmara de Itabira vota denominação de rua na Chapada e apresenta demandas por melhorias na cidade</h2>
+      <p class="card-snippet">40ª Reunião Ordinária também reúne moção de aplausos e indicações sobre infraestrutura, mobilidade, saúde e serviços públicosA Câmara Municipal de Itabira real…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T11:03:00+00:00">
+          05/11/2026 11:03
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44302-itabira-nao-tem-mais-estruturas-da-vale-em-nivel-de-emergencia-apos-decisao-da" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/unnamed-7-4863f7-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabira não tem mais estruturas da Vale em nível de emergência, após decisão da ANM</h2>
+      <p class="card-snippet">Agência Nacional de Mineração encerrou nível de emergência do Sistema Pontal, na Mina CauêA Agência Nacional de Mineração encerrou o nível de emergência do Sis…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-04T23:00:00+00:00">
+          04/11/2026 23:00
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44266-taquaracu-de-minas-recebe-o-1o-encontro-de-motociclistas-com-shows-de-rock" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/gemini-generated-image-btycb9btycb9btyc-e0b709-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Taquaraçu de Minas recebe o 1º Encontro de Motociclistas com shows de rock</h2>
+      <p class="card-snippet">Evento será realizado no dia 14 de novembro, na Praça do Largo, e marcará a inauguração da facção do Raça Team Moto Clube no municípioTaquaraçu de Minas se pre…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-04T21:11:00+00:00">
+          04/11/2026 21:11
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44257-6o-flitabira-bate-recorde-historico-de-publico-e-transforma-a-obra-de-drummond" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/flitabira-2026-foto-alnereis-grupo-de-danca-primeiro-ato-1527-c48239-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">6º Flitabira bate recorde histórico de público e transforma a obra de Drummond em debate sobre o Brasil contemporâneo</h2>
+      <p class="card-snippet">Maior edição dos seis anos do Festival reúne 40 mil pessoas, vende mais de 3 mil livros e alcança 2,8 milhões de visualizações digitais, com programação marcad…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-04T21:04:00+00:00">
+          04/11/2026 21:04
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44127-radio-nacional-transmite-botafogo-x-atletico-mg-pelo-brasileirao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/radio-nacional-transmite-botafogo-x-atletico-mg-pelo-brasileirao-nesta-quarta-4-258c95.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Rádio Nacional transmite Botafogo X Atlético-MG pelo Brasileirão</h2>
+      <p class="card-snippet">Neste quarta-feira (4), o Botafogo recebe o Atlético-MG no Estádio Olímpico Nilton Santos, no Rio de Janeiro (RJ), em jogo válido pela 34ª rodada do Brasileirã…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-04T12:42:00+00:00">
+          04/11/2026 12:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44128-novembro-roxo-alerta-para-cuidados-com-prematuros-apos-alta" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/image-4-5dd34a.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Novembro Roxo alerta para cuidados com prematuros após alta</h2>
+      <p class="card-snippet">Bebês prematuros que recebem alta hospitalar continuam precisando de acompanhamento especializado para monitorar o crescimento, a alimentação e o desenvolvimento. Esse é o alerta do Novembro Roxo…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-04T12:38:00+00:00">
+          04/11/2026 12:38
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44129-padilha-defende-proibicao-das-bets-e-cita-impacto-no-sus" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/55629432572-24909a08ac-o-106396.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Padilha defende proibição das bets e cita impacto no SUS</h2>
+      <p class="card-snippet">O ministro da Saúde, Alexandre Padilha, defendeu nesta terça-feira (3) a manutenção da decisão do governo federal que proibiu o funcionamento das empresas que …</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-04T12:34:00+00:00">
+          04/11/2026 12:34
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44130-dolar-sobe-0-74-e-aproxima-se-de-r-5-50-em-dia-de-cautela-fiscal" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/dolar-moeda-0803221212-94d325.webp" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Dólar sobe 0,74% e aproxima-se de R$ 5,50 em dia de cautela fiscal</h2>
+      <p class="card-snippet">O mercado financeiro brasileiro encerrou esta terça-feira (3) em queda, com o dólar em alta e a bolsa de valores ampliando as perdas após a reeleição do presid…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-04T12:19:00+00:00">
+          04/11/2026 12:19
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43756-mulher-e-presa-com-3-kg-de-cocaina-escondidos-junto-ao-corpo-em-aeroporto-do-rio" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/6253e565-bcad-4b57-90f5-d18abbfdc620-f62715-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Mulher é presa com 3 kg de cocaína escondidos junto ao corpo em aeroporto do Rio</h2>
+      <p class="card-snippet">Uma mulher foi presa em flagrante pela Polícia Federal na tarde de sábado (31/10), no Aeroporto Internacional do Rio de Janeiro, após ser descoberta transporta…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-03T10:30:00+00:00">
+          03/11/2026 10:30
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43757-adolescente-e-apreendido-com-32-quilos-de-maconha-dentro-de-onibus-interestadual" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/acaf55fd-d969-4d30-8b7b-30ff2f66d146-c52887-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Adolescente é apreendido com 32 quilos de maconha dentro de ônibus interestadual</h2>
+      <p class="card-snippet">Um adolescente de 17 anos foi apreendido transportando aproximadamente 32 quilos de maconha em duas malas durante uma fiscalização realizada no Terminal Rodovi…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-03T10:28:00+00:00">
+          03/11/2026 10:28
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43758-pf-prende-duas-mulheres-com-48-frascos-de-medicamento-emagrecedor" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/e50458dc-85da-4226-ba32-3c3427a9db9c-8ed0ef-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">PF prende duas mulheres com 48 frascos de medicamento emagrecedor</h2>
+      <p class="card-snippet">Duas mulheres foram presas em flagrante pela Polícia Federal na quarta-feira (28/10), no Aeroporto Internacional do Rio de Janeiro, após serem encontradas transportando 48 frascos de tirzepatida…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-03T10:11:00+00:00">
+          03/11/2026 10:11
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43748-duas-pessoas-sao-presas-com-carro-lotado-de-cigarros-contrabandeados" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://rkio.com.br/midia/2026/11/eaf0ab6f-8f6b-4b77-a44a-4ffcde74eae7-7d7042-1200x630.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Duas pessoas são presas com carro lotado de cigarros contrabandeados</h2>
+      <p class="card-snippet">Duas pessoas foram presas em flagrante durante uma fiscalização realizada por equipes da Polícia Federal, do Batalhão de Polícia de Fronteira (BPFRON) e da Receita Federal, nas proximidades de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-03T10:00:00+00:00">
+          03/11/2026 10:00
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+    <span class="page-btn active" aria-current="page">1</span>
+    <a class="page-btn" href="/fonte/rkio?page=2">2</a>
+    <a class="page-btn" href="/fonte/rkio?page=3">3</a>
+    <a class="page-btn" href="/fonte/rkio?page=4">4</a>
+    <a class="page-btn" href="/fonte/rkio?page=5">5</a>
+    <a class="page-btn" href="/fonte/rkio?page=6">6</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/rkio?page=2" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?aebc3a512f09"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?aebc3a512f09" defer></script>
+</body>
+</html>

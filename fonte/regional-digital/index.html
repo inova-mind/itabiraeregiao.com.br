@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Notícias agregadas do Regional Digital em Itabira e Região.">
+  <meta name="keywords" content="#itabiraeregiao, #itabiraeregião, itabiraeregiao, itabira e regiao, itabira e região, notícias de itabira, notícias de itabira e região, notícias agregadas de itabira e região, agregador de notícias, itabira, itabira mg, notícias minas gerais, MG, portal de notícias itabira">
+  <meta name="robots" content="index, follow">
+  <title>Regional Digital | Notícias de Itabira e Região</title>
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://itabiraeregiao.com.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Regional Digital | Notícias de Itabira e Região">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="https://itabiraeregiao.com.br/">
+  <meta property="og:site_name" content="Itabira e Região">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?aebc3a512f09">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Regional Digital | Notícias de Itabira e Região">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?aebc3a512f09">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Itabira e Região",
+    "alternateName": "#ItabiraERegiao",
+    "url": "https://itabiraeregiao.com.br/",
+    "description": "",
+    "inLanguage": "pt-BR",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Itabira e Região",
+      "url": "https://itabiraeregiao.com.br/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://itabiraeregiao.com.br/img/og-itabiraeregiao.png?aebc3a512f09",
+        "width": 1200,
+        "height": 630
+      }
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="/css/main.css?aebc3a512f09">
+</head>
+<body class="page-public">
+<header class="app-header">
+  <div class="header-inner">
+    <a href="/" class="brand" title="Início">
+      <span class="brand-name">#ItabiraERegiao</span>
+      <span class="brand-sub">Notícias de Itabira e Região</span>
+    </a>
+    <nav class="primary-nav" aria-label="Principal">
+      <a href="/">Início</a>
+      <a href="/sobre">Sobre</a>
+      <a href="/contato">Contato</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+<section class="feed-intro">
+  <h1>Regional Digital</h1>
+  <p class="muted small"><a href="/">← Voltar ao feed geral</a></p>
+<nav class="view-modes" aria-label="Modo de visualização">
+  <span class="view-modes-label">Visualização:</span>
+  <div class="view-modes-group" role="group">
+    <a href="/fonte/regional-digital"
+       class="view-mode-btn active"
+       aria-label="Grande: notícias completas com texto"
+       aria-current="page"
+       title="Grande: notícias completas com texto">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3" y="3" width="18" height="8" rx="2" />
+          <rect x="3" y="13" width="18" height="8" rx="2" />
+        </svg></a>
+    <a href="/fonte/regional-digital?mode=mini"
+       class="view-mode-btn"
+       aria-label="Mini: miniaturas, notícias só com os títulos"
+       aria-current="false"
+       title="Mini: miniaturas, notícias só com os títulos">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="view-mode-ico">
+          <rect x="3"  y="3"  width="5" height="5" rx="1" />
+          <rect x="9.5" y="3"  width="5" height="5" rx="1" />
+          <rect x="16" y="3"  width="5" height="5" rx="1" />
+          <rect x="3"  y="9.5" width="5" height="5" rx="1" />
+          <rect x="9.5" y="9.5" width="5" height="5" rx="1" />
+          <rect x="16" y="9.5" width="5" height="5" rx="1" />
+          <rect x="3"  y="16" width="5" height="5" rx="1" />
+          <rect x="9.5" y="16" width="5" height="5" rx="1" />
+          <rect x="16" y="16" width="5" height="5" rx="1" />
+        </svg></a>
+  </div>
+  <span class="view-modes-label view-modes-label-theme">Tema:</span>
+  <button
+    id="theme-toggle"
+    class="theme-toggle"
+    type="button"
+    aria-label="Alternar tema (slate ↔ cyber)"
+    title="Alternar tema">
+    <svg class="ico-slate" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="9" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+    <svg class="ico-cyber" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>
+    </svg>
+  </button>
+</nav>
+</section>
+<section class="cards-grid " aria-label="Notícias do portal">
+<article class="card">
+  <a class="card-link" href="/noticia/44355-joao-monlevade-inicia-a-elaboracao-do-novo-plano-municipal-de-educacao-com" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="http://www.regionaldigital.com.br/adm/img/05112026094105_f6e9e3e2d468043b610eb4e11aa74fe6.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">João Monlevade inicia a elaboração do novo Plano Municipal de Educação, com vigência de 2027 a 2037</h2>
+      <p class="card-snippet">O processo prevê diagnóstico educacional, definição de metas e estratégias e participação de diferentes instâncias na construção das políticas públicas para a próxima década</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T09:53:21.294603+00:00">
+          05/11/2026 09:53
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44353-prefeitura-promove-escuta-publica-para-elaboracao-do-plano-municipal-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/SAOGONCALO/img/%7B5ABDAAA6-70DC-CAAA-EAEB-EB54EA6AC8CB%7D/%7B5ABDAAA6-70DC-CAAA-EAEB-EB54EA6AC8CB%7D_650X450.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura promove escuta pública para elaboração do Plano Municipal de Educação 2027/2037.</h2>
+      <p class="card-snippet">A Prefeitura de São Gonçalo do Rio Abaixo, por meio da Secretaria de Educação, realiza uma escuta pública para subsidiar a elaboração do novo Plano Municipal de Educação (PME), com vigência prevista…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T09:36:51.212911+00:00">
+          05/11/2026 09:36
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44352-prefeitura-de-itabira-e-unifei-anunciam-70-vagas-em-dois-cursos-noturnos-para" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/ITABIRA/imgOrig/%7BDEDC2C1B-B8BD-54AB-DBDA-AEAE3E00DCEC%7D.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura de Itabira e Unifei anunciam 70 vagas em dois cursos noturnos para 2027</h2>
+      <p class="card-snippet">A Prefeitura de Itabira e a Universidade Federal de Itajubá (Unifei) anunciaram, nesta quinta-feira (22), a ampliação da oferta de cursos de graduação no campus de Itabira. O anúncio ocorreu durante…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T09:36:50.213569+00:00">
+          05/11/2026 09:36
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44351-cadastramento-escolar-para-a-rede-municipal-de-bh-termina-nesta-quinta-feira-5" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/cadastramento-escolar-1.JPG" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cadastramento escolar para a Rede Municipal de BH termina nesta quinta-feira (5/11)</h2>
+      <p class="card-snippet">Termina nesta quinta-feira (5) o prazo para o cadastro escolar de crianças, adolescentes e adultos que desejam ingressar na Rede Municipal de Educação em 2027. Pais e responsáveis devem registrar a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T09:36:47.218603+00:00">
+          05/11/2026 09:36
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44330-estudantes-do-cesgra-conquistam-medalhas-em-olimpiadas-de-conhecimento" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/SAOGONCALO/img/%7B71A55A08-1AC3-AC17-B2CB-CEBEE0CB3E34%7D/%7B71A55A08-1AC3-AC17-B2CB-CEBEE0CB3E34%7D_650X450.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Estudantes do Cesgra conquistam medalhas em olimpíadas de conhecimento.</h2>
+      <p class="card-snippet">Os estudantes do Centro Educacional de São Gonçalo do Rio Abaixo (Cesgra) conquistaram resultados expressivos em três importantes competições acadêmicas: a Olimpíada de Português (OP), a Olimpíada…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T01:42:04.890947+00:00">
+          05/11/2026 01:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44329-prefeito-alvaro-damiao-anuncia-transicao-da-guarda-civil-municipal-para-policia" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/filipe-augusto-07213.jpg.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeito Álvaro Damião anuncia transição da Guarda Civil Municipal para Polícia Municipal</h2>
+      <p class="card-snippet">O prefeito Álvaro Damião anunciou nesta quarta-feira (4) o início do processo de transição da Guarda Civil Municipal de Belo Horizonte para Polícia Municipal de Belo Horizonte. A mudança consta em…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T01:42:03.692389+00:00">
+          05/11/2026 01:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44328-prefeitura-de-itabira-abre-edital-para-projeto-de-xadrez-e-damas-voltado-a" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/ITABIRA/imgOrig/%7B614DC0BE-32D2-A1C5-28D6-C8ABABBE3CBE%7D.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura de Itabira abre edital para projeto de xadrez e damas voltado a crianças e adolescentes</h2>
+      <p class="card-snippet">A Prefeitura de Itabira, por meio da Secretaria Municipal de Esporte e Lazer (SMEL), está com inscrições abertas para o Edital de Chamada Pública nº 010/2026, que selecionará uma Organização da…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T01:42:02.664950+00:00">
+          05/11/2026 01:42
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/44327-passeio-turistico-percorre-arquitetura-historica-do-hipercentro-de-belo" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/acaiaca_qu4rto-studio_mg_8680-editada.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Passeio turístico percorre arquitetura histórica do Hipercentro de Belo Horizonte</h2>
+      <p class="card-snippet">O Hipercentro de Belo Horizonte será o cenário de um passeio dedicado à história e à arquitetura da capital. Neste sábado (7), a Belotur promove o oitavo roteiro turístico do ano, com uma caminhada…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-11-05T01:41:59.661726+00:00">
+          05/11/2026 01:41
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43059-feriado-do-servidor-publico-e-finados-alteram-funcionamento-dos-servicos-em" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/ITABIRA/imgOrig/%7BA025DC3A-5A2C-E1EC-EEA1-4CAA40D720D2%7D.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Feriado do Servidor Público e Finados alteram funcionamento dos serviços em Itabira</h2>
+      <p class="card-snippet">O funcionamento dos serviços públicos municipais de Itabira terá alterações entre sexta-feira (30/10) e segunda-feira (2/11), feriado de Finados. A folga referente ao Dia do Servidor Público…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-30T13:17:05.455886+00:00">
+          30/10/2026 13:17
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43058-dia-de-finados-tera-operacao-especial-para-conforto-e-seguranca-das-mais-de-80" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/finados-2025-foto-remy-drumond.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Dia de Finados terá operação especial para conforto e segurança das mais de 80 mil pessoas esperadas nos cemitérios municipais</h2>
+      <p class="card-snippet">Mais de 80 mil pessoas são esperadas nos quatro cemitérios municipais para as homenagens do Dia de Finados, na próxima segunda-feira (2). Para garantir a segurança e o conforto dos visitantes, uma…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-30T13:17:02.438809+00:00">
+          30/10/2026 13:17
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43045-sao-goncalo-transfere-ponto-facultativo-do-dia-do-servidor-publico-para-30-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-body">
+      <h2 class="card-title">São Gonçalo transfere ponto facultativo do Dia do Servidor Público para 30 de outubro</h2>
+      <p class="card-snippet">O ponto facultativo em homenagem ao Dia do Servidor Público foi transferido para 30 de outubro em São Gonçalo do Rio Abaixo. A alteração foi estabelecida pela Prefeitura por meio do Decreto nº…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-30T12:59:50.913906+00:00">
+          30/10/2026 12:59
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/43044-itabira-realiza-15a-chamada-para-extensao-de-carga-horaria" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/ITABIRA/imgOrig/%7B514AAE1E-30CA-CA15-DAD5-8B46DCBBC2EC%7D.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabira realiza 15ª chamada para extensão de carga horária</h2>
+      <p class="card-snippet">A Prefeitura de Itabira, por meio da Secretaria Municipal de Educação, realiza nesta sexta-feira (30) a 15ª chamada para preenchimento de vagas de extensão de carga horária na rede municipal de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-30T12:59:47.919467+00:00">
+          30/10/2026 12:59
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/42034-sao-goncalo-do-rio-abaixo-fortalece-a-rede-de-protecao-a-crianca-e-ao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/SAOGONCALO/img/%7BCD71BA58-CEBD-B6EB-ADDC-B054BE58BD23%7D/%7BCD71BA58-CEBD-B6EB-ADDC-B054BE58BD23%7D_650X450.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">São Gonçalo do Rio Abaixo fortalece a rede de proteção à criança e ao adolescente</h2>
+      <p class="card-snippet">Representantes do CMDCA e Conselho Tutelar, juntamente com os consultores da Universa.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-27T11:54:03.083711+00:00">
+          27/10/2026 11:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/42033-itabira-realiza-15a-chamada-para-extensao-de-carga-horaria" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/ITABIRA/imgOrig/%7B514AAE1E-30CA-CA15-DAD5-8B46DCBBC2EC%7D.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Itabira realiza 15ª chamada para extensão de carga horária</h2>
+      <p class="card-snippet">A Prefeitura de Itabira, por meio da Secretaria Municipal de Educação, realiza nesta sexta-feira (30) a 15ª chamada para preenchimento de vagas de extensão de carga horária na rede municipal de…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-27T11:54:02.086242+00:00">
+          27/10/2026 11:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/42032-prefeitura-prorroga-inscricoes-do-processo-seletivo-simplificado-no-04-2026-ate" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/ITABIRA/imgOrig/%7B72CCB3EC-86EA-5C77-13AB-7B2C5AEECEA5%7D.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura prorroga inscrições do Processo Seletivo Simplificado nº 04/2026 até 2 de novembro</h2>
+      <p class="card-snippet">A Prefeitura de Itabira, por meio da Secretaria Municipal de Administração e Governança, informa que o prazo de inscrições para o Processo Seletivo Simplificado (PSS) nº 04/2026 foi prorrogado até o…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-27T11:54:01.096070+00:00">
+          27/10/2026 11:54
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/42031-juventude-em-movimento-oferece-qualificacao-profissional-a-300-pessoas-de-14-a" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/comunicacao/dji_0463-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Juventude em Movimento oferece qualificação profissional a 300 pessoas de 14 a 29 anos em situação de vulnerabilidade</h2>
+      <p class="card-snippet">Belo Horizonte ganha reforço na capacitação de 300 jovens em situação de vulnerabilidade. Com investimento de R$ 300 mil, o projeto Juventude em Movimento vai atuar por um ano e meio nos bairros…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-27T11:53:58.103633+00:00">
+          27/10/2026 11:53
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/39035-prefeitura-capacita-motoristas-municipais-em-direcao-defensiva" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/SAOGONCALO/img/%7B2D380EDE-1E5A-3A00-8CB6-DDEBEEAA225C%7D/%7B2D380EDE-1E5A-3A00-8CB6-DDEBEEAA225C%7D_650X450.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Prefeitura capacita motoristas municipais em Direção Defensiva</h2>
+      <p class="card-snippet">Os primeiros a passar pela capacitação foram os motoristas da Secretaria de Educação.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-19T10:26:29.741263+00:00">
+          19/10/2026 10:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/39034-wi-fi-bh-gratuito-alcanca-mais-de-7-milhoes-de-usuarios-e-segue-em-expansao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/comunicacao/whatsapp-image-2026-10-15-at-15.39.09-1_.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Wi-Fi BH gratuito alcança mais de 7 milhões de usuários e segue em expansão pela cidade</h2>
+      <p class="card-snippet">A rede municipal de Wi-Fi de Belo Horizonte alcançou a marca histórica de mais de 7 milhões de contas cadastradas, consolidando o compromisso de levar inclusão digital e oportunidade à população…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-19T10:26:28.671270+00:00">
+          19/10/2026 10:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/39033-futsal-feminino-movimenta-itabira-e-da-visibilidade-as-atletas-no-campeonato" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/ITABIRA/imgOrig/%7BDAA4D0C6-3BB7-BCE8-C3B4-A27C5CDD5612%7D.png" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Futsal feminino movimenta Itabira e dá visibilidade às atletas no Campeonato Amador</h2>
+      <p class="card-snippet">Itabira recebe, entre os dias 16 e 18 de outubro, a Copa de Futsal Feminino Marcos Evangelista Alves, no Ginásio Poliesportivo, no Centro. Organizada pela Liga Itabirana de Futebol Amador (LIFA), a…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-19T10:26:27.656893+00:00">
+          19/10/2026 10:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/39032-fiscalizacao-fecha-o-cerco-e-apreende-quase-1-3-mil-faixas-irregulares-em-bh-de" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://prefeitura.pbh.gov.br/sites/default/files/estrutura-de-governo/comunicacao/whatsapp-image-2026-10-15-at-13.13.51-1.jpg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Fiscalização fecha o cerco e apreende quase 1,3 mil faixas irregulares em BH de janeiro a setembro</h2>
+      <p class="card-snippet">De janeiro a setembro deste ano foram apreendidas 1.285 faixas irregulares e aplicadas 208 multas por publicidade proibida em Belo Horizonte pela Fiscalização Urbanística e Ambiental. Foram emitidos…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-19T10:26:24.646054+00:00">
+          19/10/2026 10:26
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/38520-outubro-rosa-mobiliza-unidades-de-saude-e-amplia-acoes-de-prevencao-em-sao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/SAOGONCALO/img/%7BE1BC3EAA-DC63-EDA1-27BE-ECB5A48C434C%7D/%7BE1BC3EAA-DC63-EDA1-27BE-ECB5A48C434C%7D_650X450.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Outubro Rosa mobiliza unidades de saúde e amplia ações de prevenção em São Gonçalo.</h2>
+      <p class="card-snippet">A Prefeitura de São Gonçalo do Rio Abaixo, por meio da Secretaria de Saúde, realiza ao longo de outubro uma série de ações de conscientização e promoção da saúde da mulher. A programação do Outubro…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-16T12:24:05.736913+00:00">
+          16/10/2026 12:24
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/38519-itabira-realiza-13a-chamada-para-extensao-de-carga-horaria" target="_blank" rel="noopener noreferrer external">
+    <div class="card-body">
+      <h2 class="card-title">Itabira realiza 13ª chamada para extensão de carga horária</h2>
+      <p class="card-snippet">A Prefeitura de Itabira, por meio da Secretaria Municipal de Educação, realiza na quarta-feira (7) a 13ª chamada para preenchimento de vagas de extensão de carga horária na rede municipal de ensino…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-16T12:24:04.785586+00:00">
+          16/10/2026 12:24
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/38518-periodo-de-estiagem-saae-inicia-captacao-emergencial-para-reforcar" target="_blank" rel="noopener noreferrer external">
+    <div class="card-body">
+      <h2 class="card-title">Período de estiagem: Saae inicia captação emergencial para reforçar abastecimento de água em Itabira</h2>
+      <p class="card-snippet">Uma operação emergencial de captação e bombeamento de água bruta foi iniciada nesta segunda-feira (31/08), pelo Serviço Autônomo de água e Esgoto (Saae) de Itabira, no córrego Rio de Peixe, na…</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-16T12:24:03.773681+00:00">
+          16/10/2026 12:24
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+<article class="card">
+  <a class="card-link" href="/noticia/38185-outubro-rosa-mobiliza-unidades-de-saude-e-amplia-acoes-de-prevencao-em-sao" target="_blank" rel="noopener noreferrer external">
+    <div class="card-thumb">
+      <img src="https://portalfacilarquivos.blob.core.windows.net/uploads/SAOGONCALO/img/%7BE1BC3EAA-DC63-EDA1-27BE-ECB5A48C434C%7D/%7BE1BC3EAA-DC63-EDA1-27BE-ECB5A48C434C%7D_650X450.jpeg" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.closest('.card-thumb').remove();">
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Outubro Rosa mobiliza unidades de saúde e amplia ações de prevenção em São Gonçalo.</h2>
+      <p class="card-snippet">Mobilização no Hospital Municipal na tarde de quarta-feira (14) foi uma das ações de conscientização.</p>
+      <div class="card-meta">
+        <time class="card-tempo" data-publicada="2026-10-15T10:01:33.494623+00:00">
+          15/10/2026 10:01
+        </time>
+      </div>
+    </div>
+  </a>
+</article>
+</section>
+<nav class="pagination" aria-label="Paginação">
+    <span class="page-btn active" aria-current="page">1</span>
+    <a class="page-btn" href="/fonte/regional-digital?page=2">2</a>
+    <a class="page-btn" href="/fonte/regional-digital?page=3">3</a>
+    <a class="page-btn" href="/fonte/regional-digital?page=4">4</a>
+    <a class="page-btn" href="/fonte/regional-digital?page=5">5</a>
+    <a class="page-btn" href="/fonte/regional-digital?page=6">6</a>
+  <span class="page-ellipsis" aria-hidden="true">…</span>
+  <a class="page-btn page-btn-nav" href="/fonte/regional-digital?page=2" rel="next">Próxima ›</a>
+</nav>
+<script src="/js/tempo-relativo.js?aebc3a512f09"></script>
+</main>
+<footer class="app-footer">
+  <div class="footer-inner">
+    <small>
+      &copy; 2026 Itabira e Região. Desenvolvido por <a href="https://www.inovamind.dev/" target="_blank" rel="noopener">Inovamind.dev</a>
+    </small>
+    <small>
+      <a href="/sobre">Sobre</a> ·
+      <a href="/politica-de-remocao">Política de Remoção</a> ·
+      <a href="/contato">Contato</a>
+    </small>
+  </div>
+  <div class="footer-inner footer-rede-row">
+    <small class="footer-rede-inova">
+      Parceiros: <a href="https://thalesfernandes.dev" target="_blank" rel="noopener">ThalesFernandes.dev</a> ·
+      <a href="https://victorgabriel.dev" target="_blank" rel="noopener">VictorGabriel.dev</a> ·
+      <a href="https://www.imoveislucas.com.br" target="_blank" rel="noopener">ImoveisLucas.com.br</a> ·
+      <a href="https://bikemaniaitabira.com.br" target="_blank" rel="noopener">BikeManiaItabira.com.br</a> ·
+      <a href="https://nexfert.com.br" target="_blank" rel="noopener">NexFert.com.br</a>
+    </small>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/js/theme.js?aebc3a512f09" defer></script>
+</body>
+</html>
